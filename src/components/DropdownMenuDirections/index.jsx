@@ -1,6 +1,8 @@
 import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
+import "./style.scss";
+
 const DropdownMenuDirections = () => {
   return (
     <div className="drop-directions">

@@ -2,6 +2,8 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { LiaTelegramPlane } from "react-icons/lia";
 
+import "./style.scss";
+
 const ListSocialNetworks = () => {
   return (
     <div className="social-networks">

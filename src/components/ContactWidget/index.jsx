@@ -2,6 +2,8 @@ import React from "react";
 import { ListSocialNetworks } from "../ListSocialNetworks";
 import { ContactsDetails } from "../ContactDetails";
 
+import "./style.scss";
+
 const ContactWidget = () => {
   return (
     <div className="contact-widget visually-hidden">

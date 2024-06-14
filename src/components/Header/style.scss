@@ -1,0 +1,10 @@
+.header {
+    padding: 30px 0;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+        row-gap: 20px;
+    }
+}

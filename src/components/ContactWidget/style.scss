@@ -1,0 +1,14 @@
+.contact-widget {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+
+    &__opening-hours {
+        display: block;
+        margin-bottom: 15px;
+    }
+}

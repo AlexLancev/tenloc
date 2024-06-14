@@ -3,7 +3,8 @@ import { Logo } from "../Logo";
 import { DropdownMenuDirections } from "../DropdownMenuDirections";
 import { Menu } from "../Menu";
 import { CustomerAssistance } from "../CustomerAssistance";
-import { Search } from "../Search";
+
+import "./style.scss";
 
 const Header = () => {
   return (
@@ -14,7 +15,6 @@ const Header = () => {
           <DropdownMenuDirections />
           <Menu />
           <CustomerAssistance />
-          <Search />
         </div>
       </div>
     </header>

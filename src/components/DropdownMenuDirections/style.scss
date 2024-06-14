@@ -1,0 +1,51 @@
+.drop-directions {
+    position: relative;
+
+    &__btn-arrow {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 20px;
+        background-color: #ffd600;
+        border-radius: 20px;
+        color: #000000;
+    }
+
+    &__head {
+    }
+
+    &__icon {
+    }
+
+    &__list {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        background-color: #ffffff;
+        border: 1px solid #ececec;
+        width: 250px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    &__item {
+        padding: 8px 0;
+        border-bottom: 1px solid #ececec;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__link {
+        display: inline-block;    
+        color: #5d5d5d;
+        transition: 0.3s color;
+
+        &:hover {
+            color: #000000;
+        }
+    }
+}
+.arrow-icon {
+}

@@ -2,6 +2,8 @@ import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 
+import "./style.scss";
+
 const ContactsDetails = () => {
   return (
     <ul className="contact-details">

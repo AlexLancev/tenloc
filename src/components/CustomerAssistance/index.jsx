@@ -2,6 +2,8 @@ import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { ContactWidget } from "../ContactWidget";
 
+import "./style.scss";
+
 const CustomerAssistance = () => {
   return (
     <div className="cust-assist">

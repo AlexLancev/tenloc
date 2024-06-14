@@ -1,0 +1,30 @@
+.contact-details {
+
+    &__item:not(:last-child) {
+        margin-bottom: 2px;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        color: #525252;
+        transition: 0.3s color;
+
+        &:hover {
+            color: #000000;
+        }
+    }
+
+    &__link--phone {
+    }
+
+    &__icon {
+    }
+
+    &__text {
+    }
+
+    &__link--email {
+    }
+}
