@@ -1,6 +1,8 @@
 import React from "react";
-import { IoSearch } from "react-icons/io5";
+import { CiSearch } from "react-icons/ci";
 import { FiMapPin } from "react-icons/fi";
+
+import "./style.scss";
 
 const Search = () => {
   return (
@@ -13,7 +15,7 @@ const Search = () => {
           placeholder="Выберите направление"
         />
         <button className="search__btn" type="button">
-          <IoSearch className="search__btn-icon" size={30} />
+          <CiSearch className="search__btn-icon" size={20} />
           <span className="search__text">Найти</span>
         </button>
       </label>

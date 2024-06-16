@@ -51,7 +51,7 @@ body.lock {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 .visually-hidden {
@@ -65,4 +65,21 @@ body.lock {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.decor-title {
+    position: relative;
+}
+
+.decor-title::after {
+    content: '';
+    width: 228px;
+    height: 42px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../../img/decor-line.png');
+    background-position: center center;
+    background-repeat: no-repeat;
 }

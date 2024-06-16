@@ -1,0 +1,57 @@
+.subscribe-mail {
+    padding: 50px 0;
+    
+
+    &__inner {
+        padding: 100px 50px;
+        border-radius: 50px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 20px;
+        margin-bottom: 30px;
+        color: #616161;
+    }
+
+    &__social-networks {}
+
+    &__policy {
+        font-size: 14px;
+        color: #616161;
+    }
+
+    &__policy-link {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    & .social-networks__link {
+         background-color: #f8f8f8;
+         color: #616161;
+         border-radius: 5px;
+         padding: 8px 15px;
+    }
+
+    & .social-networks__icon--telegram {
+        fill: #039be5;
+    }
+
+    & .social-networks__icon--whatsapp {
+        fill: #4caf50;
+    }
+
+    & .social-networks {
+        margin-bottom: 100px;
+    }
+}

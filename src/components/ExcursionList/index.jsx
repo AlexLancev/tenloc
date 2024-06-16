@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./style.scss";
+
 const ExcursionList = () => {
   return (
     <ul className="excursion-list">

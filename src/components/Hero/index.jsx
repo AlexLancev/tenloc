@@ -3,6 +3,8 @@ import HeroBg from "../../img/hero-bg.png";
 import { Search } from "../Search";
 import { ExcursionList } from "../ExcursionList";
 
+import "./style.scss";
+
 const Hero = () => {
   return (
     <section className="hero">
@@ -11,7 +13,7 @@ const Hero = () => {
           className="hero__inner"
           style={{ backgroundImage: `url(${HeroBg})` }}
         >
-          <h2 className="hero__title">Поиск и бронирование экскурсий</h2>
+          <h2 className="hero__title decor-title">Поиск и бронирование экскурсий</h2>
           <h3 className="hero__description">
             Экскурсии и частные гиды в России и за рубежом
           </h3>

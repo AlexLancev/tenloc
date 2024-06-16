@@ -4,19 +4,24 @@ import { ContactsDetails } from "../ContactDetails";
 import { Logo } from "../Logo";
 import { ListSocialNetworks } from "../ListSocialNetworks";
 
+import "./style.scss";
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer__inner">
           <div className="footer__column">
-            <Logo className="footer__logo" />
-            <ListSocialNetworks className="footer__social-networks" />
+            <Logo />
+            <div className="footer__social">
+              <span className="footer__social-head">Мы в соц. сетях</span>
+              <ListSocialNetworks />
+            </div>
           </div>
 
           <div className="footer__column">
             <h3 className="footer__heading">Сервис</h3>
-            <Menu className="footer__menu" />
+            <Menu />
           </div>
 
           <div className="footer__column">

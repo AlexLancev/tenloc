@@ -1,6 +1,8 @@
 import React from "react";
 import { Directions } from "../Directions";
 
+import "./style.scss";
+
 const PopularDestinations = () => {
   return (
     <section className="popular-destinations">

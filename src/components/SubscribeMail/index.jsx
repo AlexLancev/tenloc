@@ -2,23 +2,25 @@ import React from "react";
 import { ListSocialNetworks } from "../ListSocialNetworks";
 import SubscribeMailBg from "../../img/subscription-mail.png";
 
+import "./style.scss";
+
 const SubscribeMail = () => {
   return (
     <div className="container">
-      <section className="subscribe-mail" style={{backgroundImage: `url(${SubscribeMailBg})`}}>
-        <div className="subscribe-mail__inner">
+      <section className="subscribe-mail">
+        <div className="subscribe-mail__inner" style={{backgroundImage: `url(${SubscribeMailBg})`}}>
           <h2 className="subscribe-mail__title">
             Подпишитесь на нашу рассылку
           </h2>
           <p className="subscribe-mail__text">
             Подписывайтесь на удобный для Вас мессенджер
           </p>
-          <ListSocialNetworks className="subscribe-mail__social-networks" />
+          <ListSocialNetworks />
           <p className="subscribe-mail__policy">
             При переходе в одну из указанных социальных сетей, вы автоматически
-            соглашаетесь с
+            соглашаетесь с 
             <a className="subscribe-mail__policy-link" href="/">
-              политикой конфидециальности
+               политикой конфидециальности
             </a>
           </p>
         </div>

@@ -13,7 +13,7 @@ const ListSocialNetworks = () => {
             href="https://wa.me/+79991257881"
             className="social-networks__link social-networks__link--whatsapp"
           >
-            <FaWhatsapp className="social-networks__icon" />
+            <FaWhatsapp className="social-networks__icon social-networks__icon--whatsapp" />
             <span className="social-networks__text">Whatsapp</span>
           </a>
         </li>
@@ -22,7 +22,7 @@ const ListSocialNetworks = () => {
             href="https://t.me/AlexVavulo"
             className="social-networks__link social-networks__link--telegram"
           >
-            <LiaTelegramPlane className="social-networks__icon" />
+            <LiaTelegramPlane className="social-networks__icon social-networks__icon--telegram" />
             <span className="social-networks__text">Telegram</span>
           </a>
         </li>

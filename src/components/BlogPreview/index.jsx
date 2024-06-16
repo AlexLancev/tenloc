@@ -2,7 +2,10 @@ import React from "react";
 import bg from "../../img/blog-preview/item-1.png";
 import { BsThreeDots } from "react-icons/bs";
 
+import "./style.scss";
+
 const BlogPreview = () => {
+  
   return (
     <ul className="blog-preview__list">
       <li className="blog-preview__item">
