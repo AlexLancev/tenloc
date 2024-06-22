@@ -6,6 +6,7 @@ const Presentation = () => {
   return (
     <div className="presentation">
       <div className="container">
+        ff
         <SliderGallery />
         <TourInformation />
       </div>

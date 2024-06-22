@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { paths } from "../../paths";
+
 import SpbBg from "../../img/directions/spb.jpg";
 import KaliningradBg from "../../img/directions/kaliningrad.jpg";
 import MurmanskBg from "../../img/directions/murmansk.jpg";
@@ -9,10 +12,6 @@ import "./style.scss";
 
 const Directions = () => {
 
-  const anotherPage = () => {
-    // navigate(`/${}`);
-  }
-
   return (
     <div className="directions">
       <ul className="directions__list">
@@ -20,7 +19,7 @@ const Directions = () => {
           className="directions__item"
           style={{ backgroundImage: `url(${SpbBg})` }}
         >
-          <a onClick={anotherPage} className="directions__link" href="/">
+          <Link to={`${paths.excursions}`} className="directions__link">
             <h3 className="directions__heading">
               Экскурсии в Санкт-Петербурге
             </h3>
@@ -28,7 +27,7 @@ const Directions = () => {
               <i className="directions__quantity"></i>
               экскурсии
             </b>
-          </a>
+          </Link>
         </li>
         <li
           className="directions__item"
