@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { SliderGallery } from "../SliderGallery";
 import { TourInformation } from "../TourInformation";
+import { BookExcursion } from "../BookExcursion";
 
 import "./style.scss";
 
@@ -20,7 +21,7 @@ const PromoPage = () => {
     return <div>Loading...</div>;
   }
 
-  const { title, description, groupMembers, prices, images, typeExcursion } =
+  const { title, description, groupMembers, prices, images, typeExcursion, bookExcursion } =
     plane;
 
   return (
@@ -37,6 +38,7 @@ const PromoPage = () => {
         </div>
         <SliderGallery arrImages={images} />
         <TourInformation groupMembers={groupMembers} />
+        <BookExcursion arrBookExcursion={bookExcursion} />
         <div
           className="presentation__description"
           dangerouslySetInnerHTML={{ __html: description }}
