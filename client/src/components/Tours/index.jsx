@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { paths } from "../../paths";
 import { useDispatch, useSelector } from "react-redux";
 import { getPlanes } from "../../store/planes/planesSlice";
 import { LuPlus } from "react-icons/lu";
 import { v4 as uuidv4 } from "uuid";
+
+import "./style.scss";
 
 const Tours = () => {
   const dispatch = useDispatch();
@@ -14,6 +15,10 @@ const Tours = () => {
     dispatch(getPlanes());
   }, [dispatch]);
 
+  if (isLoading || !planes) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <ul className="tours__list">
       {planes &&
@@ -22,7 +27,7 @@ const Tours = () => {
           return (
             <li className="tours__item" key={key}>
               <Link
-                to={`${paths.excursion}/${plane._id}`}
+                to={`/${plane._id}`}
                 className="tours__img-link"
               >
                 <img
@@ -38,16 +43,16 @@ const Tours = () => {
                 <p className="tours__text">{plane.presentation}</p>
                 <div className="prices-reservation">
                   <div className="prices-reservation__details">
-                    <span className="prices-reservation__price"></span>&#8381;
+                    <span className="prices-reservation__price">{`от ${plane.prices[0]}`} &#8381;</span>
                     <i className="prices-reservation__quantity">
-                      {`от ${plane.prices[0]} / за ${plane.typeExcursion[0]} `}
+                      {` /за ${plane.typeExcursion.personally} `}
                     </i>
                   </div>
                   <Link
-                    to={`${paths.excursion}/${plane._id}`}
+                    to={`/${plane._id}`}
                     className="tours__link"
                   >
-                    <LuPlus className="tours__link-icon" size={30} />
+                    <LuPlus className="tours__link-icon" size={20} />
                   </Link>
                 </div>
               </div>

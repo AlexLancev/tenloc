@@ -1,0 +1,11 @@
+.slider-gallery {
+    position: relative;
+    padding: 35px 0px;
+
+    &__img {
+        height: auto;
+        max-height: 400px;
+        object-fit: contain;
+        object-position: center center;
+    }
+}

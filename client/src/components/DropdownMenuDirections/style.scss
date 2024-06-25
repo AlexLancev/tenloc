@@ -11,19 +11,18 @@
         color: #000000;
     }
 
-    &__head {
-    }
+    &__head {}
 
-    &__icon {
-    }
+    &__icon {}
 
     &__list {
         position: absolute;
+        z-index: 9999;
         top: 45px;
         left: 0;
         background-color: #ffffff;
         border: 1px solid #ececec;
-        width: 250px;
+        width: 300px;
         padding: 10px;
         border-radius: 8px;
     }
@@ -38,7 +37,7 @@
     }
 
     &__link {
-        display: inline-block;    
+        display: inline-block;
         color: #5d5d5d;
         transition: 0.3s color;
 
@@ -47,5 +46,11 @@
         }
     }
 }
+
 .arrow-icon {
+    transition: 0.3s;
+
+    &--visible {
+        transform: rotate(180deg);
+    }
 }

@@ -9,7 +9,7 @@ const BlogPreview = () => {
     <ul className="blog-preview__list">
       <li className="blog-preview__item">
         <img src={bg} alt="" className="blog-preview__img" />
-        <time className="blog-preview__date" datetime="2023-11-08T07:14">
+        <time className="blog-preview__date" dateTime="2023-11-08T07:14">
           08.11.2023 07:14
         </time>
         <h3 className="blog-preview__heading">
@@ -22,7 +22,7 @@ const BlogPreview = () => {
       </li>
       <li className="blog-preview__item">
         <img src={bg} alt="" className="blog-preview__img" />
-        <time className="blog-preview__date" datetime="2023-11-08T07:14">
+        <time className="blog-preview__date" dateTime="2023-11-08T07:14">
           08.11.2023 07:14
         </time>
         <h3 className="blog-preview__heading">
@@ -35,7 +35,7 @@ const BlogPreview = () => {
       </li>
       <li className="blog-preview__item">
         <img src={bg} alt="" className="blog-preview__img" />
-        <time className="blog-preview__date" datetime="2023-11-08T07:14">
+        <time className="blog-preview__date" dateTime="2023-11-08T07:14">
           08.11.2023 07:14
         </time>
         <h3 className="blog-preview__heading">
@@ -48,7 +48,7 @@ const BlogPreview = () => {
       </li>
       <li className="blog-preview__item">
         <img src={bg} alt="" className="blog-preview__img" />
-        <time className="blog-preview__date" datetime="2023-11-08T07:14">
+        <time className="blog-preview__date" dateTime="2023-11-08T07:14">
           08.11.2023 07:14
         </time>
         <h3 className="blog-preview__heading">

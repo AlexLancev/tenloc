@@ -15,7 +15,7 @@ const planeSchema = mongoose.Schema({
     required: true,
   },
   groupMembers: {
-    type: [String],
+    type: {String},
     required: true,
   },
   description: {
@@ -27,7 +27,7 @@ const planeSchema = mongoose.Schema({
     required: true,
   },
   typeExcursion: {
-    type: [String],
+    type: {String},
     required: true,
   }
 });

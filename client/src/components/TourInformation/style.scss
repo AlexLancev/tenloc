@@ -1,0 +1,24 @@
+.tour-information {
+    padding: 15px 0;
+    border-top: 1px solid rgb(178, 178, 178);
+    border-bottom: 1px solid rgb(178, 178, 178);
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__icon {
+        fill: #676767;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: #676767;
+    }
+}

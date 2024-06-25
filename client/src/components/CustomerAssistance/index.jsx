@@ -5,16 +5,18 @@ import { ContactWidget } from "../ContactWidget";
 import "./style.scss";
 
 const CustomerAssistance = () => {
+  const [isVisible, setIsVisible] = React.useState(false);
+
   return (
     <div className="cust-assist">
-      <button type="button" className="cust-assist__btn">
+      <button onClick={() => setIsVisible(!isVisible)} type="button" className="cust-assist__btn">
         <span className="cust-assist__text">Помощь клиентам</span>
         <MdKeyboardArrowDown
-          className="cust-assist__icon arrow-icon"
+          className={`cust-assist__icon arrow-icon ${isVisible ? "arrow-icon--visible" : ""}`}
           size={20}
         />
       </button>
-      <ContactWidget />
+      {isVisible && <ContactWidget />}
     </div>
   );
 };
