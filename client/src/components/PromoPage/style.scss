@@ -1,7 +1,13 @@
 .presentation {
 
-    &__description {
+    &__description-box {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 30px;
         padding: 40px 0px 70px;
+    }
+
+    &__description {
 
         & h3 {
             font-size: 20px;

@@ -1,0 +1,68 @@
+.book-excursion {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #dfdfdf;
+
+    &__title {
+        display: block;
+        margin-bottom: 30px;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    &__table {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__body {}
+
+    &__row {
+        // width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+        border-bottom: 1px solid #ececec;
+
+        // &:not(:last-child) {
+        // }
+    }
+
+    &__cell {}
+
+    &__cell--category {
+        flex: 1 1 auto;
+    }
+
+    &__cell--price {}
+
+    &__cell--controls {}
+
+    &__number {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__input {
+
+        border: none;
+        padding: 0;
+        text-align: center;
+        width: 10px;
+    }
+
+    &__box {}
+
+    &__total {}
+
+    &__price {}
+
+    &__btn {}
+}

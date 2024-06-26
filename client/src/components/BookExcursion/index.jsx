@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { MyBtnMinus, MyBtnPlus } from "../ui/Buttons";
 import { MyDataPicker } from "../ui/DataPicker";
 // import { v4 as uuidv4 } from "uuid";
+import "./style.scss";
 
 const BookExcursion = ({ arrBookExcursion }) => {
   const [total, setTotal] = useState(0);
@@ -9,8 +10,11 @@ const BookExcursion = ({ arrBookExcursion }) => {
 
   const handleCalc = (index, increment) => {
     const inputEl = inputRefs.current[index];
+    console.log(inputEl, 1);
     const currentValue = parseInt(inputEl.value, 10);
+    console.log(currentValue, 2);
     const newValue = currentValue + increment;
+    console.log(newValue, 3);
 
     if (newValue >= 0) {
       inputEl.value = newValue;
@@ -21,10 +25,8 @@ const BookExcursion = ({ arrBookExcursion }) => {
 
   return (
     <form className="book-excursion">
-      <div className="book-excursion__date-picker">
-        <MyDataPicker />
-      </div>
       <b className="book-excursion__title">Забронировать экскурсию</b>
+      <MyDataPicker />
       <table className="book-excursion__table">
         <tbody className="book-excursion__body">
           {arrBookExcursion &&

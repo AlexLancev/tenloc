@@ -21,8 +21,15 @@ const PromoPage = () => {
     return <div>Loading...</div>;
   }
 
-  const { title, description, groupMembers, prices, images, typeExcursion, bookExcursion } =
-    plane;
+  const {
+    title,
+    description,
+    groupMembers,
+    prices,
+    images,
+    typeExcursion,
+    bookExcursion,
+  } = plane;
 
   return (
     <section className="presentation">
@@ -38,11 +45,13 @@ const PromoPage = () => {
         </div>
         <SliderGallery arrImages={images} />
         <TourInformation groupMembers={groupMembers} />
-        <BookExcursion arrBookExcursion={bookExcursion} />
-        <div
-          className="presentation__description"
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
+        <div className="presentation__description-box">
+          <div
+            className="presentation__description"
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
+          <BookExcursion arrBookExcursion={bookExcursion} />
+        </div>
       </div>
     </section>
   );

@@ -14,7 +14,6 @@ const RoundButton = styled(Button)(({ theme }) => ({
 }));
 
 const MyBtnPlus = ({handleCalc}) => {
-
   return (
     <Stack spacing={2} direction="row">
       <RoundButton onClick={handleCalc} variant="outlined">
