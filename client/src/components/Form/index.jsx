@@ -1,62 +1,58 @@
-import React from "react";
+import React, { useRef, useEffect, useCallback, useState } from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import schema from "../../utils/validationShema"; // Импортируем схему валидации
-import InputMask from "react-input-mask"; // Импортируем компонент для маски ввода
-import debounce from "lodash.debounce"; // Импортируем функцию для дебаунса
+import schema from "../../utils/validationShema";
+import InputMask from "react-input-mask";
+import debounce from "lodash.debounce";
 import { useSelector } from "react-redux";
-
 import "./style.scss";
 
 const Form = () => {
-  const [name, setName] = React.useState(""); // Состояние для хранения имени
-  const [phone, setPhone] = React.useState(""); // Состояние для хранения телефона
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const { bookings } = useSelector((state) => state.booking);
+  const inputRef = useRef(null);
 
-  // Инициализация useForm с yupResolver для валидации
   const {
-    register, // Метод для регистрации полей формы
-    handleSubmit, // Метод для обработки отправки формы
-    setValue, // Метод для программного задания значений полей
-    trigger, // Метод для триггера валидации
-    formState: { errors }, // Объект состояния формы, содержащий ошибки валидации
-    reset, // Метод для сброса формы
+    register,
+    handleSubmit,
+    setValue,
+    trigger,
+    formState: { errors },
+    reset,
   } = useForm({
-    resolver: yupResolver(schema), // Используем yupResolver для интеграции схемы валидации
+    resolver: yupResolver(schema),
   });
 
-  // Дебаунс функция для проверки полей через 500 мс после последнего изменения
-  const debouncedValidateField = React.useCallback(
+  const debouncedValidateField = useCallback(
     debounce((field) => {
-      trigger(field); // Триггерим валидацию для указанного поля
+      trigger(field);
     }, 500),
-    [trigger] // Зависимость от trigger для предотвращения изменений при каждом рендере
+    [trigger]
   );
 
-  // Регистрация полей формы при монтировании компонента
-  React.useEffect(() => {
-    register("name"); // Регистрируем поле "name"
-    register("phone"); // Регистрируем поле "phone"
+  useEffect(() => {
+    register("name");
+    register("phone");
   }, [register]);
 
-  // Универсальная функция для обработки изменений в полях формы
   const handleFieldChange = (setter, field, value) => {
-    setter(value); // Обновляем локальное состояние
-    setValue(field, value); // Устанавливаем значение поля в useForm
-    debouncedValidateField(field); // Запускаем дебаунс валидацию
+    setter(value);
+    setValue(field, value);
+    debouncedValidateField(field);
   };
 
-  // Обработчики изменений для полей имени и телефона
-  const handleNameChange = (e) =>
+  const handleNameChange = (e) => {
     handleFieldChange(setName, "name", e.target.value);
-  const handlePhoneChange = (e) =>
-    handleFieldChange(setPhone, "phone", e.target.value);
+  };
 
-  // Обработчик отправки формы
-  const onSubmit = () => {
-    setName(""); // Сбрасываем состояние имени
-    setPhone(""); // Сбрасываем состояние телефона
-    reset(); // Сбрасываем форму в useForm
+  const handlePhoneChange = (e) => {
+    handleFieldChange(setPhone, "phone", e.target.value);
+  };
+
+  const onSubmit = (data) => {
+    console.log("Form submitted:", data);
+    reset();
   };
 
   return (
@@ -83,8 +79,9 @@ const Form = () => {
             placeholder="Ваш телефон"
             value={phone}
             onChange={handlePhoneChange}
+            ref={inputRef}
           >
-            {(inputProps) => <input {...inputProps} ref={inputProps.ref} />}
+            {(inputProps) => <input {...inputProps} ref={inputRef} />}
           </InputMask>
           {errors.phone && (
             <span className="form__error">{errors.phone.message}</span>
