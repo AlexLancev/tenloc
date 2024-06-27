@@ -1,16 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const searchCounterSlice = createSlice({
-  name: "search",
+const orderCounterSlice = createSlice({
+  name: "order",
   initialState: {
-    searchProduct: "",
+    orderName: "",
   },
   reducers: {
-    searchCounter: (state, action) => {
-      state.searchProduct = action.payload;
+    orderCurrent: (state, action) => {
+      state.orderName = action.payload;
     },
   },
 });
 
-export const { searchCounter } = searchCounterSlice.actions;
-export default searchCounterSlice.reducer;
+export const { orderCurrent } = orderCounterSlice.actions;
+export default orderCounterSlice.reducer;

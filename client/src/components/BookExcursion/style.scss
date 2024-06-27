@@ -55,14 +55,37 @@
         border: none;
         padding: 0;
         text-align: center;
-        width: 10px;
+        width: 50px;
     }
 
-    &__box {}
+    &__box {
+        margin-bottom: 25px;
+    }
 
     &__total {}
 
     &__price {}
 
-    &__btn {}
+    &__btn {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        padding: 15px 35px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid #c4a400;
+        background-color: #ffd600;
+        transition: 0.3s background-color;
+
+        &:hover {
+            background-color: #f0c800;
+        }
+
+        &:disabled {
+            border: 1px solid #686868;
+            background-color: #ebebeb;
+            color: #686868;
+            cursor: default;
+        }
+    }
 }

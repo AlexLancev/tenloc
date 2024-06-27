@@ -5,10 +5,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { SliderGallery } from "../SliderGallery";
 import { TourInformation } from "../TourInformation";
 import { BookExcursion } from "../BookExcursion";
+import { PopupSubmitForm } from "../PopupSubmitForm";
 
 import "./style.scss";
 
 const PromoPage = () => {
+  const [isVisibleForm, setIsVisibleForm] = React.useState(false);
   const { id } = useParams();
   const dispatch = useDispatch();
   const { plane, isLoading } = useSelector((state) => state.plane);
@@ -50,7 +52,8 @@ const PromoPage = () => {
             className="presentation__description"
             dangerouslySetInnerHTML={{ __html: description }}
           />
-          <BookExcursion arrBookExcursion={bookExcursion} />
+          <BookExcursion arrBookExcursion={bookExcursion} setIsVisibleForm={setIsVisibleForm} />
+          {isVisibleForm && <PopupSubmitForm setIsVisibleForm={setIsVisibleForm} />}
         </div>
       </div>
     </section>
