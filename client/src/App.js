@@ -1,11 +1,20 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { paths } from "./paths";
 import { Excursions } from "./components/Excursions";
 import { Layout } from "./components/Layout";
 import { HomePage } from "./components/HomePage";
 import { PromoPage } from "./components/PromoPage";
+import { getPlanes } from "./store/planes/planesSlice";
+import { useDispatch } from "react-redux";
 
 function App() {
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    dispatch(getPlanes());
+  }, [dispatch]);
+
   return (
     <BrowserRouter>
       <Routes>

@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const bookingSlice = createSlice({
   name: "booking",
   initialState: {
-    bookings: [], // Инициализируем массив для хранения бронирований
+    bookings: {}, // Инициализируем массив для хранения бронирований
   },
   reducers: {
     orderCurrent: (state, action) => {
-      state.bookings.push(action.payload); // Добавляем новое бронирование в массив
+      state.bookings = action.payload;
     },
   },
 });

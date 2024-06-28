@@ -10,11 +10,11 @@ import "./style.scss";
 const Tours = () => {
   const dispatch = useDispatch();
   const { planes, isLoading } = useSelector((state) => state.planes);
-
+  
   useEffect(() => {
     dispatch(getPlanes());
   }, [dispatch]);
-
+  
   if (isLoading || !planes) {
     return <div>Loading...</div>;
   }

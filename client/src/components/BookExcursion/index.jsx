@@ -5,10 +5,12 @@ import { MyBtnMinus, MyBtnPlus } from "../ui/Buttons";
 import { MyDatePicker } from "../ui/DataPicker";
 import { v4 as uuidv4 } from "uuid";
 import { bodyScroll } from "../../utils/body-scroll";
+import dayjs from "dayjs";
 import "./style.scss";
 
 const BookExcursion = ({ arrBookExcursion, setIsVisibleForm }) => {
   const dispatch = useDispatch();
+  const today = dayjs().format("DD-MM-YYYY");
 
   // Состояние для хранения количеств и выбранной даты
   const [quantities, setQuantities] = useState(arrBookExcursion.map(() => 0));
@@ -29,24 +31,30 @@ const BookExcursion = ({ arrBookExcursion, setIsVisibleForm }) => {
     });
   };
 
-  // Обработчик отправки формы
+
   const onSubmit = (e) => {
     e.preventDefault();
-
+  
     // Формирование объекта с данными
     const bookingDetails = {
-      date: selectedDate ? selectedDate.format() : null,
-      excursions: arrBookExcursion.map((item, index) => ({
-        category: item.category,
-        quantity: quantities[index],
-        price: item.price,
-      })),
+      date: selectedDate ? selectedDate.format("DD-MM-YYYY") : today,
+      excursions: arrBookExcursion.reduce((accumulator, item, index) => {
+        const quantity = quantities[index];
+        if (quantity > 0) {
+          accumulator.push({
+            category: item.category,
+            quantity: quantity,
+            price: item.price * quantity,
+          });
+        }
+        return accumulator;
+      }, []),
       total,
     };
-
+    
     // Передача данных в useDispatch
     dispatch(orderCurrent(bookingDetails));
-
+  
     // Сброс состояния
     setQuantities(arrBookExcursion.map(() => 0));
     setTotal(0);
@@ -54,6 +62,7 @@ const BookExcursion = ({ arrBookExcursion, setIsVisibleForm }) => {
     setIsVisibleForm(true);
     bodyScroll.lock();
   };
+  
 
   return (
     <form className="book-excursion" onSubmit={onSubmit}>
@@ -76,6 +85,7 @@ const BookExcursion = ({ arrBookExcursion, setIsVisibleForm }) => {
                     <div className="book-excursion__number">
                       <MyBtnPlus handleCalc={() => handleCalc(index, 1)} />
                       <input
+                        id={index}
                         type="number"
                         className="book-excursion__input"
                         readOnly

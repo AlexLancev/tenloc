@@ -1,4 +1,4 @@
-import * as yup from "yup";
+import * as yup from 'yup';
 
 const schema = yup.object().shape({
   name: yup
@@ -12,10 +12,11 @@ const schema = yup.object().shape({
   phone: yup
     .string()
     .matches(
-      /^\+7 \(\d{3}\) \d{3}-\d{4}$/,
-      "Номер телефона должен быть в формате +7 (999) 999-9999"
+      /^\d{11}$/,
+      "Номер телефона должен содержать 11 цифр"
     )
     .required("Телефон обязателен"),
 });
 
 export default schema;
+

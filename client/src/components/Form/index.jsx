@@ -1,17 +1,15 @@
-import React, { useRef, useEffect, useCallback, useState } from "react";
+import React, { useEffect, useCallback, useState } from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import schema from "../../utils/validationShema";
-import InputMask from "react-input-mask";
 import debounce from "lodash.debounce";
-import { useSelector } from "react-redux";
+import { BookingDescription } from "../BookingDescription";
+
 import "./style.scss";
 
 const Form = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const { bookings } = useSelector((state) => state.booking);
-  const inputRef = useRef(null);
 
   const {
     register,
@@ -72,22 +70,20 @@ const Form = () => {
           )}
         </label>
         <label className="form__label">
-          <InputMask
-            mask="+7 (999) 999-9999"
-            maskChar=" "
+          <input
             className="form__input"
-            placeholder="Ваш телефон"
+            type="tel"
+            placeholder="Номер телефона"
             value={phone}
             onChange={handlePhoneChange}
-            ref={inputRef}
-          >
-            {(inputProps) => <input {...inputProps} ref={inputRef} />}
-          </InputMask>
+            maxLength="11"
+          />
           {errors.phone && (
             <span className="form__error">{errors.phone.message}</span>
           )}
         </label>
       </fieldset>
+      <BookingDescription />
       <button className="form__btn" type="submit">
         Оформить заказ
       </button>
