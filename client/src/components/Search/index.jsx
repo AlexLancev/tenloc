@@ -4,6 +4,8 @@ import { FiMapPin } from "react-icons/fi";
 import { useSelector } from "react-redux";
 import { IoIosClose } from "react-icons/io";
 import debounce from "lodash.debounce";
+import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 
 import "./style.scss";
 
@@ -14,10 +16,15 @@ const Search = () => {
   const inputRef = React.useRef();
 
   const inCloseClear = () => {
-    setSearchValue('');
+    setSearchValue("");
     setArrFilteredSearch([]);
     inputRef.current.focus();
   };
+
+  // const handleClick = () => {
+  //   inputRef.current.focus();
+  //   setSearchValue("");
+  // }
 
   const debouncedSearch = React.useCallback(
     debounce((value) => {
@@ -25,9 +32,7 @@ const Search = () => {
         setArrFilteredSearch(
           planes
             ? planes.filter((el) =>
-                el.title
-                  .toLocaleLowerCase()
-                  .includes(value.toLocaleLowerCase())
+                el.title.toLocaleLowerCase().includes(value.toLocaleLowerCase())
               )
             : []
         );
@@ -49,6 +54,7 @@ const Search = () => {
       debouncedSearch.cancel();
     };
   }, [debouncedSearch]);
+
 
   return (
     <div className="search filtered-search">
@@ -74,13 +80,20 @@ const Search = () => {
           <span className="search__text">Найти</span>
         </button>
       </label>
-      <ul className="filtered-search__list">
-        {arrFilteredSearch.map((item) => (
-          <li key={item.id} className="filtered-search__item">
-            {item.title}
-          </li>
-        ))}
-      </ul>
+      {searchValue.trim() && <ul className="filtered-search__list">
+        {arrFilteredSearch.map((item) => {
+          const key = uuidv4();
+          return (
+            <li key={key} className="filtered-search__item">
+              <Link to={`${item._id}`} className="filtered-search__link" title="Перейти на страницу экскурсии">
+              <img className="filtered-search__img" width={100} height={100} src={item.images[0]} alt="" />
+              <b className="filtered-search__head">{item.title}</b>
+              <span className="filtered-search__price">от <b>{item.prices[0]}</b> &#8381;</span>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>}
     </div>
   );
 };

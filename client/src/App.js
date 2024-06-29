@@ -7,9 +7,12 @@ import { HomePage } from "./components/HomePage";
 import { PromoPage } from "./components/PromoPage";
 import { getPlanes } from "./store/planes/planesSlice";
 import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 function App() {
   const dispatch = useDispatch();
+  const { planes, isLoading } = useSelector((state) => state.planes);
+  console.log(planes);
 
   React.useEffect(() => {
     dispatch(getPlanes());

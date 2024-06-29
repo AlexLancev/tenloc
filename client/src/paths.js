@@ -1,5 +1,5 @@
 export const paths = {
     home: "/",
-    excursions: "/excursions",
+    excursions: "/excursions/:direct",
     excursion: "/:id"
 }
