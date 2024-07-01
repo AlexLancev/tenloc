@@ -106,7 +106,7 @@ body.lock {
     content: "→";
 }
 
-.slick-arrow.slick-next, 
+.slick-arrow.slick-next,
 .slick-arrow.slick-prev {
     position: absolute;
     top: -31px;
@@ -123,4 +123,16 @@ body.lock {
 
 .slick-arrow.slick-prev {
     left: 5px;
+}
+
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: inherit !important;
+}
+
+.slick-slide>div {
+    height: 100%;
 }

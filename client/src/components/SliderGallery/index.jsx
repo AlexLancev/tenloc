@@ -24,7 +24,7 @@ const SliderGallery = ({ arrImages }) => {
             const key = uuidv4();
             return (
               <img
-                src={image}
+                src={`/${image}`}
                 loading="lazy"
                 className="slider-gallery__img"
                 alt=""

@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 // Создаем схему
 const planeSchema = mongoose.Schema({
   name: {
-    type: String,
+    type: { String },
     required: true,
   },
   title: {
@@ -15,7 +15,7 @@ const planeSchema = mongoose.Schema({
     required: true,
   },
   groupMembers: {
-    type: {String},
+    type: { String },
     required: true,
   },
   description: {
@@ -27,9 +27,9 @@ const planeSchema = mongoose.Schema({
     required: true,
   },
   typeExcursion: {
-    type: {String},
+    type: { String },
     required: true,
-  }
+  },
 });
 
 module.exports = mongoose.model("Tours", planeSchema);

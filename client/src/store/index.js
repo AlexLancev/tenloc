@@ -9,6 +9,6 @@ export const store = configureStore({
     planes: planesReducer,
     plane: planeReducer,
     search: searchCounterSlice,
-    booking: bookingReducer,
+    booking: bookingReducer
   },
 });

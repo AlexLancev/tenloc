@@ -76,4 +76,17 @@
 
     &__description {
     }
+
+    & .tours__list {
+        display: block;
+    }
+
+    & .tours__item {
+        display: flex !important;
+        height: 100%;
+    }
+    
+    &  .tours__list .slick-slide {
+        margin: 0 10px;
+    }
 }
