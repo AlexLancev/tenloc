@@ -54,7 +54,7 @@ body.lock {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
-    border: 1px solid green;
+    // border: 1px solid green;
 }
 
 .visually-hidden {
@@ -79,7 +79,7 @@ body.lock {
     width: 228px;
     height: 42px;
     position: absolute;
-    top: 60px;
+    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
     background-image: url('../../img/decor-line.png');

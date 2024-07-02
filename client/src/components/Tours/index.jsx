@@ -4,16 +4,26 @@ import { useSelector } from "react-redux";
 import { LuPlus } from "react-icons/lu";
 import { v4 as uuidv4 } from "uuid";
 import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { getPlanes } from "../../store/planes/planesSlice";
+import { ToursLoader } from "../Loader/toursLoader";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.scss";
 
 const Tours = ({ isSlider = false }) => {
+  const dispatch = useDispatch();
+  React.useEffect(() => {
+    dispatch(getPlanes());
+  }, [dispatch]);
+
   const { direct, id } = useParams();
   const { planes, isLoading } = useSelector((state) => state.planes);
   const arrDirect = planes
-    ? planes.filter((plane) => plane.name.current === direct && plane._id !== id)
+    ? planes.filter(
+        (plane) => plane.name.current === direct && plane._id !== id
+      )
     : [];
 
   const settings = {
@@ -26,10 +36,6 @@ const Tours = ({ isSlider = false }) => {
   };
 
   window.scrollTo(0, 0);
-
-  if (isLoading || !arrDirect) {
-    return <div>Loading...</div>;
-  }
 
   const renderTourItem = (plane) => {
     const key = uuidv4();
@@ -59,7 +65,7 @@ const Tours = ({ isSlider = false }) => {
                 {` /за ${plane.typeExcursion.personally} `}
               </i>
             </div>
-            <Link to={`/${plane._id}`} className="tours__link">
+            <Link to={`/excursion/${direct}/${plane._id}`} className="tours__link">
               <LuPlus className="tours__link-icon" size={20} />
             </Link>
           </div>
@@ -74,10 +80,13 @@ const Tours = ({ isSlider = false }) => {
     </Slider>
   ) : (
     <ul className="tours__list">
-      {arrDirect && arrDirect.map((plane) => renderTourItem(plane))}
+      {isLoading || !arrDirect
+        ? Array.from({ length: arrDirect.length }).map(() => {
+          const key = uuidv4();
+          return <ToursLoader key={key} />})
+        : arrDirect.map((plane) => renderTourItem(plane))}
     </ul>
   );
-  
 };
 
 export { Tours };

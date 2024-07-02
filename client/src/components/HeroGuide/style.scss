@@ -1,0 +1,53 @@
+.hero-guide {
+    position: relative;
+    z-index: 1;
+    padding: 50px 0 100px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+
+    &__inner {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        overflow: hidden;
+        padding: 100px;
+    }
+
+    &__box {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    &__title {
+        font-size: 42px;
+        font-weight: 900;
+        line-height: 1;
+        margin-bottom: 70px;
+    }
+    
+    &__text {
+        font-size: 20px;
+        line-height: 1.5;
+        color: #3c3c3c;
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        display: block;
+        width: 250px;
+        text-align: center;
+        color: #000000;
+        border-radius: 50px;
+        padding: 15px 30px;
+        background-color: #ffd600;
+        border: 1px solid #b19400;
+        transition: 0.3s background-color;
+
+        &:hover {
+            background-color: #f2ca00;
+        }
+    }
+}

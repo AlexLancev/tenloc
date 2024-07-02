@@ -1,0 +1,54 @@
+.terms-cooperation {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+
+    &__title {
+        margin-bottom: 45px;
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    &__list {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__head {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        line-height: 1.4;
+    }
+
+    &__descriptions {
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 54px 103px 58px 51px;
+        font-size: 18px;
+    }
+
+    &__heading {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 10px 18px;
+        border-radius: 10px;
+        background-color: #ffd600;
+    }
+}

@@ -1,0 +1,78 @@
+.guide-registration {
+    padding: 50px 0;
+
+    &__form {
+    }
+}
+
+.guide-form {
+    width: 100%;
+    max-width: 790px;
+    margin: 0 auto;
+
+    &__fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__head {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 55px;
+    }
+
+    &__label {
+        width: 385px;
+
+        &--ex {
+            width: 100%;
+        }
+    }
+
+    &__input,
+    &__textarea {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        background-color: #f1f1f1;
+        padding: 15px 25px;
+        font-size: 15px;
+    }
+
+    &__textarea {
+        resize: vertical;
+        min-height: 150px;
+        max-height: 400px;
+    }
+
+    &__btn {
+        display: block;
+        width: 280px;
+        padding: 12px 25px;
+        margin: 0 auto 20px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #ffd600;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__police {
+        color: #505050;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__police-lin {
+        color: #505050;
+        margin-left: 5px;
+        text-decoration: underline;
+    }
+}

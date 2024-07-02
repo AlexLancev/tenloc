@@ -5,6 +5,8 @@ import { Logo } from "../Logo";
 import { ListSocialNetworks } from "../ListSocialNetworks";
 
 import "./style.scss";
+import { Link } from "react-router-dom";
+import { paths } from "../../paths";
 
 const Footer = () => {
   return (
@@ -28,9 +30,9 @@ const Footer = () => {
             <h3 className="footer__heading">Гидам</h3>
             <ul className="footer__list">
               <li className="footer__item">
-                <a href="/" className="footer__link">
+                <Link to={paths.guide} className="footer__link">
                   Стать гидом
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

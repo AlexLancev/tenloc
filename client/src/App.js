@@ -5,15 +5,9 @@ import { Excursions } from "./components/Excursions";
 import { Layout } from "./components/Layout";
 import { HomePage } from "./components/HomePage";
 import { PromoPage } from "./components/PromoPage";
-import { getPlanes } from "./store/planes/planesSlice";
-import { useDispatch } from "react-redux";
+import { Guide } from "./components/Guide";
 
 function App() {
-  const dispatch = useDispatch();
-
-  React.useEffect(() => {
-    dispatch(getPlanes());
-  }, [dispatch]);
 
   return (
     <BrowserRouter>
@@ -22,6 +16,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path={`${paths.excursions}`} element={<Excursions />} />
           <Route path={`${paths.excursion}`} element={<PromoPage />} />
+          <Route path={`${paths.guide}`} element={<Guide />} />
         </Route>
       </Routes>
     </BrowserRouter>
