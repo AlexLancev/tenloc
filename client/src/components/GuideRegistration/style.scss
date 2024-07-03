@@ -58,9 +58,20 @@
         margin: 0 auto 20px;
         text-align: center;
         border-radius: 10px;
-        background-color: #ffd600;
         font-size: 16px;
         font-weight: 500;
+        background-color: #ffd600;
+        border: 1px solid #b19400;
+        transition: 0.3s background-color;
+
+        &:disabled {
+            cursor: default;
+            background-color: #f2ca00;
+        }
+
+        &:hover {
+            background-color: #f2ca00;
+        }
     }
 
     &__police {
@@ -70,7 +81,7 @@
         text-align: center;
     }
 
-    &__police-lin {
+    &__police-link {
         color: #505050;
         margin-left: 5px;
         text-decoration: underline;

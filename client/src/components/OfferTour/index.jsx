@@ -1,4 +1,8 @@
 import React from "react";
+import imgGuide1 from "../../img/guide/guide1.svg";
+import imgGuide2 from "../../img/guide/guide2.svg";
+import imgGuide3 from "../../img/guide/guide3.svg";
+import imgGuide4 from "../../img/guide/guide4.svg";
 import "./style.scss";
 
 const OfferTour = () => {
@@ -13,7 +17,7 @@ const OfferTour = () => {
         </p>
         <ul className="offer-tour__list">
           <li className="offer-tour__list-item">
-            <img src="" alt="" aria-hidden="true" className="offer-tour__img" />
+            <div style={{backgroundImage: `url(${imgGuide1})`}} className="offer-tour__img"></div>
             <b className="offer-tour__head">Отправьте заявку</b>
             <p className="offer-tour__text">
               Расскажите о своей экскурсии, предлагая стройную концепцию – ваш
@@ -22,7 +26,7 @@ const OfferTour = () => {
             </p>
           </li>
           <li className="offer-tour__list-item">
-            <img src="" alt="" aria-hidden="true" className="offer-tour__img" />
+          <div style={{backgroundImage: `url(${imgGuide2})`}} className="offer-tour__img"></div>
             <b className="offer-tour__head">Ждите ответа</b>
             <p className="offer-tour__text">
               Мы позвоним вам и сообщим, насколько ваше предложение подходит для
@@ -30,7 +34,7 @@ const OfferTour = () => {
             </p>
           </li>
           <li className="offer-tour__list-item">
-            <img src="" alt="" aria-hidden="true" className="offer-tour__img" />
+          <div style={{backgroundImage: `url(${imgGuide3})`}} className="offer-tour__img"></div>
             <b className="offer-tour__head">Звонок-знакомство</b>
             <p className="offer-tour__text">
               Мы договоримся о созвоне, на котором обсудим детали экскурсии,
@@ -38,7 +42,7 @@ const OfferTour = () => {
             </p>
           </li>
           <li className="offer-tour__list-item">
-            <img src="" alt="" aria-hidden="true" className="offer-tour__img" />
+          <div style={{backgroundImage: `url(${imgGuide4})`}} className="offer-tour__img"></div>
             <b className="offer-tour__head">Экскурсия на сайте</b>
             <p className="offer-tour__text">
               Мы готовим карточку вашей экскурсии и размещаем ее на сайте таким
