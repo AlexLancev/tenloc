@@ -1,5 +1,5 @@
 import React from "react";
-import HeroBg from "../../img/hero-bg.png";
+import HeroBg from "../../img/hero-bg.webp";
 import { Search } from "../Search";
 import { ExcursionList } from "../ExcursionList";
 

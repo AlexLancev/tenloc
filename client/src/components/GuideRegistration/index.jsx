@@ -67,7 +67,7 @@ const GuideRegistration = () => {
   };
 
   return (
-    <section className="guide-registration">
+    <section className="guide-registration" id="form">
       <div className="container">
         <form
           className="guide-registration__form guide-form"

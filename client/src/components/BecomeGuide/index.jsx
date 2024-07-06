@@ -1,5 +1,5 @@
 import React from "react";
-import BecomeGuideBg from "../../img/guide/bg3.png";
+import BecomeGuideBg from "../../img/guide/bg3.webp";
 
 import "./style.scss";
 

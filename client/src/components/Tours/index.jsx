@@ -14,6 +14,7 @@ import "./style.scss";
 
 const Tours = ({ isSlider = false }) => {
   const dispatch = useDispatch();
+
   React.useEffect(() => {
     dispatch(getPlanes());
   }, [dispatch]);

@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-// Создаем схему
 const planeSchema = mongoose.Schema({
   name: {
     type: { String },
@@ -30,6 +29,29 @@ const planeSchema = mongoose.Schema({
     type: { String },
     required: true,
   },
-});
+}, { collection: 'tours' });
 
-module.exports = mongoose.model("Tours", planeSchema);
+const Tours = mongoose.model("Tours", planeSchema);
+module.exports.Tours = Tours;
+
+const secondSchema = mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  image: {
+    type: [String],
+    required: true,
+  },
+  date: {
+    type: String,
+    required: true
+  }
+}, { collection: 'blog' });
+
+const Blog = mongoose.model("Blog", secondSchema);
+module.exports.Blog = Blog;

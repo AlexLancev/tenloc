@@ -21,8 +21,8 @@
             1400
         ],
         "images": [
-            "img/tours/spb/tour-1/item-1.png",
-            "img/tours/spb/tour-1/item-2.png"
+            "img/tours/spb/tour-1/item-1.webp",
+            "img/tours/spb/tour-1/item-2.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -71,12 +71,12 @@
             3060
         ],
         "images": [
-            "img/tours/spb/tour-2/item-1.jpg",
-            "img/tours/spb/tour-2/item-2.png",
-            "img/tours/spb/tour-2/item-3.png",
-            "img/tours/spb/tour-2/item-4.png",
-            "img/tours/spb/tour-2/item-5.png",
-            "img/tours/spb/tour-2/item-6.png"
+            "img/tours/spb/tour-2/item-1.webp",
+            "img/tours/spb/tour-2/item-2.webp",
+            "img/tours/spb/tour-2/item-3.webp",
+            "img/tours/spb/tour-2/item-4.webp",
+            "img/tours/spb/tour-2/item-5.webp",
+            "img/tours/spb/tour-2/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -113,12 +113,12 @@
             15000
         ],
         "images": [
-            "img/tours/spb/tour-3/item-1.jpg",
-            "img/tours/spb/tour-3/item-2.jpg",
-            "img/tours/spb/tour-3/item-3.jpg",
-            "img/tours/spb/tour-3/item-4.jpg",
-            "img/tours/spb/tour-3/item-5.jpg",
-            "img/tours/spb/tour-3/item-6.jpg"
+            "img/tours/spb/tour-3/item-1.webp",
+            "img/tours/spb/tour-3/item-2.webp",
+            "img/tours/spb/tour-3/item-3.webp",
+            "img/tours/spb/tour-3/item-4.webp",
+            "img/tours/spb/tour-3/item-5.webp",
+            "img/tours/spb/tour-3/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -154,12 +154,12 @@
             7200
         ],
         "images": [
-            "img/tours/spb/tour-4/item-1.png",
-            "img/tours/spb/tour-4/item-2.png",
-            "img/tours/spb/tour-4/item-3.jpg",
-            "img/tours/spb/tour-4/item-4.png",
-            "img/tours/spb/tour-4/item-5.jpg",
-            "img/tours/spb/tour-4/item-6.png"
+            "img/tours/spb/tour-4/item-1.webp",
+            "img/tours/spb/tour-4/item-2.webp",
+            "img/tours/spb/tour-4/item-3.webp",
+            "img/tours/spb/tour-4/item-4.webp",
+            "img/tours/spb/tour-4/item-5.webp",
+            "img/tours/spb/tour-4/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -191,12 +191,12 @@
             10500
         ],
         "images": [
-            "img/tours/spb/tour-5/item-1.png",
-            "img/tours/spb/tour-5/item-2.png",
-            "img/tours/spb/tour-5/item-3.png",
-            "img/tours/spb/tour-5/item-4.png",
-            "img/tours/spb/tour-5/item-5.png",
-            "img/tours/spb/tour-5/item-6.png"
+            "img/tours/spb/tour-5/item-1.webp",
+            "img/tours/spb/tour-5/item-2.webp",
+            "img/tours/spb/tour-5/item-3.webp",
+            "img/tours/spb/tour-5/item-4.webp",
+            "img/tours/spb/tour-5/item-5.webp",
+            "img/tours/spb/tour-5/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -229,12 +229,12 @@
             10800
         ],
         "images": [
-            "img/tours/spb/tour-6/item-1.jpg",
-            "img/tours/spb/tour-6/item-2.png",
-            "img/tours/spb/tour-6/item-3.png",
-            "img/tours/spb/tour-6/item-4.jpg",
-            "img/tours/spb/tour-6/item-5.jpg",
-            "img/tours/spb/tour-6/item-6.png"
+            "img/tours/spb/tour-6/item-1.webp",
+            "img/tours/spb/tour-6/item-2.webp",
+            "img/tours/spb/tour-6/item-3.webp",
+            "img/tours/spb/tour-6/item-4.webp",
+            "img/tours/spb/tour-6/item-5.webp",
+            "img/tours/spb/tour-6/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -271,12 +271,12 @@
             11000
         ],
         "images": [
-            "img/tours/spb/tour-7/item-1.jpg",
-            "img/tours/spb/tour-7/item-2.jpg",
-            "img/tours/spb/tour-7/item-3.png",
-            "img/tours/spb/tour-7/item-4.png",
-            "img/tours/spb/tour-7/item-5.png",
-            "img/tours/spb/tour-7/item-6.jpg"
+            "img/tours/spb/tour-7/item-1.webp",
+            "img/tours/spb/tour-7/item-2.webp",
+            "img/tours/spb/tour-7/item-3.webp",
+            "img/tours/spb/tour-7/item-4.webp",
+            "img/tours/spb/tour-7/item-5.webp",
+            "img/tours/spb/tour-7/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -313,12 +313,12 @@
             15500
         ],
         "images": [
-            "img/tours/spb/tour-8/item-1.jpg",
-            "img/tours/spb/tour-8/item-2.png",
-            "img/tours/spb/tour-8/item-3.png",
-            "img/tours/spb/tour-8/item-4.png",
-            "img/tours/spb/tour-8/item-5.png",
-            "img/tours/spb/tour-8/item-6.png"
+            "img/tours/spb/tour-8/item-1.webp",
+            "img/tours/spb/tour-8/item-2.webp",
+            "img/tours/spb/tour-8/item-3.webp",
+            "img/tours/spb/tour-8/item-4.webp",
+            "img/tours/spb/tour-8/item-5.webp",
+            "img/tours/spb/tour-8/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -355,18 +355,18 @@
             6000
         ],
         "images": [
-            "img/tours/spb/tour-9/item-1.jpg",
-            "img/tours/spb/tour-9/item-2.jpg",
-            "img/tours/spb/tour-9/item-3.jpg",
-            "img/tours/spb/tour-9/item-4.jpg",
-            "img/tours/spb/tour-9/item-5.png",
-            "img/tours/spb/tour-9/item-6.png",
-            "img/tours/spb/tour-9/item-7.png",
-            "img/tours/spb/tour-9/item-8.png",
-            "img/tours/spb/tour-9/item-9.jpg",
-            "img/tours/spb/tour-9/item-10.png",
-            "img/tours/spb/tour-9/item-11.jpg",
-            "img/tours/spb/tour-9/item-12.jpg"
+            "img/tours/spb/tour-9/item-1.webp",
+            "img/tours/spb/tour-9/item-2.webp",
+            "img/tours/spb/tour-9/item-3.webp",
+            "img/tours/spb/tour-9/item-4.webp",
+            "img/tours/spb/tour-9/item-5.webp",
+            "img/tours/spb/tour-9/item-6.webp",
+            "img/tours/spb/tour-9/item-7.webp",
+            "img/tours/spb/tour-9/item-8.webp",
+            "img/tours/spb/tour-9/item-9.webp",
+            "img/tours/spb/tour-9/item-10.webp",
+            "img/tours/spb/tour-9/item-11.webp",
+            "img/tours/spb/tour-9/item-12.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -402,15 +402,15 @@
             15000
         ],
         "images": [
-            "img/tours/spb/tour-10/item-1.jpg",
-            "img/tours/spb/tour-10/item-2.jpg",
-            "img/tours/spb/tour-10/item-3.jpg",
-            "img/tours/spb/tour-10/item-4.jpg",
-            "img/tours/spb/tour-10/item-5.jpg",
-            "img/tours/spb/tour-10/item-6.jpg",
-            "img/tours/spb/tour-10/item-7.jpg",
-            "img/tours/spb/tour-10/item-8.jpg",
-            "img/tours/spb/tour-10/item-9.jpg"
+            "img/tours/spb/tour-10/item-1.webp",
+            "img/tours/spb/tour-10/item-2.webp",
+            "img/tours/spb/tour-10/item-3.webp",
+            "img/tours/spb/tour-10/item-4.webp",
+            "img/tours/spb/tour-10/item-5.webp",
+            "img/tours/spb/tour-10/item-6.webp",
+            "img/tours/spb/tour-10/item-7.webp",
+            "img/tours/spb/tour-10/item-8.webp",
+            "img/tours/spb/tour-10/item-9.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -442,18 +442,18 @@
             4800
         ],
         "images": [
-            "img/tours/spb/tour-11/item-1.jpg",
-            "img/tours/spb/tour-11/item-2.jpg",
-            "img/tours/spb/tour-11/item-3.jpg",
-            "img/tours/spb/tour-11/item-4.jpg",
-            "img/tours/spb/tour-11/item-5.jpg",
-            "img/tours/spb/tour-11/item-6.jpg",
-            "img/tours/spb/tour-11/item-7.jpg",
-            "img/tours/spb/tour-11/item-8.jpg",
-            "img/tours/spb/tour-11/item-9.jpg",
-            "img/tours/spb/tour-11/item-10.jpg",
-            "img/tours/spb/tour-11/item-11.jpg",
-            "img/tours/spb/tour-11/item-12.jpg"
+            "img/tours/spb/tour-11/item-1.webp",
+            "img/tours/spb/tour-11/item-2.webp",
+            "img/tours/spb/tour-11/item-3.webp",
+            "img/tours/spb/tour-11/item-4.webp",
+            "img/tours/spb/tour-11/item-5.webp",
+            "img/tours/spb/tour-11/item-6.webp",
+            "img/tours/spb/tour-11/item-7.webp",
+            "img/tours/spb/tour-11/item-8.webp",
+            "img/tours/spb/tour-11/item-9.webp",
+            "img/tours/spb/tour-11/item-10.webp",
+            "img/tours/spb/tour-11/item-11.webp",
+            "img/tours/spb/tour-11/item-12.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -485,12 +485,12 @@
             9600
         ],
         "images": [
-            "img/tours/kaliningrad/tour-1/item-1.jpg",
-            "img/tours/kaliningrad/tour-1/item-2.jpg",
-            "img/tours/kaliningrad/tour-1/item-3.jpg",
-            "img/tours/kaliningrad/tour-1/item-4.jpg",
-            "img/tours/kaliningrad/tour-1/item-5.jpg",
-            "img/tours/kaliningrad/tour-1/item-6.jpg"
+            "img/tours/kaliningrad/tour-1/item-1.webp",
+            "img/tours/kaliningrad/tour-1/item-2.webp",
+            "img/tours/kaliningrad/tour-1/item-3.webp",
+            "img/tours/kaliningrad/tour-1/item-4.webp",
+            "img/tours/kaliningrad/tour-1/item-5.webp",
+            "img/tours/kaliningrad/tour-1/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -522,11 +522,11 @@
             9000
         ],
         "images": [
-            "img/tours/kaliningrad/tour-2/item-1.jpg",
-            "img/tours/kaliningrad/tour-2/item-2.jpg",
-            "img/tours/kaliningrad/tour-2/item-3.jpg",
-            "img/tours/kaliningrad/tour-2/item-4.jpg",
-            "img/tours/kaliningrad/tour-2/item-5.jpg"
+            "img/tours/kaliningrad/tour-2/item-1.webp",
+            "img/tours/kaliningrad/tour-2/item-2.webp",
+            "img/tours/kaliningrad/tour-2/item-3.webp",
+            "img/tours/kaliningrad/tour-2/item-4.webp",
+            "img/tours/kaliningrad/tour-2/item-5.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -558,15 +558,15 @@
             8500
         ],
         "images": [
-            "img/tours/kaliningrad/tour-3/item-1.jpg",
-            "img/tours/kaliningrad/tour-3/item-2.jpg",
-            "img/tours/kaliningrad/tour-3/item-3.jpg",
-            "img/tours/kaliningrad/tour-3/item-4.jpg",
-            "img/tours/kaliningrad/tour-3/item-5.jpg",
-            "img/tours/kaliningrad/tour-3/item-6.jpg",
-            "img/tours/kaliningrad/tour-3/item-7.jpg",
-            "img/tours/kaliningrad/tour-3/item-8.jpg",
-            "img/tours/kaliningrad/tour-3/item-9.jpg"
+            "img/tours/kaliningrad/tour-3/item-1.webp",
+            "img/tours/kaliningrad/tour-3/item-2.webp",
+            "img/tours/kaliningrad/tour-3/item-3.webp",
+            "img/tours/kaliningrad/tour-3/item-4.webp",
+            "img/tours/kaliningrad/tour-3/item-5.webp",
+            "img/tours/kaliningrad/tour-3/item-6.webp",
+            "img/tours/kaliningrad/tour-3/item-7.webp",
+            "img/tours/kaliningrad/tour-3/item-8.webp",
+            "img/tours/kaliningrad/tour-3/item-9.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -598,12 +598,12 @@
             5000
         ],
         "images": [
-            "img/tours/kaliningrad/tour-4/item-1.jpg",
-            "img/tours/kaliningrad/tour-4/item-2.jpg",
-            "img/tours/kaliningrad/tour-4/item-3.jpg",
-            "img/tours/kaliningrad/tour-4/item-4.jpg",
-            "img/tours/kaliningrad/tour-4/item-5.jpg",
-            "img/tours/kaliningrad/tour-4/item-6.jpg"
+            "img/tours/kaliningrad/tour-4/item-1.webp",
+            "img/tours/kaliningrad/tour-4/item-2.webp",
+            "img/tours/kaliningrad/tour-4/item-3.webp",
+            "img/tours/kaliningrad/tour-4/item-4.webp",
+            "img/tours/kaliningrad/tour-4/item-5.webp",
+            "img/tours/kaliningrad/tour-4/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -635,18 +635,18 @@
             650
         ],
         "images": [
-            "img/tours/kaliningrad/tour-5/item-1.jpg",
-            "img/tours/kaliningrad/tour-5/item-2.jpg",
-            "img/tours/kaliningrad/tour-5/item-3.jpg",
-            "img/tours/kaliningrad/tour-5/item-4.jpg",
-            "img/tours/kaliningrad/tour-5/item-5.jpg",
-            "img/tours/kaliningrad/tour-5/item-6.jpg",
-            "img/tours/kaliningrad/tour-5/item-7.jpg",
-            "img/tours/kaliningrad/tour-5/item-8.jpg",
-            "img/tours/kaliningrad/tour-5/item-9.jpg",
-            "img/tours/kaliningrad/tour-5/item-10.jpg",
-            "img/tours/kaliningrad/tour-5/item-11.jpg",
-            "img/tours/kaliningrad/tour-5/item-12.jpg"
+            "img/tours/kaliningrad/tour-5/item-1.webp",
+            "img/tours/kaliningrad/tour-5/item-2.webp",
+            "img/tours/kaliningrad/tour-5/item-3.webp",
+            "img/tours/kaliningrad/tour-5/item-4.webp",
+            "img/tours/kaliningrad/tour-5/item-5.webp",
+            "img/tours/kaliningrad/tour-5/item-6.webp",
+            "img/tours/kaliningrad/tour-5/item-7.webp",
+            "img/tours/kaliningrad/tour-5/item-8.webp",
+            "img/tours/kaliningrad/tour-5/item-9.webp",
+            "img/tours/kaliningrad/tour-5/item-10.webp",
+            "img/tours/kaliningrad/tour-5/item-11.webp",
+            "img/tours/kaliningrad/tour-5/item-12.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -686,20 +686,20 @@
             1000
         ],
         "images": [
-            "img/tours/kaliningrad/tour-6/item-1.jpg",
-            "img/tours/kaliningrad/tour-6/item-2.jpg",
-            "img/tours/kaliningrad/tour-6/item-3.jpg",
-            "img/tours/kaliningrad/tour-6/item-4.jpg",
-            "img/tours/kaliningrad/tour-6/item-5.jpg",
-            "img/tours/kaliningrad/tour-6/item-6.jpg",
-            "img/tours/kaliningrad/tour-6/item-7.jpg",
-            "img/tours/kaliningrad/tour-6/item-8.jpg",
-            "img/tours/kaliningrad/tour-6/item-9.jpg",
-            "img/tours/kaliningrad/tour-6/item-10.jpg",
-            "img/tours/kaliningrad/tour-6/item-11.jpg",
-            "img/tours/kaliningrad/tour-6/item-12.jpg",
-            "img/tours/kaliningrad/tour-6/item-13.jpg",
-            "img/tours/kaliningrad/tour-6/item-14.jpg"
+            "img/tours/kaliningrad/tour-6/item-1.webp",
+            "img/tours/kaliningrad/tour-6/item-2.webp",
+            "img/tours/kaliningrad/tour-6/item-3.webp",
+            "img/tours/kaliningrad/tour-6/item-4.webp",
+            "img/tours/kaliningrad/tour-6/item-5.webp",
+            "img/tours/kaliningrad/tour-6/item-6.webp",
+            "img/tours/kaliningrad/tour-6/item-7.webp",
+            "img/tours/kaliningrad/tour-6/item-8.webp",
+            "img/tours/kaliningrad/tour-6/item-9.webp",
+            "img/tours/kaliningrad/tour-6/item-10.webp",
+            "img/tours/kaliningrad/tour-6/item-11.webp",
+            "img/tours/kaliningrad/tour-6/item-12.webp",
+            "img/tours/kaliningrad/tour-6/item-13.webp",
+            "img/tours/kaliningrad/tour-6/item-14.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -735,12 +735,12 @@
             4500
         ],
         "images": [
-            "img/tours/kaliningrad/tour-7/item-1.jpg",
-            "img/tours/kaliningrad/tour-7/item-2.jpg",
-            "img/tours/kaliningrad/tour-7/item-3.jpg",
-            "img/tours/kaliningrad/tour-7/item-4.jpg",
-            "img/tours/kaliningrad/tour-7/item-5.jpg",
-            "img/tours/kaliningrad/tour-7/item-6.jpg"
+            "img/tours/kaliningrad/tour-7/item-1.webp",
+            "img/tours/kaliningrad/tour-7/item-2.webp",
+            "img/tours/kaliningrad/tour-7/item-3.webp",
+            "img/tours/kaliningrad/tour-7/item-4.webp",
+            "img/tours/kaliningrad/tour-7/item-5.webp",
+            "img/tours/kaliningrad/tour-7/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -772,13 +772,13 @@
             7000
         ],
         "images": [
-            "img/tours/kaliningrad/tour-8/item-1.jpg",
-            "img/tours/kaliningrad/tour-8/item-2.jpg",
-            "img/tours/kaliningrad/tour-8/item-3.jpg",
-            "img/tours/kaliningrad/tour-8/item-4.jpg",
-            "img/tours/kaliningrad/tour-8/item-5.jpg",
-            "img/tours/kaliningrad/tour-8/item-6.jpg",
-            "img/tours/kaliningrad/tour-8/item-7.jpg"
+            "img/tours/kaliningrad/tour-8/item-1.webp",
+            "img/tours/kaliningrad/tour-8/item-2.webp",
+            "img/tours/kaliningrad/tour-8/item-3.webp",
+            "img/tours/kaliningrad/tour-8/item-4.webp",
+            "img/tours/kaliningrad/tour-8/item-5.webp",
+            "img/tours/kaliningrad/tour-8/item-6.webp",
+            "img/tours/kaliningrad/tour-8/item-7.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -810,12 +810,12 @@
             3000
         ],
         "images": [
-            "img/tours/kaliningrad/tour-9/item-1.jpg",
-            "img/tours/kaliningrad/tour-9/item-2.jpg",
-            "img/tours/kaliningrad/tour-9/item-3.jpg",
-            "img/tours/kaliningrad/tour-9/item-4.jpg",
-            "img/tours/kaliningrad/tour-9/item-5.jpg",
-            "img/tours/kaliningrad/tour-9/item-6.jpg"
+            "img/tours/kaliningrad/tour-9/item-1.webp",
+            "img/tours/kaliningrad/tour-9/item-2.webp",
+            "img/tours/kaliningrad/tour-9/item-3.webp",
+            "img/tours/kaliningrad/tour-9/item-4.webp",
+            "img/tours/kaliningrad/tour-9/item-5.webp",
+            "img/tours/kaliningrad/tour-9/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -847,12 +847,12 @@
             3000
         ],
         "images": [
-            "img/tours/kaliningrad/tour-10/item-1.png",
-            "img/tours/kaliningrad/tour-10/item-2.jpg",
-            "img/tours/kaliningrad/tour-10/item-3.jpg",
-            "img/tours/kaliningrad/tour-10/item-4.png",
-            "img/tours/kaliningrad/tour-10/item-5.jpg",
-            "img/tours/kaliningrad/tour-10/item-6.jpg"
+            "img/tours/kaliningrad/tour-10/item-1.webp",
+            "img/tours/kaliningrad/tour-10/item-2.webp",
+            "img/tours/kaliningrad/tour-10/item-3.webp",
+            "img/tours/kaliningrad/tour-10/item-4.webp",
+            "img/tours/kaliningrad/tour-10/item-5.webp",
+            "img/tours/kaliningrad/tour-10/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -884,14 +884,14 @@
             20000
         ],
         "images": [
-            "img/tours/murmansk/tour-1/item-1.jpg",
-            "img/tours/murmansk/tour-1/item-2.jpg",
-            "img/tours/murmansk/tour-1/item-3.jpg",
-            "img/tours/murmansk/tour-1/item-4.jpg",
-            "img/tours/murmansk/tour-1/item-5.jpg",
-            "img/tours/murmansk/tour-1/item-6.jpg",
-            "img/tours/murmansk/tour-1/item-7.jpg",
-            "img/tours/murmansk/tour-1/item-8.jpg"
+            "img/tours/murmansk/tour-1/item-1.webp",
+            "img/tours/murmansk/tour-1/item-2.webp",
+            "img/tours/murmansk/tour-1/item-3.webp",
+            "img/tours/murmansk/tour-1/item-4.webp",
+            "img/tours/murmansk/tour-1/item-5.webp",
+            "img/tours/murmansk/tour-1/item-6.webp",
+            "img/tours/murmansk/tour-1/item-7.webp",
+            "img/tours/murmansk/tour-1/item-8.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -923,10 +923,10 @@
             5500
         ],
         "images": [
-            "img/tours/murmansk/tour-2/item-1.jpg",
-            "img/tours/murmansk/tour-2/item-2.jpg",
-            "img/tours/murmansk/tour-2/item-3.jpg",
-            "img/tours/murmansk/tour-2/item-4.jpg"
+            "img/tours/murmansk/tour-2/item-1.webp",
+            "img/tours/murmansk/tour-2/item-2.webp",
+            "img/tours/murmansk/tour-2/item-3.webp",
+            "img/tours/murmansk/tour-2/item-4.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -962,19 +962,19 @@
             6000
         ],
         "images": [
-            "img/tours/murmansk/tour-3/item-1.jpg",
-            "img/tours/murmansk/tour-3/item-2.jpg",
-            "img/tours/murmansk/tour-3/item-3.jpg",
-            "img/tours/murmansk/tour-3/item-4.jpg",
-            "img/tours/murmansk/tour-3/item-5.jpg",
-            "img/tours/murmansk/tour-3/item-6.jpg",
-            "img/tours/murmansk/tour-3/item-7.jpg",
-            "img/tours/murmansk/tour-3/item-8.jpg",
-            "img/tours/murmansk/tour-3/item-9.jpg",
-            "img/tours/murmansk/tour-3/item-10.jpg",
-            "img/tours/murmansk/tour-3/item-11.jpg",
-            "img/tours/murmansk/tour-3/item-12.jpg",
-            "img/tours/murmansk/tour-3/item-13.jpg"
+            "img/tours/murmansk/tour-3/item-1.webp",
+            "img/tours/murmansk/tour-3/item-2.webp",
+            "img/tours/murmansk/tour-3/item-3.webp",
+            "img/tours/murmansk/tour-3/item-4.webp",
+            "img/tours/murmansk/tour-3/item-5.webp",
+            "img/tours/murmansk/tour-3/item-6.webp",
+            "img/tours/murmansk/tour-3/item-7.webp",
+            "img/tours/murmansk/tour-3/item-8.webp",
+            "img/tours/murmansk/tour-3/item-9.webp",
+            "img/tours/murmansk/tour-3/item-10.webp",
+            "img/tours/murmansk/tour-3/item-11.webp",
+            "img/tours/murmansk/tour-3/item-12.webp",
+            "img/tours/murmansk/tour-3/item-13.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1010,18 +1010,18 @@
             2000
         ],
         "images": [
-            "img/tours/murmansk/tour-4/item-1.jpg",
-            "img/tours/murmansk/tour-4/item-2.jpg",
-            "img/tours/murmansk/tour-4/item-3.jpg",
-            "img/tours/murmansk/tour-4/item-4.jpg",
-            "img/tours/murmansk/tour-4/item-5.jpg",
-            "img/tours/murmansk/tour-4/item-6.jpg",
-            "img/tours/murmansk/tour-4/item-7.jpg",
-            "img/tours/murmansk/tour-4/item-8.jpg",
-            "img/tours/murmansk/tour-4/item-9.jpg",
-            "img/tours/murmansk/tour-4/item-10.jpg",
-            "img/tours/murmansk/tour-4/item-11.jpg",
-            "img/tours/murmansk/tour-4/item-12.jpg"
+            "img/tours/murmansk/tour-4/item-1.webp",
+            "img/tours/murmansk/tour-4/item-2.webp",
+            "img/tours/murmansk/tour-4/item-3.webp",
+            "img/tours/murmansk/tour-4/item-4.webp",
+            "img/tours/murmansk/tour-4/item-5.webp",
+            "img/tours/murmansk/tour-4/item-6.webp",
+            "img/tours/murmansk/tour-4/item-7.webp",
+            "img/tours/murmansk/tour-4/item-8.webp",
+            "img/tours/murmansk/tour-4/item-9.webp",
+            "img/tours/murmansk/tour-4/item-10.webp",
+            "img/tours/murmansk/tour-4/item-11.webp",
+            "img/tours/murmansk/tour-4/item-12.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1057,10 +1057,10 @@
             6000
         ],
         "images": [
-            "img/tours/murmansk/tour-5/item-1.jpg",
-            "img/tours/murmansk/tour-5/item-2.jpg",
-            "img/tours/murmansk/tour-5/item-3.jpg",
-            "img/tours/murmansk/tour-5/item-4.jpg"
+            "img/tours/murmansk/tour-5/item-1.webp",
+            "img/tours/murmansk/tour-5/item-2.webp",
+            "img/tours/murmansk/tour-5/item-3.webp",
+            "img/tours/murmansk/tour-5/item-4.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1092,12 +1092,12 @@
             3000
         ],
         "images": [
-            "img/tours/murmansk/tour-6/item-1.png",
-            "img/tours/murmansk/tour-6/item-2.jpg",
-            "img/tours/murmansk/tour-6/item-3.jpg",
-            "img/tours/murmansk/tour-6/item-4.png",
-            "img/tours/murmansk/tour-6/item-5.png",
-            "img/tours/murmansk/tour-6/item-6.png"
+            "img/tours/murmansk/tour-6/item-1.webp",
+            "img/tours/murmansk/tour-6/item-2.webp",
+            "img/tours/murmansk/tour-6/item-3.webp",
+            "img/tours/murmansk/tour-6/item-4.webp",
+            "img/tours/murmansk/tour-6/item-5.webp",
+            "img/tours/murmansk/tour-6/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1129,25 +1129,25 @@
             4000
         ],
         "images": [
-            "img/tours/murmansk/tour-7/item-1.jpg",
-            "img/tours/murmansk/tour-7/item-2.jpg",
-            "img/tours/murmansk/tour-7/item-3.jpg",
-            "img/tours/murmansk/tour-7/item-4.jpg",
-            "img/tours/murmansk/tour-7/item-5.jpg",
-            "img/tours/murmansk/tour-7/item-6.jpg",
-            "img/tours/murmansk/tour-7/item-7.jpg",
-            "img/tours/murmansk/tour-7/item-8.jpg",
-            "img/tours/murmansk/tour-7/item-9.jpg",
-            "img/tours/murmansk/tour-7/item-10.jpg",
-            "img/tours/murmansk/tour-7/item-11.jpg",
-            "img/tours/murmansk/tour-7/item-12.jpg",
-            "img/tours/murmansk/tour-7/item-13.jpg",
-            "img/tours/murmansk/tour-7/item-14.jpg",
-            "img/tours/murmansk/tour-7/item-15.jpg",
-            "img/tours/murmansk/tour-7/item-16.jpg",
-            "img/tours/murmansk/tour-7/item-17.jpg",
-            "img/tours/murmansk/tour-7/item-18.jpg",
-            "img/tours/murmansk/tour-7/item-19.jpg"
+            "img/tours/murmansk/tour-7/item-1.webp",
+            "img/tours/murmansk/tour-7/item-2.webp",
+            "img/tours/murmansk/tour-7/item-3.webp",
+            "img/tours/murmansk/tour-7/item-4.webp",
+            "img/tours/murmansk/tour-7/item-5.webp",
+            "img/tours/murmansk/tour-7/item-6.webp",
+            "img/tours/murmansk/tour-7/item-7.webp",
+            "img/tours/murmansk/tour-7/item-8.webp",
+            "img/tours/murmansk/tour-7/item-9.webp",
+            "img/tours/murmansk/tour-7/item-10.webp",
+            "img/tours/murmansk/tour-7/item-11.webp",
+            "img/tours/murmansk/tour-7/item-12.webp",
+            "img/tours/murmansk/tour-7/item-13.webp",
+            "img/tours/murmansk/tour-7/item-14.webp",
+            "img/tours/murmansk/tour-7/item-15.webp",
+            "img/tours/murmansk/tour-7/item-16.webp",
+            "img/tours/murmansk/tour-7/item-17.webp",
+            "img/tours/murmansk/tour-7/item-18.webp",
+            "img/tours/murmansk/tour-7/item-19.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1177,19 +1177,19 @@
         },
         "prices": [],
         "images": [
-            "img/tours/murmansk/tour-8/item-1.jpg",
-            "img/tours/murmansk/tour-8/item-2.jpg",
-            "img/tours/murmansk/tour-8/item-3.jpg",
-            "img/tours/murmansk/tour-8/item-4.jpg",
-            "img/tours/murmansk/tour-8/item-5.jpg",
-            "img/tours/murmansk/tour-8/item-6.jpg",
-            "img/tours/murmansk/tour-8/item-7.jpg",
-            "img/tours/murmansk/tour-8/item-8.jpg",
-            "img/tours/murmansk/tour-8/item-9.jpg",
-            "img/tours/murmansk/tour-8/item-10.jpg",
-            "img/tours/murmansk/tour-8/item-11.jpg",
-            "img/tours/murmansk/tour-8/item-12.jpg",
-            "img/tours/murmansk/tour-8/item-13.jpg"
+            "img/tours/murmansk/tour-8/item-1.webp",
+            "img/tours/murmansk/tour-8/item-2.webp",
+            "img/tours/murmansk/tour-8/item-3.webp",
+            "img/tours/murmansk/tour-8/item-4.webp",
+            "img/tours/murmansk/tour-8/item-5.webp",
+            "img/tours/murmansk/tour-8/item-6.webp",
+            "img/tours/murmansk/tour-8/item-7.webp",
+            "img/tours/murmansk/tour-8/item-8.webp",
+            "img/tours/murmansk/tour-8/item-9.webp",
+            "img/tours/murmansk/tour-8/item-10.webp",
+            "img/tours/murmansk/tour-8/item-11.webp",
+            "img/tours/murmansk/tour-8/item-12.webp",
+            "img/tours/murmansk/tour-8/item-13.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1225,12 +1225,12 @@
             4500
         ],
         "images": [
-            "img/tours/murmansk/tour-9/item-1.png",
-            "img/tours/murmansk/tour-9/item-2.png",
-            "img/tours/murmansk/tour-9/item-3.png",
-            "img/tours/murmansk/tour-9/item-4.jpg",
-            "img/tours/murmansk/tour-9/item-5.jpg",
-            "img/tours/murmansk/tour-9/item-6.png"
+            "img/tours/murmansk/tour-9/item-1.webp",
+            "img/tours/murmansk/tour-9/item-2.webp",
+            "img/tours/murmansk/tour-9/item-3.webp",
+            "img/tours/murmansk/tour-9/item-4.webp",
+            "img/tours/murmansk/tour-9/item-5.webp",
+            "img/tours/murmansk/tour-9/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1262,12 +1262,12 @@
             5500
         ],
         "images": [
-            "img/tours/stambul/tour-1/item-1.png",
-            "img/tours/stambul/tour-1/item-2.jpg",
-            "img/tours/stambul/tour-1/item-3.jpg",
-            "img/tours/stambul/tour-1/item-4.png",
-            "img/tours/stambul/tour-1/item-5.jpg",
-            "img/tours/stambul/tour-1/item-6.png"
+            "img/tours/stambul/tour-1/item-1.webp",
+            "img/tours/stambul/tour-1/item-2.webp",
+            "img/tours/stambul/tour-1/item-3.webp",
+            "img/tours/stambul/tour-1/item-4.webp",
+            "img/tours/stambul/tour-1/item-5.webp",
+            "img/tours/stambul/tour-1/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1299,12 +1299,12 @@
             14000
         ],
         "images": [
-            "img/tours/stambul/tour-2/item-1.jpg",
-            "img/tours/stambul/tour-2/item-2.jpg",
-            "img/tours/stambul/tour-2/item-3.jpg",
-            "img/tours/stambul/tour-2/item-4.jpg",
-            "img/tours/stambul/tour-2/item-5.jpg",
-            "img/tours/stambul/tour-2/item-6.jpg"
+            "img/tours/stambul/tour-2/item-1.webp",
+            "img/tours/stambul/tour-2/item-2.webp",
+            "img/tours/stambul/tour-2/item-3.webp",
+            "img/tours/stambul/tour-2/item-4.webp",
+            "img/tours/stambul/tour-2/item-5.webp",
+            "img/tours/stambul/tour-2/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1336,12 +1336,12 @@
             13000
         ],
         "images": [
-            "img/tours/stambul/tour-3/item-1.png",
-            "img/tours/stambul/tour-3/item-2.png",
-            "img/tours/stambul/tour-3/item-3.png",
-            "img/tours/stambul/tour-3/item-4.png",
-            "img/tours/stambul/tour-3/item-5.png",
-            "img/tours/stambul/tour-3/item-6.png"
+            "img/tours/stambul/tour-3/item-1.webp",
+            "img/tours/stambul/tour-3/item-2.webp",
+            "img/tours/stambul/tour-3/item-3.webp",
+            "img/tours/stambul/tour-3/item-4.webp",
+            "img/tours/stambul/tour-3/item-5.webp",
+            "img/tours/stambul/tour-3/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1373,12 +1373,12 @@
             18000
         ],
         "images": [
-            "img/tours/stambul/tour-4/item-1.jpg",
-            "img/tours/stambul/tour-4/item-2.jpg",
-            "img/tours/stambul/tour-4/item-3.png",
-            "img/tours/stambul/tour-4/item-4.png",
-            "img/tours/stambul/tour-4/item-5.png",
-            "img/tours/stambul/tour-4/item-6.png"
+            "img/tours/stambul/tour-4/item-1.webp",
+            "img/tours/stambul/tour-4/item-2.webp",
+            "img/tours/stambul/tour-4/item-3.webp",
+            "img/tours/stambul/tour-4/item-4.webp",
+            "img/tours/stambul/tour-4/item-5.webp",
+            "img/tours/stambul/tour-4/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1410,12 +1410,12 @@
             15000
         ],
         "images": [
-            "img/tours/stambul/tour-5/item-1.png",
-            "img/tours/stambul/tour-5/item-2.png",
-            "img/tours/stambul/tour-5/item-3.png",
-            "img/tours/stambul/tour-5/item-4.jpg",
-            "img/tours/stambul/tour-5/item-5.jpg",
-            "img/tours/stambul/tour-5/item-6.png"
+            "img/tours/stambul/tour-5/item-1.webp",
+            "img/tours/stambul/tour-5/item-2.webp",
+            "img/tours/stambul/tour-5/item-3.webp",
+            "img/tours/stambul/tour-5/item-4.webp",
+            "img/tours/stambul/tour-5/item-5.webp",
+            "img/tours/stambul/tour-5/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1447,12 +1447,12 @@
             32000
         ],
         "images": [
-            "img/tours/stambul/tour-6/item-1.png",
-            "img/tours/stambul/tour-6/item-2.png",
-            "img/tours/stambul/tour-6/item-3.png",
-            "img/tours/stambul/tour-6/item-4.png",
-            "img/tours/stambul/tour-6/item-5.png",
-            "img/tours/stambul/tour-6/item-6.png"
+            "img/tours/stambul/tour-6/item-1.webp",
+            "img/tours/stambul/tour-6/item-2.webp",
+            "img/tours/stambul/tour-6/item-3.webp",
+            "img/tours/stambul/tour-6/item-4.webp",
+            "img/tours/stambul/tour-6/item-5.webp",
+            "img/tours/stambul/tour-6/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1484,12 +1484,12 @@
             8000
         ],
         "images": [
-            "img/tours/stambul/tour-7/item-1.png",
-            "img/tours/stambul/tour-7/item-2.jpg",
-            "img/tours/stambul/tour-7/item-3.png",
-            "img/tours/stambul/tour-7/item-4.png",
-            "img/tours/stambul/tour-7/item-5.png",
-            "img/tours/stambul/tour-7/item-6.png"
+            "img/tours/stambul/tour-7/item-1.webp",
+            "img/tours/stambul/tour-7/item-2.webp",
+            "img/tours/stambul/tour-7/item-3.webp",
+            "img/tours/stambul/tour-7/item-4.webp",
+            "img/tours/stambul/tour-7/item-5.webp",
+            "img/tours/stambul/tour-7/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1521,12 +1521,12 @@
             20000
         ],
         "images": [
-            "img/tours/stambul/tour-8/item-1.png",
-            "img/tours/stambul/tour-8/item-2.png",
-            "img/tours/stambul/tour-8/item-3.png",
-            "img/tours/stambul/tour-8/item-4.png",
-            "img/tours/stambul/tour-8/item-5.png",
-            "img/tours/stambul/tour-8/item-6.png"
+            "img/tours/stambul/tour-8/item-1.webp",
+            "img/tours/stambul/tour-8/item-2.webp",
+            "img/tours/stambul/tour-8/item-3.webp",
+            "img/tours/stambul/tour-8/item-4.webp",
+            "img/tours/stambul/tour-8/item-5.webp",
+            "img/tours/stambul/tour-8/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1558,12 +1558,12 @@
             18000
         ],
         "images": [
-            "img/tours/stambul/tour-9/item-1.png",
-            "img/tours/stambul/tour-9/item-2.png",
-            "img/tours/stambul/tour-9/item-3.png",
-            "img/tours/stambul/tour-9/item-4.jpg",
-            "img/tours/stambul/tour-9/item-5.png",
-            "img/tours/stambul/tour-9/item-6.png"
+            "img/tours/stambul/tour-9/item-1.webp",
+            "img/tours/stambul/tour-9/item-2.webp",
+            "img/tours/stambul/tour-9/item-3.webp",
+            "img/tours/stambul/tour-9/item-4.webp",
+            "img/tours/stambul/tour-9/item-5.webp",
+            "img/tours/stambul/tour-9/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1595,12 +1595,12 @@
             17000
         ],
         "images": [
-            "img/tours/stambul/tour-10/item-1.png",
-            "img/tours/stambul/tour-10/item-2.jpg",
-            "img/tours/stambul/tour-10/item-3.jpg",
-            "img/tours/stambul/tour-10/item-4.jpg",
-            "img/tours/stambul/tour-10/item-5.png",
-            "img/tours/stambul/tour-10/item-6.png"
+            "img/tours/stambul/tour-10/item-1.webp",
+            "img/tours/stambul/tour-10/item-2.webp",
+            "img/tours/stambul/tour-10/item-3.webp",
+            "img/tours/stambul/tour-10/item-4.webp",
+            "img/tours/stambul/tour-10/item-5.webp",
+            "img/tours/stambul/tour-10/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1632,16 +1632,16 @@
             30000
         ],
         "images": [
-            "img/tours/oae/tour-1/item-1.jpg",
-            "img/tours/oae/tour-1/item-2.jpg",
-            "img/tours/oae/tour-1/item-3.jpg",
-            "img/tours/oae/tour-1/item-4.jpg",
-            "img/tours/oae/tour-1/item-5.jpg",
-            "img/tours/oae/tour-1/item-6.jpg",
-            "img/tours/oae/tour-1/item-7.jpg",
-            "img/tours/oae/tour-1/item-8.jpg",
-            "img/tours/oae/tour-1/item-9.jpg",
-            "img/tours/oae/tour-1/item-10.jpg"
+            "img/tours/oae/tour-1/item-1.webp",
+            "img/tours/oae/tour-1/item-2.webp",
+            "img/tours/oae/tour-1/item-3.webp",
+            "img/tours/oae/tour-1/item-4.webp",
+            "img/tours/oae/tour-1/item-5.webp",
+            "img/tours/oae/tour-1/item-6.webp",
+            "img/tours/oae/tour-1/item-7.webp",
+            "img/tours/oae/tour-1/item-8.webp",
+            "img/tours/oae/tour-1/item-9.webp",
+            "img/tours/oae/tour-1/item-10.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1673,12 +1673,12 @@
             11500
         ],
         "images": [
-            "img/tours/oae/tour-2/item-1.jpg",
-            "img/tours/oae/tour-2/item-2.jpg",
-            "img/tours/oae/tour-2/item-3.jpg",
-            "img/tours/oae/tour-2/item-4.jpg",
-            "img/tours/oae/tour-2/item-5.jpg",
-            "img/tours/oae/tour-2/item-6.jpg"
+            "img/tours/oae/tour-2/item-1.webp",
+            "img/tours/oae/tour-2/item-2.webp",
+            "img/tours/oae/tour-2/item-3.webp",
+            "img/tours/oae/tour-2/item-4.webp",
+            "img/tours/oae/tour-2/item-5.webp",
+            "img/tours/oae/tour-2/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1710,12 +1710,12 @@
             8500
         ],
         "images": [
-            "img/tours/oae/tour-3/item-1.png",
-            "img/tours/oae/tour-3/item-2.jpg",
-            "img/tours/oae/tour-3/item-3.jpg",
-            "img/tours/oae/tour-3/item-4.jpg",
-            "img/tours/oae/tour-3/item-5.png",
-            "img/tours/oae/tour-3/item-6.png"
+            "img/tours/oae/tour-3/item-1.webp",
+            "img/tours/oae/tour-3/item-2.webp",
+            "img/tours/oae/tour-3/item-3.webp",
+            "img/tours/oae/tour-3/item-4.webp",
+            "img/tours/oae/tour-3/item-5.webp",
+            "img/tours/oae/tour-3/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1747,12 +1747,12 @@
             25000
         ],
         "images": [
-            "img/tours/oae/tour-4/item-1.png",
-            "img/tours/oae/tour-4/item-2.png",
-            "img/tours/oae/tour-4/item-3.jpg",
-            "img/tours/oae/tour-4/item-4.png",
-            "img/tours/oae/tour-4/item-5.jpg",
-            "img/tours/oae/tour-4/item-6.jpg"
+            "img/tours/oae/tour-4/item-1.webp",
+            "img/tours/oae/tour-4/item-2.webp",
+            "img/tours/oae/tour-4/item-3.webp",
+            "img/tours/oae/tour-4/item-4.webp",
+            "img/tours/oae/tour-4/item-5.webp",
+            "img/tours/oae/tour-4/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1784,12 +1784,12 @@
             22000
         ],
         "images": [
-            "img/tours/oae/tour-5/item-1.jpg",
-            "img/tours/oae/tour-5/item-2.jpg",
-            "img/tours/oae/tour-5/item-3.jpg",
-            "img/tours/oae/tour-5/item-4.jpg",
-            "img/tours/oae/tour-5/item-5.jpg",
-            "img/tours/oae/tour-5/item-6.jpg"
+            "img/tours/oae/tour-5/item-1.webp",
+            "img/tours/oae/tour-5/item-2.webp",
+            "img/tours/oae/tour-5/item-3.webp",
+            "img/tours/oae/tour-5/item-4.webp",
+            "img/tours/oae/tour-5/item-5.webp",
+            "img/tours/oae/tour-5/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1821,12 +1821,12 @@
             30000
         ],
         "images": [
-            "img/tours/oae/tour-6/item-1.png",
-            "img/tours/oae/tour-6/item-2.jpg",
-            "img/tours/oae/tour-6/item-3.png",
-            "img/tours/oae/tour-6/item-4.jpg",
-            "img/tours/oae/tour-6/item-5.jpg",
-            "img/tours/oae/tour-6/item-6.png"
+            "img/tours/oae/tour-6/item-1.webp",
+            "img/tours/oae/tour-6/item-2.webp",
+            "img/tours/oae/tour-6/item-3.webp",
+            "img/tours/oae/tour-6/item-4.webp",
+            "img/tours/oae/tour-6/item-5.webp",
+            "img/tours/oae/tour-6/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1858,21 +1858,21 @@
             5500
         ],
         "images": [
-            "img/tours/oae/tour-7/item-1.png",
-            "img/tours/oae/tour-7/item-2.png",
-            "img/tours/oae/tour-7/item-3.png",
-            "img/tours/oae/tour-7/item-4.png",
-            "img/tours/oae/tour-7/item-5.jpg",
-            "img/tours/oae/tour-7/item-6.png",
-            "img/tours/oae/tour-7/item-7.jpg",
-            "img/tours/oae/tour-7/item-8.png",
-            "img/tours/oae/tour-7/item-9.png",
-            "img/tours/oae/tour-7/item-10.png",
-            "img/tours/oae/tour-7/item-11.jpg",
-            "img/tours/oae/tour-7/item-12.png",
-            "img/tours/oae/tour-7/item-13.jpg",
-            "img/tours/oae/tour-7/item-14.png",
-            "img/tours/oae/tour-7/item-15.png"
+            "img/tours/oae/tour-7/item-1.webp",
+            "img/tours/oae/tour-7/item-2.webp",
+            "img/tours/oae/tour-7/item-3.webp",
+            "img/tours/oae/tour-7/item-4.webp",
+            "img/tours/oae/tour-7/item-5.webp",
+            "img/tours/oae/tour-7/item-6.webp",
+            "img/tours/oae/tour-7/item-7.webp",
+            "img/tours/oae/tour-7/item-8.webp",
+            "img/tours/oae/tour-7/item-9.webp",
+            "img/tours/oae/tour-7/item-10.webp",
+            "img/tours/oae/tour-7/item-11.webp",
+            "img/tours/oae/tour-7/item-12.webp",
+            "img/tours/oae/tour-7/item-13.webp",
+            "img/tours/oae/tour-7/item-14.webp",
+            "img/tours/oae/tour-7/item-15.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1904,12 +1904,12 @@
             43000
         ],
         "images": [
-            "img/tours/oae/tour-8/item-1.jpg",
-            "img/tours/oae/tour-8/item-2.jpg",
-            "img/tours/oae/tour-8/item-3.jpg",
-            "img/tours/oae/tour-8/item-4.jpg",
-            "img/tours/oae/tour-8/item-5.jpg",
-            "img/tours/oae/tour-8/item-6.jpg"
+            "img/tours/oae/tour-8/item-1.webp",
+            "img/tours/oae/tour-8/item-2.webp",
+            "img/tours/oae/tour-8/item-3.webp",
+            "img/tours/oae/tour-8/item-4.webp",
+            "img/tours/oae/tour-8/item-5.webp",
+            "img/tours/oae/tour-8/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1941,12 +1941,12 @@
             28000
         ],
         "images": [
-            "img/tours/oae/tour-9/item-1.jpg",
-            "img/tours/oae/tour-9/item-2.jpg",
-            "img/tours/oae/tour-9/item-3.png",
-            "img/tours/oae/tour-9/item-4.jpg",
-            "img/tours/oae/tour-9/item-5.png",
-            "img/tours/oae/tour-9/item-6.jpg"
+            "img/tours/oae/tour-9/item-1.webp",
+            "img/tours/oae/tour-9/item-2.webp",
+            "img/tours/oae/tour-9/item-3.webp",
+            "img/tours/oae/tour-9/item-4.webp",
+            "img/tours/oae/tour-9/item-5.webp",
+            "img/tours/oae/tour-9/item-6.webp"
         ],
         "typeExcursion": {
             "personally": "человека",
@@ -1978,24 +1978,24 @@
             27500
         ],
         "images": [
-            "img/tours/oae/tour-10/item-1.png",
-            "img/tours/oae/tour-10/item-2.jpg",
-            "img/tours/oae/tour-10/item-3.png",
-            "img/tours/oae/tour-10/item-4.png",
-            "img/tours/oae/tour-10/item-5.png",
-            "img/tours/oae/tour-10/item-6.png",
-            "img/tours/oae/tour-10/item-7.png",
-            "img/tours/oae/tour-10/item-8.png",
-            "img/tours/oae/tour-10/item-9.png",
-            "img/tours/oae/tour-10/item-10.jpg",
-            "img/tours/oae/tour-10/item-11.png",
-            "img/tours/oae/tour-10/item-12.jpg",
-            "img/tours/oae/tour-10/item-13.jpg",
-            "img/tours/oae/tour-10/item-14.jpg",
-            "img/tours/oae/tour-10/item-15.jpg",
-            "img/tours/oae/tour-10/item-16.png",
-            "img/tours/oae/tour-10/item-17.png",
-            "img/tours/oae/tour-10/item-18.jpg"
+            "img/tours/oae/tour-10/item-1.webp",
+            "img/tours/oae/tour-10/item-2.webp",
+            "img/tours/oae/tour-10/item-3.webp",
+            "img/tours/oae/tour-10/item-4.webp",
+            "img/tours/oae/tour-10/item-5.webp",
+            "img/tours/oae/tour-10/item-6.webp",
+            "img/tours/oae/tour-10/item-7.webp",
+            "img/tours/oae/tour-10/item-8.webp",
+            "img/tours/oae/tour-10/item-9.webp",
+            "img/tours/oae/tour-10/item-10.webp",
+            "img/tours/oae/tour-10/item-11.webp",
+            "img/tours/oae/tour-10/item-12.webp",
+            "img/tours/oae/tour-10/item-13.webp",
+            "img/tours/oae/tour-10/item-14.webp",
+            "img/tours/oae/tour-10/item-15.webp",
+            "img/tours/oae/tour-10/item-16.webp",
+            "img/tours/oae/tour-10/item-17.webp",
+            "img/tours/oae/tour-10/item-18.webp"
         ],
         "typeExcursion": {
             "personally": "человека",

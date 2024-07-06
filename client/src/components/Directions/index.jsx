@@ -8,27 +8,27 @@ const arrDirections = [
   {
     direct: "spb",
     descriptions: "Экскурсии в Санкт-Петербурге",
-    urlImage: "/img/directions/spb.jpg",
+    urlImage: "/img/directions/spb.webp",
   },
   {
     direct: "kaliningrad",
     descriptions: "Экскурсии в Калининграде",
-    urlImage: "/img/directions/kaliningrad.jpg",
+    urlImage: "/img/directions/kaliningrad.webp",
   },
   {
     direct: "murmansk",
     descriptions: "Экскурсии в Мурманске",
-    urlImage: "/img/directions/murmansk.jpg",
+    urlImage: "/img/directions/murmansk.webp",
   },
   {
     direct: "stambul",
     descriptions: "Экскурсии в Стамбуле",
-    urlImage: "/img/directions/stambul.jpg",
+    urlImage: "/img/directions/stambul.webp",
   },
   {
     direct: "oae",
     descriptions: "Экскурсии в ОАЭ",
-    urlImage: "/img/directions/oae.jpg",
+    urlImage: "/img/directions/oae.webp",
   },
 ];
 

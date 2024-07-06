@@ -1,41 +1,71 @@
-const Plane = require("../modles/planes");
+const { Tours, Blog } = require("../modles/planes");
 
 /**
- * Получить все самолеты
  * @param {*} req 
  * @param {*} res 
  */
 const getPlanes = async (req, res) => {
   try {
-    // Получаем все самолеты из Монго
-    const planes = await Plane.find();
+    const planes = await Tours.find();
+    console.log("Planes:", planes);
 
     res.status(200).json(planes);
-  } catch {
-    res.status(500).json({ message: "Не удалось получить список самолетов, повторите попытку познее" });
+  } catch (error) {
+    console.error("Error fetching tours:", error);
+    res.status(500).json({ message: "Не удалось получить список экскурсий, повторите попытку позднее" });
   }
 };
 
 /**
- * Получить самолет по id
+ * @param {*} req 
+ * @param {*} res 
+ */
+const getBlog = async (req, res) => {
+  try {
+    const blog = await Blog.find();
+    console.log("Blog:", blog);
+
+    res.status(200).json(blog);
+  } catch (error) {
+    console.error("Error fetching blogs:", error);
+    res.status(500).json({ message: "Не удалось получить список блогов, повторите попытку позднее" });
+  }
+};
+
+/**
  * @param {*} req 
  * @param {*} res 
  */
 const getPlane = async (req, res) => {
   try {
-    // Получаем самолет из Монго
-    const plane = await Plane.find({ _id: req.params.id });
+    const plane = await Tours.find({ _id: req.params.id });
 
     res.status(200).json(plane);
-  } catch {
-    res.status(404).json({
-      message: "Самолёт не найден"
-    })
+  } catch (error) {
+    console.error("Error fetching tour:", error);
+    res.status(404).json({ message: "Тур не найден" });
   }
 };
 
 
+/**
+ * @param {*} req 
+ * @param {*} res 
+ */
+const getBlogArticle = async (req, res) => {
+  try {
+    const plane = await Blog.find({ _id: req.params.id });
+
+    res.status(200).json(plane);
+  } catch (error) {
+    console.error("Error fetching tour:", error);
+    res.status(404).json({ message: "Тур не найден" });
+  }
+};
+
 module.exports = {
   getPlanes,
-  getPlane
+  getPlane,
+  getBlog,
+  getBlogArticle
 };

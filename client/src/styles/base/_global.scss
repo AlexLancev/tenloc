@@ -6,6 +6,7 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     scrollbar-gutter: stable;
+    // scroll-behavior: smooth;
 }
 
 body {
@@ -82,7 +83,7 @@ body.lock {
     bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url('../../img/decor-line.png');
+    background-image: url('../../img/decor-line.webp');
     background-position: center center;
     background-repeat: no-repeat;
 }

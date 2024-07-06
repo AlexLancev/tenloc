@@ -1,5 +1,5 @@
 import React from "react";
-import HeroGuideBg from "../../img/guide/guide.png";
+import HeroGuideBg from "../../img/guide/guide.webp";
 
 import "./style.scss";
 
@@ -21,7 +21,7 @@ const HeroGuide = () => {
               вам есть что показать гостям и вы знаете, как это сделать, добро
               пожаловать в наши ряды!
             </p>
-            <a className="hero-guide__link" href="!#">
+            <a className="hero-guide__link" href="#form">
               Стать гидом
             </a>
           </div>

@@ -27,6 +27,8 @@ const PromoPage = () => {
     return <div>Loading...</div>;
   }
 
+  console.log(plane);
+
   const {
     title,
     description,

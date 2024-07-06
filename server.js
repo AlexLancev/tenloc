@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/api/tours", require("./routes/planes"));
+app.use("/api/", require("./routes/planes"));
 
 app.get("/", (req, res) => {
   res.send("Hello world!");

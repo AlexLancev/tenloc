@@ -1,65 +1,44 @@
 import React from "react";
-import bg from "../../img/blog/kaliningrad/item-1.png";
+import { Link } from "react-router-dom";
 import { BsThreeDots } from "react-icons/bs";
+import { getBlog } from "../../store/blog/reducer";
+import { useDispatch, useSelector } from "react-redux";
+import { paths } from "../../paths";
 
 import "./style.scss";
 
 const BlogPreview = () => {
+  const { blogArr, isLoading } = useSelector((state) => state.blog);
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    dispatch(getBlog());
+  }, [dispatch]);
+
   return (
     <ul className="blog-preview__list">
-      <li className="blog-preview__item">
-        <img src={bg} alt="" className="blog-preview__img" />
-        <time className="blog-preview__date" dateTime="2023-11-08T07:14">
-          08.11.2023 07:14
-        </time>
-        <h3 className="blog-preview__heading">
-          Калининград от центра до окраин
-        </h3>
-        <a href="/" className="blog-preview__link">
-          <span className="blog-preview__link-text">Читать</span>
-          <BsThreeDots className="blog-preview__icon" size={10} />
-        </a>
-      </li>
-      <li className="blog-preview__item">
-        <img src={bg} alt="" className="blog-preview__img" />
-        <time className="blog-preview__date" dateTime="2023-11-08T07:14">
-          08.11.2023 07:14
-        </time>
-        <h3 className="blog-preview__heading">
-          Поездка в Турцию как гастрономический тур
-        </h3>
-        <a href="/" className="blog-preview__link">
-          <span className="blog-preview__link-text">Читать</span>
-          <BsThreeDots className="blog-preview__icon" size={10} />
-        </a>
-      </li>
-      <li className="blog-preview__item">
-        <img src={bg} alt="" className="blog-preview__img" />
-        <time className="blog-preview__date" dateTime="2023-11-08T07:14">
-          08.11.2023 07:14
-        </time>
-        <h3 className="blog-preview__heading">
-          Знакомство со Стамбулом: история одной любви
-        </h3>
-        <a href="/" className="blog-preview__link">
-          <span className="blog-preview__link-text">Читать</span>
-          <BsThreeDots className="blog-preview__icon" size={10} />
-        </a>
-      </li>
-      <li className="blog-preview__item">
-        <img src={bg} alt="" className="blog-preview__img" />
-        <time className="blog-preview__date" dateTime="2023-11-08T07:14">
-          08.11.2023 07:14
-        </time>
-        <h3 className="blog-preview__heading">
-          Экскурсия в Выборг из Санкт-Петербурга с посещением замка и парка
-          Монрепо
-        </h3>
-        <a href="/" className="blog-preview__link">
-          <span className="blog-preview__link-text">Читать</span>
-          <BsThreeDots className="blog-preview__icon" size={10} />
-        </a>
-      </li>
+      {blogArr &&
+        blogArr.map((item) => {
+          return (
+            <li className="blog-preview__item">
+              <Link to={`blog/${item._id}`}>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="blog-preview__img"
+                />
+              </Link>
+              <time className="blog-preview__date" dateTime="2023-11-08T07:14">
+                {item.date}
+              </time>
+              <h3 className="blog-preview__heading">{item.title}</h3>
+              <Link to={`blog/${item._id}`} className="blog-preview__link">
+                <span className="blog-preview__link-text">Читать</span>
+                <BsThreeDots className="blog-preview__icon" size={10} />
+              </Link>
+            </li>
+          );
+        })}
     </ul>
   );
 };

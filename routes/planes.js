@@ -1,15 +1,15 @@
 const express = require("express");
-const { getPlanes, getPlane } = require("../controllers/planes");
+const { getPlanes, getPlane, getBlog, getBlogArticle } = require("../controllers/planes");
 const router = express.Router();
 
 const path = require('path');
 
-// @route GET /api/planes
-// @desc Получить все самолёты
-router.get("/", getPlanes);
+router.get("/tours", getPlanes);
 
-// @route GET /api/planes/:id
-// @desc Получить самолёт по id
-router.get("/:id", getPlane);
+router.get("/blog", getBlog);
+
+router.get("/tours/:id", getPlane);
+
+router.get("/blog/:id", getBlogArticle);
 
 module.exports = router;
