@@ -12,12 +12,12 @@ import { Navigation } from "../Navigation";
 import "./style.scss";
 
 const PromoPage = () => {
-  const [isVisibleForm, setIsVisibleForm] = React.useState(false);
-  const [isSlider, setIsSlider] = React.useState(false);
-  const { plane, isLoading } = useSelector((state) => state.plane);
   const dispatch = useDispatch();
   const { id } = useParams();
-
+  const { plane, isLoading } = useSelector((state) => state.plane);
+  const [isVisibleForm, setIsVisibleForm] = React.useState(false);
+  const [isSlider, setIsSlider] = React.useState(false);
+  
   React.useEffect(() => {
     dispatch(getPlane(id));
     setIsSlider(true);
@@ -26,8 +26,6 @@ const PromoPage = () => {
   if (isLoading || !plane) {
     return <div>Loading...</div>;
   }
-
-  console.log(plane);
 
   const {
     title,

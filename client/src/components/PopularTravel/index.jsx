@@ -1,5 +1,7 @@
 import React from "react";
 import { BlogPreview } from "../BlogPreview";
+import { Link } from "react-router-dom";
+import { paths } from "../../paths";
 
 import "./style.scss";
 
@@ -9,11 +11,13 @@ const PopularTravel = () => {
       <div className="container">
         <div className="popular-travel__inner">
           <h2 className="popular-travel__title">Популярные путешествия</h2>
-          {/* <a href="/" className="popular-travel__link">
-            В блог
-          </a> */}
+          <Link to={`${paths.blogPage}`} className="popular-travel__link">
+            Блог
+          </Link>
         </div>
-        <BlogPreview />
+        <div className="popular-travel__content">
+          <BlogPreview />
+        </div>
       </div>
     </section>
   );

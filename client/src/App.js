@@ -7,6 +7,7 @@ import { HomePage } from "./components/HomePage";
 import { PromoPage } from "./components/PromoPage";
 import { Guide } from "./components/Guide";
 import { BlogPage } from "./components/BlogPage";
+import { BlogPagePresentation } from "./components/BlogPagePresentation";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path={`${paths.excursions}`} element={<Excursions />} />
           <Route path={`${paths.excursion}`} element={<PromoPage />} />
           <Route path={`${paths.guide}`} element={<Guide />} />
-          <Route path={`${paths.blogId}`} element={<BlogPage />} />
+          <Route path={`${paths.blogPage}`} element={<BlogPage />} />
+          <Route path={`${paths.blogId}`} element={<BlogPagePresentation />} />
         </Route>
       </Routes>
     </BrowserRouter>

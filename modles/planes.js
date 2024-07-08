@@ -35,6 +35,10 @@ const Tours = mongoose.model("Tours", planeSchema);
 module.exports.Tours = Tours;
 
 const secondSchema = mongoose.Schema({
+  name: {
+    type: { String },
+    required: true,
+  },
   title: {
     type: String,
     required: true,

@@ -88,6 +88,7 @@ const Tours = ({ isSlider = false }) => {
         : arrDirect.map((plane) => renderTourItem(plane))}
     </ul>
   );
+  
 };
 
 export { Tours };

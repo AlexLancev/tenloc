@@ -11,12 +11,14 @@
 
     &__img {
         display: block;
+        height: 250px;
         border-radius: 10px;
         overflow: hidden;
         margin-bottom: 20px;
     }
 
     &__date {
+        display: block;
         color: #585858;
         font-size: 13px;
         margin-bottom: 5px;
