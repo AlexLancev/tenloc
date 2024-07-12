@@ -5,10 +5,12 @@ import "./style.scss";
 
 const BlogPage = () => {
   const [isSlider, setIsSlider] = React.useState(false);
+  window.scrollTo(0, 0);
 
   React.useEffect(() => {
     setIsSlider(false);
   }, [isSlider]);
+  
 
   return (
     <section className="blog">

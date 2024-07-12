@@ -7,7 +7,6 @@ const { Tours, Blog } = require("../modles/planes");
 const getPlanes = async (req, res) => {
   try {
     const planes = await Tours.find();
-    console.log("Planes:", planes);
 
     res.status(200).json(planes);
   } catch (error) {
@@ -23,7 +22,6 @@ const getPlanes = async (req, res) => {
 const getBlog = async (req, res) => {
   try {
     const blog = await Blog.find();
-    console.log("Blog:", blog);
 
     res.status(200).json(blog);
   } catch (error) {

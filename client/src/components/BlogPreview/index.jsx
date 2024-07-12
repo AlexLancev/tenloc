@@ -52,7 +52,7 @@ const BlogPreview = ({isSlider = true}) => {
           {blogItem.date}
         </time>
         <h3 className="blog-preview__heading">{blogItem.title}</h3>
-        <Link to={`blog/${blogItem._id}`} className="blog-preview__link">
+        <Link to={`/blog/${blogItem._id}`} className="blog-preview__link">
           <span className="blog-preview__link-text">Читать</span>
           <BsThreeDots className="blog-preview__icon" size={10} />
         </Link>

@@ -1,4 +1,5 @@
 .presentation {
+    padding: 20px 0 50px;
 
     &__description-box {
         display: flex;
@@ -79,6 +80,10 @@
 
     & .tours__list {
         display: block;
+    }
+
+    & .slick-track {
+        padding-bottom: 20px;
     }
 
     & .tours__item {

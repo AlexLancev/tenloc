@@ -15,7 +15,7 @@ const Navigation = ({ plane }) => {
             Главная страница
           </Link>
         </li>
-        {plane.name && (
+        {plane.name ? (
           <li className="navigation__item">
             <button
               onClick={goBack}
@@ -24,6 +24,14 @@ const Navigation = ({ plane }) => {
             >
               {`Экскурсии в ${plane.name.sity}`}
             </button>
+          </li>
+        ) : (
+          <li className="navigation__item">
+            <Link to={`/blog`}
+              className="navigation__link"
+            >
+              Блог
+            </Link>
           </li>
         )}
         {plane.title && (

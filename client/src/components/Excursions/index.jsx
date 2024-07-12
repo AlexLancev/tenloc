@@ -3,6 +3,8 @@ import { Tours } from "../Tours";
 import { arrDirections } from "../Directions";
 import { useParams } from "react-router-dom";
 
+import "./style.scss";
+
 const Excursions = () => {
   const { direct } = useParams();
   const currentDirect = arrDirections.find((item) => item.direct === direct);

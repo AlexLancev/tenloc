@@ -21,40 +21,37 @@ const Search = () => {
     inputRef.current.focus();
   };
 
-  // const handleClick = () => {
-  //   inputRef.current.focus();
-  //   setSearchValue("");
-  // }
-
-  const debouncedSearch = React.useCallback(
-    debounce((value) => {
-      if (value.length >= 3) {
-        setArrFilteredSearch(
-          planes
-            ? planes.filter((el) =>
-                el.title.toLocaleLowerCase().includes(value.toLocaleLowerCase())
-              )
-            : []
-        );
-      } else {
-        setArrFilteredSearch([]);
-      }
-    }, 700),
-    [planes]
-  );
-
   const handleChange = (event) => {
     const { value } = event.target;
     setSearchValue(value);
     debouncedSearch(value);
   };
 
+  const debouncedSearch = React.useMemo(
+    () =>
+      debounce((value) => {
+        if (value.length >= 3) {
+          setArrFilteredSearch(
+            planes
+              ? planes.filter((el) =>
+                  el.title
+                    .toLocaleLowerCase()
+                    .includes(value.toLocaleLowerCase())
+                )
+              : []
+          );
+        } else {
+          setArrFilteredSearch([]);
+        }
+      }, 700),
+    [planes]
+  );
+
   React.useEffect(() => {
     return () => {
       debouncedSearch.cancel();
     };
   }, [debouncedSearch]);
-
 
   return (
     <div className="search filtered-search">
@@ -80,20 +77,34 @@ const Search = () => {
           <span className="search__text">Найти</span>
         </button>
       </label>
-      {searchValue.trim() && <ul className="filtered-search__list">
-        {arrFilteredSearch.map((item) => {
-          const key = uuidv4();
-          return (
-            <li key={key} className="filtered-search__item">
-              <Link to={`${item._id}`} className="filtered-search__link" title="Перейти на страницу экскурсии">
-              <img className="filtered-search__img" width={100} height={100} src={item.images[0]} alt="" />
-              <b className="filtered-search__head">{item.title}</b>
-              <span className="filtered-search__price">от <b>{item.prices[0]}</b> &#8381;</span>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>}
+      {searchValue.trim() && (
+        <ul className="filtered-search__list">
+          {arrFilteredSearch.map((item) => {
+            const key = uuidv4();
+            return (
+              <li key={key} className="filtered-search__item">
+                <Link
+                  to={`/excursion/${item.name.current}/${item._id}`}
+                  className="filtered-search__link"
+                  title="Перейти на страницу экскурсии"
+                >
+                  <img
+                    className="filtered-search__img"
+                    width={100}
+                    height={100}
+                    src={item.images[0]}
+                    alt={item.title}
+                  />
+                  <b className="filtered-search__head">{item.title}</b>
+                  <span className="filtered-search__price">
+                    от <b>{item.prices[0]}</b> &#8381;
+                  </span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 };

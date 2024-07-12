@@ -6,26 +6,31 @@ import "./style.scss";
 
 const arrDirections = [
   {
+    id: "1",
     direct: "spb",
     descriptions: "Экскурсии в Санкт-Петербурге",
     urlImage: "/img/directions/spb.webp",
   },
   {
+    id: "2",
     direct: "kaliningrad",
     descriptions: "Экскурсии в Калининграде",
     urlImage: "/img/directions/kaliningrad.webp",
   },
   {
+    id: "3",
     direct: "murmansk",
     descriptions: "Экскурсии в Мурманске",
     urlImage: "/img/directions/murmansk.webp",
   },
   {
+    id: "4",
     direct: "stambul",
     descriptions: "Экскурсии в Стамбуле",
     urlImage: "/img/directions/stambul.webp",
   },
   {
+    id: "5",
     direct: "oae",
     descriptions: "Экскурсии в ОАЭ",
     urlImage: "/img/directions/oae.webp",

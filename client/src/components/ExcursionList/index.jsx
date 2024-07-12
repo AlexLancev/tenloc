@@ -1,37 +1,19 @@
 import React from "react";
+import { arrDirections } from "../Directions";
+import { Link } from "react-router-dom";
 
 import "./style.scss";
 
-const ExcursionList = () => {
-  return (
-    <ul className="excursion-list">
-      <li className="excursion-list__item">
-        <a href="/" className="excursion-list__link">
-          Экскурсии в Санкт-Петербурге
-        </a>
+const ExcursionList = () => arrDirections && (
+  <ul className="excursion-list">
+    {arrDirections.map((direction) => (
+      <li className="excursion-list__item" key={direction.id}>
+        <Link to={`/excursions/${direction.direct}`} className="excursion-list__link">
+          {direction.descriptions}
+        </Link>
       </li>
-      <li className="excursion-list__item">
-        <a href="/" className="excursion-list__link">
-          Экскурсии в Калининграде
-        </a>
-      </li>
-      <li className="excursion-list__item">
-        <a href="/" className="excursion-list__link">
-          Экскурсии в Мурманске
-        </a>
-      </li>
-      <li className="excursion-list__item">
-        <a href="/" className="excursion-list__link">
-          Экскурсии в Стамбуле
-        </a>
-      </li>
-      <li className="excursion-list__item">
-        <a href="/" className="excursion-list__link">
-          Экскурсии в ОАЭ
-        </a>
-      </li>
-    </ul>
-  );
-};
+    ))}
+  </ul>
+)
 
 export { ExcursionList };
