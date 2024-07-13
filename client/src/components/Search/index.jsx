@@ -27,25 +27,35 @@ const Search = () => {
     debouncedSearch(value);
   };
 
+  const filteredSearch = React.useCallback(() => {
+    setArrFilteredSearch(
+      planes
+        ? planes.filter((el) =>
+          el.title
+            .toLocaleLowerCase()
+            .includes(searchValue.toLocaleLowerCase())
+        )
+        : []
+    );
+  })
+
   const debouncedSearch = React.useMemo(
     () =>
       debounce((value) => {
         if (value.length >= 3) {
-          setArrFilteredSearch(
-            planes
-              ? planes.filter((el) =>
-                  el.title
-                    .toLocaleLowerCase()
-                    .includes(value.toLocaleLowerCase())
-                )
-              : []
-          );
+          filteredSearch();
         } else {
           setArrFilteredSearch([]);
         }
       }, 700),
-    [planes]
+    [filteredSearch]
   );
+
+  const handleClick = () => {
+    if (searchValue.trim().length) {
+      filteredSearch();
+    }
+  }
 
   React.useEffect(() => {
     return () => {
@@ -72,12 +82,12 @@ const Search = () => {
             </button>
           )}
         </>
-        <button className="search__btn" type="button">
+        <button className="search__btn" type="button" onClick={handleClick}>
           <CiSearch className="search__btn-icon" size={20} />
           <span className="search__text">Найти</span>
         </button>
       </label>
-      {searchValue.trim() && (
+      {arrFilteredSearch.length > 0 && (
         <ul className="filtered-search__list">
           {arrFilteredSearch.map((item) => {
             const key = uuidv4();
@@ -104,7 +114,7 @@ const Search = () => {
             );
           })}
         </ul>
-      )}
+      ) }
     </div>
   );
 };

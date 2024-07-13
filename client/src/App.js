@@ -8,8 +8,16 @@ import { PromoPage } from "./components/PromoPage";
 import { Guide } from "./components/Guide";
 import { BlogPage } from "./components/BlogPage";
 import { BlogPagePresentation } from "./components/BlogPagePresentation";
+import { useDispatch } from "react-redux";
+import { getPlanes } from "./store/planes/planesSlice";
 
 function App() {
+  const dispatch = useDispatch();
+
+  React.useEffect(() => {
+    dispatch(getPlanes());
+  }, [dispatch]);
+
   return (
     <BrowserRouter>
       <Routes>
