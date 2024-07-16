@@ -27,23 +27,21 @@ const Search = () => {
     debouncedSearch(value);
   };
 
-  const filteredSearch = React.useCallback(() => {
+  const filteredSearch = React.useCallback((value) => {
     setArrFilteredSearch(
       planes
         ? planes.filter((el) =>
-          el.title
-            .toLocaleLowerCase()
-            .includes(searchValue.toLocaleLowerCase())
-        )
+            el.title.toLocaleLowerCase().includes(value.toLocaleLowerCase())
+          )
         : []
     );
-  })
+  }, [planes]);
 
   const debouncedSearch = React.useMemo(
     () =>
       debounce((value) => {
         if (value.length >= 3) {
-          filteredSearch();
+          filteredSearch(value);
         } else {
           setArrFilteredSearch([]);
         }
@@ -53,9 +51,15 @@ const Search = () => {
 
   const handleClick = () => {
     if (searchValue.trim().length) {
-      filteredSearch();
+      filteredSearch(searchValue);
     }
-  }
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleClick();
+    }
+  };
 
   React.useEffect(() => {
     return () => {
@@ -74,6 +78,7 @@ const Search = () => {
             type="search"
             placeholder="Выберите направление"
             onChange={handleChange}
+            onKeyDown={handleKeyDown}
             value={searchValue}
           />
           {searchValue && (
@@ -114,7 +119,7 @@ const Search = () => {
             );
           })}
         </ul>
-      ) }
+      )}
     </div>
   );
 };

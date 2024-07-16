@@ -41,6 +41,11 @@
         color: #5d5d5d;
         transition: 0.3s color;
 
+        &.active {
+            color: #000000;
+            cursor: default;
+        }
+
         &:hover {
             color: #000000;
         }

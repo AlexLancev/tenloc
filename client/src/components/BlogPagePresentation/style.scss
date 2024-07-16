@@ -47,6 +47,10 @@
         display: inline-block;
     }
 
+    &__inner .slick-track {
+        gap: 15px;
+    }
+
     & span {}
 
     & b {}

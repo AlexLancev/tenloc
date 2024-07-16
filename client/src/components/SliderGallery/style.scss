@@ -3,9 +3,9 @@
     padding: 35px 0px;
 
     &__img {
-        height: auto;
+        height: 350px;
         max-height: 400px;
-        object-fit: contain;
+        object-fit: cover;
         object-position: center center;
     }
 }
