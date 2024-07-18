@@ -1,5 +1,11 @@
+@import '../../styles/base/variables';
+
 .hero {
     padding: 20px 0 50px;
+
+    @include breakpoint(md) {
+        padding: 20px 0 25px;
+    }
 
     &__inner {
         display: flex;
@@ -12,18 +18,51 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+
+        @include breakpoint(sm) {
+            padding: 80px 30px;
+            overflow: visible;
+        }
+
+        @include breakpoint(xxs) {
+            padding: 80px 22px;
+        }
     }
 
     &__title {
         font-size: 42px;
         font-weight: 900;
         margin-bottom: 50px;
+        text-align: center;
+
+        @include breakpoint(lg) {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        @include breakpoint(md) {
+            font-size: 27px;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 23px;
+            margin-bottom: 30px;
+        } 
     }
 
     &__description {
         font-size: 25px;
+        text-align: center;
         margin-bottom: 30px;
+
+        @include breakpoint(lg) {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        @include breakpoint(md) {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
     }
-}
-.container {
 }

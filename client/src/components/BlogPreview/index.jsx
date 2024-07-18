@@ -11,29 +11,39 @@ import "slick-carousel/slick/slick-theme.css";
 
 import "./style.scss";
 
-const BlogPreview = ({isSlider = true}) => {
+const BlogPreview = ({ isSlider = true }) => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const { blogArr, isLoading } = useSelector((state) => state.blog);
   const arrBlogItem = blogArr
-    ? blogArr.filter(
-        (blogItem) =>  blogItem._id !== id
-      )
+    ? blogArr.filter((blogItem) => blogItem._id !== id)
     : [];
-
+    const settings = {
+      arrows: true,
+      autoplay: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 451,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    };
 
   React.useEffect(() => {
     dispatch(getBlog());
   }, [dispatch]);
-
-  const settings = {
-    arrows: true,
-    autoplay: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  };
 
   const renderBlogItem = (blogItem) => {
     const key = uuidv4();
@@ -74,7 +84,6 @@ const BlogPreview = ({isSlider = true}) => {
         : arrBlogItem.map((blogItem) => renderBlogItem(blogItem))}
     </ul>
   );
-
 };
 
 export { BlogPreview };

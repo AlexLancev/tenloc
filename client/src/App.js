@@ -10,6 +10,7 @@ import { BlogPage } from "./components/BlogPage";
 import { BlogPagePresentation } from "./components/BlogPagePresentation";
 import { useDispatch } from "react-redux";
 import { getPlanes } from "./store/planes/planesSlice";
+import { AboutPage } from "./components/AboutPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ function App() {
           <Route path={`${paths.excursions}`} element={<Excursions />} />
           <Route path={`${paths.excursion}`} element={<PromoPage />} />
           <Route path={`${paths.guide}`} element={<Guide />} />
+          <Route path={`${paths.aboutPage}`} element={<AboutPage />} />
           <Route path={`${paths.blogPage}`} element={<BlogPage />} />
           <Route path={`${paths.blogId}`} element={<BlogPagePresentation />} />
         </Route>

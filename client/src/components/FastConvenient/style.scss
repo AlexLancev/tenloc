@@ -1,0 +1,22 @@
+.fast-convenient {
+    margin-top: -50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__inner {
+        width: 50%;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    &__text:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

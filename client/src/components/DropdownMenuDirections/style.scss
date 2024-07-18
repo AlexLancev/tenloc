@@ -1,3 +1,5 @@
+@import '../../styles/base/variables';
+
 .drop-directions {
     position: relative;
 
@@ -9,11 +11,16 @@
         background-color: #ffd600;
         border-radius: 20px;
         color: #000000;
+
+        @include breakpoint(md) {
+            font-size: 14px;
+            padding: 10px 12px;
+        }
+
+        @include breakpoint(xxs) {
+            font-size: 12px;
+        }
     }
-
-    &__head {}
-
-    &__icon {}
 
     &__list {
         position: absolute;
@@ -25,6 +32,14 @@
         width: 300px;
         padding: 10px;
         border-radius: 8px;
+
+        @include breakpoint(md) {
+            width: 230px;
+        }
+
+        @include breakpoint(xxs) {
+            width: 200px;
+        }
     }
 
     &__item {
@@ -33,6 +48,10 @@
 
         &:last-child {
             border-bottom: none;
+        }
+
+        @include breakpoint(md) {
+            padding: 5px 0;
         }
     }
 
@@ -48,6 +67,10 @@
 
         &:hover {
             color: #000000;
+        }
+
+        @include breakpoint(md) {
+            font-size: 14px;
         }
     }
 }

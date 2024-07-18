@@ -1,0 +1,50 @@
+.how-work {
+    padding: 70px 0 100px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 747px 625px;
+
+    &__title {
+        margin-bottom: 40px;
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    &__list {
+        padding-left: 690px;
+        counter-reset: section;
+        counter-increment: my-counter;
+    }
+
+    &__item {
+    position: relative;
+    padding-left: 90px;
+    
+        &:not(:last-child) {
+            margin-bottom: 45px;
+        }
+
+        &::after {
+            content: "Шаг " counter(section);
+            counter-increment: section;
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            font-size: 13px;
+            border-radius: 100px;
+            background: #ffd600;
+            padding: 5px 15px;
+        }
+    }
+
+    &__head {
+        display: inline-block;
+        margin-bottom: 14px;
+        font-size: 18px;
+    }
+
+    &__text {
+        font-size: 15px;
+    }
+}

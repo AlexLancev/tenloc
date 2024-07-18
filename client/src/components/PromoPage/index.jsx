@@ -24,7 +24,7 @@ const PromoPage = () => {
   }, [dispatch, id]);
   
   if (isLoading || !plane) {
-    return <div>Loading...</div>;
+    return;
   }
 
   const {

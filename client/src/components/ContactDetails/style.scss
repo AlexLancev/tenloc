@@ -1,3 +1,5 @@
+@import '../../styles/base/variables';
+
 .contact-details {
 
     &__item:not(:last-child) {
@@ -13,6 +15,10 @@
 
         &:hover {
             color: #000000;
+        }
+
+        @include breakpoint(md) {
+            font-size: 14px;
         }
     }
 

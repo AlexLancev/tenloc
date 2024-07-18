@@ -1,5 +1,11 @@
+@import '../../styles/base/variables';
+
 .popular-travel {
     padding: 50px 0;
+
+    @include breakpoint(lg) {
+        padding: 25px 0;
+    }
 
     &__inner {
         display: flex;
@@ -9,11 +15,27 @@
         column-gap: 30px;
         row-gap: 10px;
         margin-bottom: 50px;
+
+        @include breakpoint(md) {
+            margin-bottom: 25px;
+        }
     }
 
     &__title {
         font-size: 40px;
         font-weight: 700;
+
+        @include breakpoint(lg) {
+            font-size: 32px;
+        }
+
+        @include breakpoint(md) {
+            font-size: 27px;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 23px;
+        }
     }
 
     &__link {
@@ -30,7 +52,8 @@
         padding: 40px 0 10px;
     }
 
-    & .slick-slide {
-        margin-right: 10px;
-    }
+}
+
+.slick-slide {
+    margin-right: 10px;
 }

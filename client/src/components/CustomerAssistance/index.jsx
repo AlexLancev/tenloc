@@ -1,6 +1,7 @@
 import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { ContactWidget } from "../ContactWidget";
+import { GoQuestion } from "react-icons/go";
 
 import "./style.scss";
 
@@ -15,6 +16,7 @@ const CustomerAssistance = () => {
           className={`cust-assist__icon arrow-icon ${isVisible ? "arrow-icon--visible" : ""}`}
           size={20}
         />
+        <GoQuestion className="cust-assist__question" />
       </button>
       {isVisible && <ContactWidget />}
     </div>

@@ -1,3 +1,5 @@
+@import '../../styles/base/variables';
+
 .contact-widget {
     position: absolute;
     top: 30px;
@@ -8,8 +10,17 @@
     border: 1px solid #ececec;
     border-radius: 8px;
 
+    @include breakpoint(md) {
+        top: -175px;
+        left: -218px;
+    }
+
     &__opening-hours {
         display: block;
         margin-bottom: 15px;
+
+        @include breakpoint(md) {
+            font-size: 14px;
+        }
     }
 }

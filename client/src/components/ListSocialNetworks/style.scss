@@ -1,3 +1,5 @@
+@import '../../styles/base/variables';
+
 .social-networks {
 
     &__list {
@@ -23,6 +25,15 @@
         &:hover {
             box-shadow: 0px 4px 8px rgba($color: #333333, $alpha: 0.5);
         }
+
+        @include breakpoint(md) {
+            font-size: 14px;
+            padding: 8px 15px;
+        }
+
+        @include breakpoint(sm) {
+            gap: 0;
+        }
     }
 
     &__link--whatsapp {
@@ -37,7 +48,11 @@
         fill: #ffffff;
     }
 
-    &__text {}
+    &__text {
+        @include breakpoint(sm) {
+            font-size: 0;
+        }
+    }
 
 }
 

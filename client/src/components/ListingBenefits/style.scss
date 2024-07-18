@@ -1,0 +1,38 @@
+.listing-benefits {
+    padding: 70px 0;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__item {
+        width: 30%;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(226, 226, 226);
+    }
+
+    &__icon {
+        width: 27px;
+        height: 27px;
+    }
+
+    &__head {
+        vertical-align: middle;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__text {
+        font-size: 15px;
+        color: rgb(103, 103, 103);
+    }
+}

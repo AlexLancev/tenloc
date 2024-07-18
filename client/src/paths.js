@@ -4,5 +4,6 @@ export const paths = {
   excursion: "/excursion/:direct/:id",
   guide: "/guide",
   blogPage: "/blog",
+  aboutPage: "/about",
   blogId: "/blog/:id",
 };

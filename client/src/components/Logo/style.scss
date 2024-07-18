@@ -1,3 +1,15 @@
+@import '../../styles/base/variables';
+
 .logo {
-    &__img {}
+
+    &.active {
+        cursor: default;
+    }
+
+    &__img {
+
+        @include breakpoint(md) {
+            width: 100px;
+        }
+    }
 }

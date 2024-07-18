@@ -1,3 +1,5 @@
+@import '../../styles/base/variables';
+
 .excursion-list {
     display: flex;
     align-items: center;
@@ -7,7 +9,13 @@
     width: 100%;
     max-width: 720px;
 
-    &__item {
+    @include breakpoint(lg) {
+        gap: 10px;
+    }
+
+    @include breakpoint(sm) {
+        visibility: hidden;
+        height: 0;
     }
 
     &__link {
@@ -22,6 +30,11 @@
 
         &:hover {
             color: #000000;
+        }
+
+        @include breakpoint(lg) {
+            font-size: 14px;
+            padding: 5px 10px;
         }
     }
 }

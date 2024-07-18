@@ -1,19 +1,25 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./style.scss";
 
-const Menu = () => {
+const Menu = ({ isOpen }) => {
   return (
-    <nav className="menu">
+    <nav className={`menu ${isOpen ? "active" : ""}`}>
       <ul className="menu__list">
         <li className="menu__item">
-          <a href="/" className="menu__link">
+          <NavLink to="/about" className="menu__link">
             О сервисе
-          </a>
+          </NavLink>
         </li>
         <li className="menu__item">
-          <a href="/" className="menu__link">
+          <NavLink to="/blog" className="menu__link">
             Блог
-          </a>
+          </NavLink>
+        </li>
+        <li className="menu__item">
+          <NavLink to="/guide" className="menu__link">
+            Стать гидом
+          </NavLink>
         </li>
       </ul>
     </nav>

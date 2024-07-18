@@ -55,10 +55,6 @@ const Directions = () => {
                   className="directions__link"
                 >
                   <h3 className="directions__heading">{item.descriptions}</h3>
-                  <b className="directions__number-excursions">
-                    <i className="directions__quantity"></i>
-                    экскурсии
-                  </b>
                 </Link>
               </li>
             );

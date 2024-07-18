@@ -1,12 +1,9 @@
 import React from "react";
-import { Menu } from "../Menu";
 import { ContactsDetails } from "../ContactDetails";
 import { Logo } from "../Logo";
 import { ListSocialNetworks } from "../ListSocialNetworks";
 
 import "./style.scss";
-import { Link } from "react-router-dom";
-import { paths } from "../../paths";
 
 const Footer = () => {
   return (
@@ -19,22 +16,6 @@ const Footer = () => {
               <span className="footer__social-head">Мы в соц. сетях</span>
               <ListSocialNetworks />
             </div>
-          </div>
-
-          <div className="footer__column">
-            <h3 className="footer__heading">Сервис</h3>
-            <Menu />
-          </div>
-
-          <div className="footer__column">
-            <h3 className="footer__heading">Гидам</h3>
-            <ul className="footer__list">
-              <li className="footer__item">
-                <Link to={paths.guide} className="footer__link">
-                  Стать гидом
-                </Link>
-              </li>
-            </ul>
           </div>
 
           <div className="footer__column">
@@ -68,7 +49,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="footer__column">
+          <div className="footer__column footer__column--contacts">
             <h3 className="footer__heading">Поддержка клиентов</h3>
             <ContactsDetails />
           </div>

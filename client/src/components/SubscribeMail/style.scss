@@ -1,14 +1,40 @@
+@import '../../styles/base/variables';
+
 .subscribe-mail {
     padding: 50px 0;
     
+    @include breakpoint(md) {
+        padding: 25px 0 50px;
+    }
 
     &__inner {
         padding: 100px 50px;
+        padding-right: 45%;
         border-radius: 50px;
         overflow: hidden;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+
+        @include breakpoint(lg) {
+            padding: 60px 50px;
+            padding-right: 45%;
+        }
+
+        @include breakpoint(md) {
+            padding: 50px;
+            padding-right: 45%;
+        }
+
+        @include breakpoint(sm) {
+            padding: 40px;
+            padding-right: 45%;
+        }
+
+        @include breakpoint(xxs) {
+            padding: 30px;
+            padding-right: 38%;
+        }
     }
 
     &__box {
@@ -17,23 +43,51 @@
     }
 
     &__title {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 700;
         line-height: 1.2;
         margin-bottom: 10px;
+
+        @include breakpoint(lg) {
+            font-size: 32px;
+        }
+
+        @include breakpoint(md) {
+            font-size: 27px;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 18px;
+        }
     }
 
     &__text {
         font-size: 20px;
         margin-bottom: 30px;
         color: #616161;
+
+        @include breakpoint(lg) {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        @include breakpoint(lg) {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
     }
 
-    &__social-networks {}
+    &__social-networks {
+        
+    }
 
     &__policy {
         font-size: 14px;
         color: #616161;
+        
+        @include breakpoint(md) {
+            font-size: 9px;
+        }
     }
 
     &__policy-link {
@@ -58,5 +112,13 @@
 
     & .social-networks {
         margin-bottom: 100px;
+
+        @include breakpoint(lg) {
+            margin-bottom: 50px;
+        }
+
+        @include breakpoint(sm) {
+            margin-bottom: 30px;
+        }
     }
 }

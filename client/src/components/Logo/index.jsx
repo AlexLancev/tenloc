@@ -1,9 +1,12 @@
 import React from "react";
 import LogoImg from "../../img/logo.webp";
+import { NavLink } from "react-router-dom";
+
+import "./style.scss";
 
 const Logo = () => {
   return (
-    <a href="/" className="logo">
+    <NavLink to="/" className="logo">
       <img
         className="logo__img"
         src={LogoImg}
@@ -12,7 +15,7 @@ const Logo = () => {
         alt="Логотип компании Tenloc"
         title="Логотип компании Tenloc"
       />
-    </a>
+    </NavLink>
   );
 };
 

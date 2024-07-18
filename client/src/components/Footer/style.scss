@@ -1,3 +1,5 @@
+@import '../../styles/base/variables';
+
 .footer {
     background-color: #fbfbfb;
     padding-bottom: 20px;
@@ -17,7 +19,13 @@
         margin-bottom: 10px;
     }
 
-    &__column {}
+    &__column {
+        &--contacts {
+            @include breakpoint(md) {
+                display: none;
+            }
+        }
+    }
 
     &__heading {
         font-size: 18px;

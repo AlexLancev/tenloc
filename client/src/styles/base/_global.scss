@@ -1,12 +1,12 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+@import '../base/variables';
 
 html {
     height: 100%;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     scrollbar-gutter: stable;
-    // scroll-behavior: smooth;
 }
 
 body {
@@ -55,7 +55,6 @@ body.lock {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
-    // border: 1px solid green;
 }
 
 .visually-hidden {
@@ -84,13 +83,22 @@ body.lock {
     left: 50%;
     transform: translateX(-50%);
     background-image: url('../../img/decor-line.webp');
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
+
+    @include breakpoint(md) {
+        width: 150px;
+    }
+
+    @include breakpoint(sm) {
+        width: 120px;
+        height: 32px;
+        bottom: -30px;
+    }
 }
 
 .slick-arrow {
-    // position: absolute;
-    // top: 0;
     background-color: transparent;
     z-index: 9999;
 }

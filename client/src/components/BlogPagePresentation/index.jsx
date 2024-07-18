@@ -17,7 +17,7 @@ const BlogPagePresentation = () => {
   }, [dispatch, id]);
 
   if (isLoading || !blogArticleArr) {
-    return <div>Loading...</div>;
+    return;
   }
 
   const { description } = blogArticleArr;
