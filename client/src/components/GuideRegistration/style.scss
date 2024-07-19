@@ -1,8 +1,9 @@
+@import '../../styles/base/variables';
+
 .guide-registration {
     padding: 50px 0;
 
-    &__form {
-    }
+    &__form {}
 }
 
 .guide-form {
@@ -12,8 +13,10 @@
 
     &__fieldset {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 15px;
+        width: 100%;
 
         &:not(:last-child) {
             margin-bottom: 15px;
@@ -24,13 +27,25 @@
         font-size: 30px;
         font-weight: 700;
         margin-bottom: 55px;
+
+        @include breakpoint(lg) {
+            margin-bottom: 30px;
+        }
     }
 
     &__label {
-        width: 385px;
+        width: 48%;
+
+        @include breakpoint(xxs) {
+            width: 100%;
+        }
 
         &--ex {
-            width: 100%;
+            width: 98%;
+
+            @include breakpoint(xxs) {
+                width: 100%;
+            }
         }
     }
 
@@ -43,6 +58,10 @@
         background-color: #f1f1f1;
         padding: 15px 25px;
         font-size: 15px;
+
+        @include breakpoint(sm) {
+            font-size: 12px;
+        }
     }
 
     &__textarea {
@@ -85,5 +104,10 @@
         color: #505050;
         margin-left: 5px;
         text-decoration: underline;
+    }
+
+    &__error {
+        font-size: 14px;
+        color: red;
     }
 }

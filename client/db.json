@@ -1175,7 +1175,7 @@
             "banSize": "Размер группы от 1 до 4 человек",
             "cancelReservation": "Бесплатная отмена за 48 часов до даты экскурсии"
         },
-        "prices": [],
+        "prices": [6000],
         "images": [
             "img/tours/murmansk/tour-8/item-1.webp",
             "img/tours/murmansk/tour-8/item-2.webp",

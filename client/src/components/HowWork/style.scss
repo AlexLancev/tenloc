@@ -1,27 +1,43 @@
+@import '../../styles/base/variables';
+
 .how-work {
     padding: 70px 0 100px;
-    background-position: center left;
+    background-position: left 50%;
     background-repeat: no-repeat;
-    background-size: 747px 625px;
+    background-size: 597px 475px;
+
+    @include breakpoint(lg) {
+        background-size: 0;
+        padding: 25px 0 100px;
+    }
 
     &__title {
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         font-size: 42px;
         font-weight: 700;
+
+        @include breakpoint(lg) {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
     }
 
     &__list {
-        padding-left: 690px;
+        padding-left: 500px;
         counter-reset: section;
         counter-increment: my-counter;
+
+        @include breakpoint(lg) {
+            padding-left: 0;
+        }
     }
 
     &__item {
-    position: relative;
-    padding-left: 90px;
-    
+        position: relative;
+        padding-left: 90px;
+
         &:not(:last-child) {
-            margin-bottom: 45px;
+            margin-bottom: 25px;
         }
 
         &::after {
@@ -35,6 +51,15 @@
             border-radius: 100px;
             background: #ffd600;
             padding: 5px 15px;
+
+            @include breakpoint(sm) {
+                padding: 5px 10px;
+                font-size: 11px;
+            }
+        }
+
+        @include breakpoint(sm) {
+            padding-left: 65px;
         }
     }
 

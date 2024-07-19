@@ -1,3 +1,5 @@
+@import '../../styles/base/variables';
+
 .terms-cooperation {
     padding: 50px 0;
     background-color: #f4f4f4;
@@ -6,12 +8,20 @@
         margin-bottom: 45px;
         font-size: 42px;
         font-weight: 700;
+
+        @include breakpoint(lg) {
+            font-size: 32px;
+        }
     }
 
     &__inner {
         display: flex;
         justify-content: space-between;
         gap: 50px;
+
+        @include breakpoint(lg) {
+            flex-direction: column;
+        }
     }
 
     &__list {
@@ -57,6 +67,14 @@
         border-radius: 20px;
         padding: 54px 103px 58px 51px;
         font-size: 18px;
+
+        @include breakpoint(md) {
+            padding: 50px;
+        }
+
+        @include breakpoint(sm) {
+            padding: 30px;
+        }
     }
 
     &__heading {

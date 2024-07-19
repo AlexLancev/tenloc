@@ -1,3 +1,5 @@
+@import '../../styles/base/variables';
+
 .hero-guide {
     position: relative;
     z-index: 1;
@@ -7,6 +9,10 @@
     overflow: hidden;
     background-color: rgb(255, 255, 255);
 
+    @include breakpoint(lg) {
+        padding: 25px 0 70px;
+    }
+
     &__inner {
         background-size: cover;
         background-position: center center;
@@ -14,6 +20,21 @@
         border-radius: 50px;
         overflow: hidden;
         padding: 100px;
+        padding-right: 300px;
+
+        @include breakpoint(lg) {
+            padding: 50px;
+            padding-right: 300px;
+        }
+
+        @include breakpoint(md) {
+            padding: 40px;
+            padding-right: 175px;
+        }
+
+        @include breakpoint(sm) {
+            padding: 30px;
+        }
     }
 
     &__box {
@@ -26,13 +47,23 @@
         font-weight: 900;
         line-height: 1;
         margin-bottom: 70px;
+
+        @include breakpoint(lg) {
+            font-size: 32px;
+            margin-bottom: 40px;
+
+        }
     }
-    
+
     &__text {
         font-size: 20px;
         line-height: 1.5;
         color: #3c3c3c;
         margin-bottom: 40px;
+
+        @include breakpoint(lg) {
+            font-size: 16px;
+        }
     }
 
     &__link {
@@ -48,6 +79,11 @@
 
         &:hover {
             background-color: #f2ca00;
+        }
+
+        @include breakpoint(lg) {
+            width: 170px;
+            padding: 12px 25px;
         }
     }
 }

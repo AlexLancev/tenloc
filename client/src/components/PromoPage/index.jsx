@@ -53,12 +53,12 @@ const PromoPage = () => {
         <SliderGallery arrImages={images} />
         <TourInformation groupMembers={groupMembers} />
         <div className="presentation__description-box">
+          <BookExcursion arrBookExcursion={bookExcursion} setIsVisibleForm={setIsVisibleForm} />
+          {isVisibleForm && <PopupSubmitForm setIsVisibleForm={setIsVisibleForm} />}
           <div
             className="presentation__description"
             dangerouslySetInnerHTML={{ __html: description }}
           />
-          <BookExcursion arrBookExcursion={bookExcursion} setIsVisibleForm={setIsVisibleForm} />
-          {isVisibleForm && <PopupSubmitForm setIsVisibleForm={setIsVisibleForm} />}
         </div>
         <Tours isSlider={isSlider} />
       </div>

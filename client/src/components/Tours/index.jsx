@@ -34,6 +34,20 @@ const Tours = ({ isSlider = false }) => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 577,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   };
 
   window.scrollTo(0, 0);
@@ -63,7 +77,7 @@ const Tours = ({ isSlider = false }) => {
                 {`от ${plane.prices[0]}`} &#8381;
               </span>
               <i className="prices-reservation__quantity">
-                {` /за ${plane.typeExcursion.personally} `}
+                {` / за ${plane.typeExcursion.personally} `}
               </i>
             </div>
             <Link to={`/excursion/${direct}/${plane._id}`} className="tours__link">

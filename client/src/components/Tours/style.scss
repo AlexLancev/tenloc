@@ -2,7 +2,7 @@
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
         gap: 25px;
     }
 

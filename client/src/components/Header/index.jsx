@@ -16,7 +16,7 @@ const Header = () => {
         <div className="header__inner">
           <Logo />
           <DropdownMenuDirections />
-          <Menu isOpen={isOpen} />
+          <Menu setIsOpen={setIsOpen} isOpen={isOpen} />
           <CustomerAssistance />
           <MenuBtn setIsOpen={setIsOpen} isOpen={isOpen} />
         </div>

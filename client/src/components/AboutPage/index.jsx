@@ -13,7 +13,9 @@ const AboutPage = () => {
       <FastConvenient />
       <ListingBenefits />
       <HowWork />
-      <BlogPreview />
+      <div className="container">
+        <BlogPreview />
+      </div>
       <SubscribeMail />
     </>
   );

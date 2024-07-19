@@ -1,6 +1,12 @@
+@import '../../styles/base/variables';
+
 .slider-gallery {
     position: relative;
     padding: 35px 0px;
+
+    @include breakpoint(md) {
+        padding-bottom: 10px;
+    }
 
     &__img {
         height: 350px;

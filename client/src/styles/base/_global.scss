@@ -136,6 +136,7 @@ body.lock {
 
 .slick-track {
     display: flex !important;
+    gap: 10px;
 }
 
 .slick-slide {
@@ -144,4 +145,8 @@ body.lock {
 
 .slick-slide>div {
     height: 100%;
+}
+
+.presentation .slick-track {
+    gap: 0;
 }

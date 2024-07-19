@@ -10,10 +10,25 @@ const SliderGallery = ({ arrImages }) => {
   const settings = {
     arrow: true,
     infinite: true,
-    // autoplay: true,
-    speed: 500,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 5000,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   };
 
   return (

@@ -12,12 +12,10 @@ const BookExcursion = ({ arrBookExcursion, setIsVisibleForm }) => {
   const dispatch = useDispatch();
   const today = dayjs().format("DD-MM-YYYY");
 
-  // Состояние для хранения количеств и выбранной даты
   const [quantities, setQuantities] = useState(arrBookExcursion.map(() => 0));
   const [total, setTotal] = useState(0);
   const [selectedDate, setSelectedDate] = useState(null);
 
-  // Обработчик изменения количества
   const handleCalc = (index, increment) => {
     setQuantities((prevQuantities) => {
       const newQuantities = [...prevQuantities];
@@ -35,7 +33,6 @@ const BookExcursion = ({ arrBookExcursion, setIsVisibleForm }) => {
   const onSubmit = (e) => {
     e.preventDefault();
   
-    // Формирование объекта с данными
     const bookingDetails = {
       date: selectedDate ? selectedDate.format("DD-MM-YYYY") : today,
       excursions: arrBookExcursion.reduce((accumulator, item, index) => {
@@ -52,10 +49,8 @@ const BookExcursion = ({ arrBookExcursion, setIsVisibleForm }) => {
       total,
     };
     
-    // Передача данных в useDispatch
     dispatch(orderCurrent(bookingDetails));
   
-    // Сброс состояния
     setQuantities(arrBookExcursion.map(() => 0));
     setTotal(0);
     setSelectedDate(null);
@@ -91,6 +86,7 @@ const BookExcursion = ({ arrBookExcursion, setIsVisibleForm }) => {
                         readOnly
                         value={quantities[index]}
                         min="0"
+                        max="2"
                       />
                       <MyBtnMinus handleCalc={() => handleCalc(index, -1)} />
                     </div>
@@ -101,7 +97,7 @@ const BookExcursion = ({ arrBookExcursion, setIsVisibleForm }) => {
         </tbody>
       </table>
       <div className="book-excursion__box">
-        <span className="book-excursion__total">Итого:</span>
+        <span className="book-excursion__total">Итого: </span>
         <b className="book-excursion__price">{total}</b>
       </div>
       <button
