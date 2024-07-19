@@ -80,7 +80,7 @@ const Tours = ({ isSlider = false }) => {
                 {` / за ${plane.typeExcursion.personally} `}
               </i>
             </div>
-            <Link to={`/excursion/${direct}/${plane._id}`} className="tours__link">
+            <Link to={`/tenloc/excursion/${direct}/${plane._id}`} className="tours__link">
               <LuPlus className="tours__link-icon" size={20} />
             </Link>
           </div>
