@@ -17,12 +17,13 @@
   "bugs": {
     "url": "https://github.com/AlexLancev/tenloc/issues"
   },
-  "homepage": "https://github.com/AlexLancev/tenloc#readme",
+  "homepage": "https://alexlancev.github.io/tenloc",
   "description": "",
   "dependencies": {
     "concurrently": "^8.2.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "gh-pages": "^6.1.1",
     "mongoose": "^8.4.3",
     "multer": "^1.4.5-lts.1",
     "path": "^0.12.7",
