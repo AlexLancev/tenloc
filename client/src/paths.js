@@ -1,9 +1,9 @@
 export const paths = {
-  home: "/tenloc",
-  excursions: "/tenloc/excursions/:direct",
-  excursion: "/tenloc/excursion/:direct/:id",
-  guide: "/tenloc/guide",
-  blogPage: "/tenloc/blog",
-  aboutPage: "/tenloc/about",
-  blogId: "/tenloc/blog/:id",
+  home: "/",
+  excursions: "/excursions/:direct",
+  excursion: "/excursion/:direct/:id",
+  guide: "/guide",
+  blogPage: "/blog",
+  aboutPage: "/about",
+  blogId: "/blog/:id",
 };
