@@ -8,38 +8,39 @@ import { ToursLoader } from "../Loader/toursLoader";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import "./style.scss";
 
 const BlogPreview = ({ isSlider = true }) => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const { blogArr, isLoading } = useSelector((state) => state.blog);
-  const arrBlogItem = blogArr.length > 0
+
+  const arrBlogItem = Array.isArray(blogArr)
     ? blogArr.filter((blogItem) => blogItem._id !== id)
     : [];
-    const settings = {
-      arrows: true,
-      autoplay: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 769,
-          settings: {
-            slidesToShow: 2
-          }
+
+  const settings = {
+    arrows: true,
+    autoplay: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
         },
-        {
-          breakpoint: 451,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-    };
+      },
+      {
+        breakpoint: 451,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   React.useEffect(() => {
     dispatch(getBlog());
@@ -62,7 +63,10 @@ const BlogPreview = ({ isSlider = true }) => {
           {blogItem.date}
         </time>
         <h3 className="blog-preview__heading">{blogItem.title}</h3>
-        <Link to={`/tenloc/blog/${blogItem._id}`} className="blog-preview__link">
+        <Link
+          to={`/tenloc/blog/${blogItem._id}`}
+          className="blog-preview__link"
+        >
           <span className="blog-preview__link-text">Читать</span>
           <BsThreeDots className="blog-preview__icon" size={10} />
         </Link>
@@ -72,12 +76,12 @@ const BlogPreview = ({ isSlider = true }) => {
 
   return isSlider ? (
     <Slider {...settings} className="blog-preview__list">
-      {arrBlogItem && arrBlogItem.map((blogItem) => renderBlogItem(blogItem))}
+      {arrBlogItem.map((blogItem) => renderBlogItem(blogItem))}
     </Slider>
   ) : (
     <ul className="blog-preview__list">
-      {isLoading || !arrBlogItem
-        ? Array.from({ length: arrBlogItem && arrBlogItem.length }).map(() => {
+      {isLoading
+        ? Array.from({ length: arrBlogItem.length }).map(() => {
             const key = uuidv4();
             return <ToursLoader key={key} />;
           })
