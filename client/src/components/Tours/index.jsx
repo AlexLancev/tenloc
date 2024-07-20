@@ -57,7 +57,7 @@ const Tours = ({ isSlider = false }) => {
     return (
       <li className="tours__item" key={key}>
         <Link
-          to={`/excursion/${direct}/${plane._id}`}
+          to={`/tenloc/excursion/${direct}/${plane._id}`}
           className="tours__img-link"
         >
           <img

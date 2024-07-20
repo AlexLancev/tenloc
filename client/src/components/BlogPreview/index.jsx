@@ -15,7 +15,7 @@ const BlogPreview = ({ isSlider = true }) => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const { blogArr, isLoading } = useSelector((state) => state.blog);
-  const arrBlogItem = blogArr.length > 0
+  const arrBlogItem = blogArr
     ? blogArr.filter((blogItem) => blogItem._id !== id)
     : [];
     const settings = {
