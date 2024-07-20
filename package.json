@@ -8,6 +8,9 @@
   "name": "server",
   "version": "1.0.0",
   "main": "server.js",
+  "engines": {
+    "node": "v20.5.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexLancev/tenloc.git"
