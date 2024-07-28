@@ -21,17 +21,17 @@ const Menu = ({ isOpen, setIsOpen }) => {
     <nav className={`menu ${isOpen ? "active" : ""}`} ref={navRef}>
       <ul className="menu__list">
         <li className="menu__item">
-          <NavLink to="/tenloc/about" className="menu__link">
+          <NavLink to="/about" className="menu__link">
             О сервисе
           </NavLink>
         </li>
         <li className="menu__item">
-          <NavLink to="/tenloc/blog" className="menu__link">
+          <NavLink to="/blog" className="menu__link">
             Блог
           </NavLink>
         </li>
         <li className="menu__item">
-          <NavLink to="/tenloc/guide" className="menu__link">
+          <NavLink to="/guide" className="menu__link">
             Стать гидом
           </NavLink>
         </li>

@@ -1,36 +1,62 @@
 {
-  "scripts": {
-    "start": "node server",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
-  },
-  "name": "server",
-  "version": "1.0.0",
-  "main": "server.js",
-  "engines": {
-    "node": "v20.5.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexLancev/tenloc.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlexLancev/tenloc/issues"
-  },
-  "homepage": "https://alexlancev.github.io/tenloc",
-  "description": "",
+  "name": "tenloc",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "concurrently": "^8.2.2",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "gh-pages": "^6.1.1",
-    "mongoose": "^8.4.3",
-    "multer": "^1.4.5-lts.1",
-    "path": "^0.12.7",
-    "react-input-mask": "^2.0.4"
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@hookform/resolvers": "^3.6.0",
+    "@mui/lab": "^5.0.0-alpha.170",
+    "@mui/material": "^5.15.20",
+    "@mui/x-date-pickers": "^7.7.1",
+    "@reduxjs/toolkit": "^2.2.5",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "axios": "^1.7.2",
+    "dayjs": "^1.11.11",
+    "lodash.debounce": "^4.0.8",
+    "react": "^18.3.1",
+    "react-content-loader": "^7.0.2",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.52.0",
+    "react-icons": "^5.2.1",
+    "react-imask": "^7.6.1",
+    "react-loading-skeleton": "^3.4.0",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.24.0",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.30.2",
+    "sass": "^1.77.6",
+    "slick-carousel": "^1.8.1",
+    "uuid": "^10.0.0",
+    "web-vitals": "^4.2.0",
+    "yup": "^1.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
     "nodemon": "^3.1.4"

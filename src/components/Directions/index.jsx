@@ -51,7 +51,7 @@ const Directions = () => {
                 style={{ backgroundImage: `url(${item.urlImage})` }}
               >
                 <Link
-                  to={`/tenloc/excursions/${item.direct}/`}
+                  to={`/excursions/${item.direct}/`}
                   className="directions__link"
                 >
                   <h3 className="directions__heading">{item.descriptions}</h3>
