@@ -67,6 +67,8 @@ const Search = () => {
     };
   }, [debouncedSearch]);
 
+  console.log(arrFilteredSearch, searchValue);
+
   return (
     <div className="search filtered-search">
       <label className="search__label">

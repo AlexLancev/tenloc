@@ -37,7 +37,7 @@ const GuideRegistration = () => {
 
   useEffect(() => {
     Object.keys(formData).forEach((field) => register(field));
-  }, [register]);
+  }, [formData, register]);
 
   const handleFieldChange = (field, value) => {
     setFormData((prev) => ({

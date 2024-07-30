@@ -8,6 +8,7 @@ import { BookExcursion } from "../BookExcursion";
 import { PopupSubmitForm } from "../PopupSubmitForm";
 import { Tours } from "../Tours";
 import { Navigation } from "../Navigation";
+import { ApplicationCompleted } from "../ApplicationCompleted";
 
 import "./style.scss";
 
@@ -17,6 +18,7 @@ const PromoPage = () => {
   const { plane, isLoading } = useSelector((state) => state.plane);
   const [isVisibleForm, setIsVisibleForm] = React.useState(false);
   const [isSlider, setIsSlider] = React.useState(false);
+  const [isSsuccessfully, setIsSuccessfully] = React.useState(false);
   
   React.useEffect(() => {
     dispatch(getPlane(id));
@@ -54,7 +56,8 @@ const PromoPage = () => {
         <TourInformation groupMembers={groupMembers} />
         <div className="presentation__description-box">
           <BookExcursion arrBookExcursion={bookExcursion} setIsVisibleForm={setIsVisibleForm} />
-          {isVisibleForm && <PopupSubmitForm setIsVisibleForm={setIsVisibleForm} />}
+          {isVisibleForm && <PopupSubmitForm setIsSuccessfully={setIsSuccessfully} setIsVisibleForm={setIsVisibleForm} />}
+          {(isSsuccessfully && !isVisibleForm) && <ApplicationCompleted setIsSuccessfully={setIsSuccessfully} />}
           <div
             className="presentation__description"
             dangerouslySetInnerHTML={{ __html: description }}

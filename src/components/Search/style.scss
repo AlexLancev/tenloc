@@ -137,6 +137,10 @@
             width: 70px;
             height: 70px;
         }
+
+        @include breakpoint(xxs) {
+            display: none;
+        }
     }
 
     &__head {

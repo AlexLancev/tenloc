@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__bottom">
-          <b className="footer__copy">&copy; 2023 «Tenloc».</b>
+          <b className="footer__copy">&copy; {new Date().getFullYear()} «Tenloc».</b>
         </div>
       </div>
     </footer>

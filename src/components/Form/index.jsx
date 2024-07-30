@@ -1,13 +1,19 @@
 import React, { useEffect, useCallback, useState } from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
+import * as yup from 'yup';
 import schema from "../../utils/validationShema";
 import debounce from "lodash.debounce";
 import { BookingDescription } from "../BookingDescription";
 
 import "./style.scss";
 
-const Form = () => {
+const partialSchema = yup.object().shape({
+  name: schema.fields.name,
+  phone: schema.fields.phone,
+});
+
+const Form = ({setIsSuccessfully, setIsVisibleForm}) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
 
@@ -19,7 +25,7 @@ const Form = () => {
     formState: { errors },
     reset,
   } = useForm({
-    resolver: yupResolver(schema),
+    resolver: yupResolver(partialSchema),
   });
 
   const debouncedValidateField = useCallback(
@@ -50,6 +56,8 @@ const Form = () => {
 
   const onSubmit = (data) => {
     console.log("Form submitted:", data);
+    setIsVisibleForm(false);
+    setIsSuccessfully(true);
     reset();
   };
 

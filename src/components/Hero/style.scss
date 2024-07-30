@@ -64,5 +64,9 @@
             font-size: 18px;
             margin-bottom: 15px;
         }
+
+        @include breakpoint(xxs) {
+            font-size: 16px;
+        }
     }
 }

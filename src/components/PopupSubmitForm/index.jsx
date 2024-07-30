@@ -5,7 +5,7 @@ import { bodyScroll } from "../../utils/body-scroll";
 
 import "./style.scss";
 
-const PopupSubmitForm = ({ setIsVisibleForm }) => {
+const PopupSubmitForm = ({ setIsVisibleForm, setIsSuccessfully }) => {
   const handleClickRemovePopup = () => {
     bodyScroll.unLock();
     setIsVisibleForm(false);
@@ -21,7 +21,7 @@ const PopupSubmitForm = ({ setIsVisibleForm }) => {
         >
           <RxCross2 size={20} className="popup__close-icon" />
         </button>
-        <Form />
+        <Form setIsSuccessfully={setIsSuccessfully} setIsVisibleForm={setIsVisibleForm} />
       </div>
     </div>
   );
