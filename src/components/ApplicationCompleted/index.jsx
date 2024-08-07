@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
 import { bodyScroll } from "../../utils/body-scroll";
@@ -8,18 +8,15 @@ import "./style.scss";
 function ApplicationCompleted({ setIsSuccessfully }) {
   const { unLock } = bodyScroll;
 
-  const closePopup = useCallback(
-    (event) => {
-      const applicationBox = event.target.closest(".application__box");
-      const applicationClose = event.target.closest(".application__close");
+  const closePopup = (event) => {
+    const applicationBox = event.target.closest(".application__box");
+    const applicationClose = event.target.closest(".application__close");
 
-      if (applicationClose || !applicationBox) {
-        setIsSuccessfully(false);
-        unLock();
-      }
-    },
-    [setIsSuccessfully, unLock]
-  );
+    if (applicationClose || !applicationBox) {
+      setIsSuccessfully(false);
+      unLock();
+    }
+  }
 
   return (
     <div className="application" onClick={closePopup}>

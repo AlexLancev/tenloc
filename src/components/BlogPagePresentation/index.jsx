@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { getblogArticle } from "../../store/blogArticle/reducer";
+import { getblogId } from "../../store/blogId/reducer";
 import { BlogPreview } from "../BlogPreview";
 import { Navigation } from "../Navigation";
 
@@ -10,21 +10,21 @@ import "./style.scss";
 const BlogPagePresentation = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
-  const { blogArticleArr, isLoading } = useSelector((state) => state.article);
+  const { blogIdArr, isLoading } = useSelector((state) => state.blogId);
 
   React.useEffect(() => {
-    dispatch(getblogArticle(id));
+    dispatch(getblogId(id));
   }, [dispatch, id]);
 
-  if (isLoading || !blogArticleArr) {
+  if (isLoading || !blogIdArr) {
     return;
   }
 
-  const { description } = blogArticleArr;
+  const { description } = blogIdArr;
 
   return (
     <div className="container">
-      <Navigation plane={blogArticleArr} />
+      <Navigation plane={blogIdArr} />
       <div
         className="blog-page"
         dangerouslySetInnerHTML={{ __html: description }}

@@ -5,7 +5,6 @@ import { PopularDestinations } from "../../components/PopularDestinations";
 import { PopularTravel } from "../../components/PopularTravel";
 
 const HomePage = () => {
-  window.scrollTo(0, 0);
   
   return (
     <>

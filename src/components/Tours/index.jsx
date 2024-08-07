@@ -2,27 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { LuPlus } from "react-icons/lu";
-import { v4 as uuidv4 } from "uuid";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { getPlanes } from "../../store/planes/planesSlice";
+import { getTours } from "../../store/tours/toursSlice";
 import { ToursLoader } from "../Loader/toursLoader";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import "./style.scss";
 
 const Tours = ({ isSlider = false }) => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  React.useEffect(() => {
-    dispatch(getPlanes());
-  }, [dispatch]);
+  // React.useEffect(() => {
+  //   dispatch(getTours());
+  // }, [dispatch]);
 
   const { direct, id } = useParams();
-  const { planes, isLoading } = useSelector((state) => state.planes);
-  const arrDirect = planes
-    ? planes.filter(
+  const { tours, isLoading } = useSelector((state) => state.tours);
+  const arrDirect = tours
+    ? tours.filter(
         (plane) => plane.name.current === direct && plane._id !== id
       )
     : [];
@@ -50,12 +48,10 @@ const Tours = ({ isSlider = false }) => {
     ]
   };
 
-  window.scrollTo(0, 0);
-
   const renderTourItem = (plane) => {
-    const key = uuidv4();
+    
     return (
-      <li className="tours__item" key={key}>
+      <li className="tours__item" key={plane._id}>
         <Link
           to={`/excursion/${direct}/${plane._id}`}
           className="tours__img-link"
@@ -96,9 +92,9 @@ const Tours = ({ isSlider = false }) => {
   ) : (
     <ul className="tours__list">
       {isLoading || !arrDirect
-        ? Array.from({ length: arrDirect.length }).map(() => {
-          const key = uuidv4();
-          return <ToursLoader key={key} />})
+        ? Array.from({ length: arrDirect.length }).map((_, index) => {
+          
+          return <ToursLoader key={index} />})
         : arrDirect.map((plane) => renderTourItem(plane))}
     </ul>
   );

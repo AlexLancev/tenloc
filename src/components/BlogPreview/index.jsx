@@ -1,18 +1,13 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { BsThreeDots } from "react-icons/bs";
-import { getBlog } from "../../store/blog/reducer";
-import { useDispatch, useSelector } from "react-redux";
-import { v4 as uuidv4 } from "uuid";
+import { useSelector } from "react-redux";
 import { ToursLoader } from "../Loader/toursLoader";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import "./style.scss";
 
 const BlogPreview = ({ isSlider = true }) => {
-  const dispatch = useDispatch();
   const { id } = useParams();
   const { blogArr, isLoading } = useSelector((state) => state.blog);
   const arrBlogItem = blogArr
@@ -41,14 +36,10 @@ const BlogPreview = ({ isSlider = true }) => {
       ]
     };
 
-  React.useEffect(() => {
-    dispatch(getBlog());
-  }, [dispatch]);
-
   const renderBlogItem = (blogItem) => {
-    const key = uuidv4();
+    
     return (
-      <li className="blog-preview__item" key={key}>
+      <li className="blog-preview__item" key={blogItem._id}>
         <Link to={`/blog/${blogItem._id}`}>
           <img
             width={337}
@@ -77,9 +68,9 @@ const BlogPreview = ({ isSlider = true }) => {
   ) : (
     <ul className="blog-preview__list">
       {isLoading || !arrBlogItem
-        ? Array.from({ length: arrBlogItem && arrBlogItem.length }).map(() => {
-            const key = uuidv4();
-            return <ToursLoader key={key} />;
+        ? Array.from({ length: arrBlogItem && arrBlogItem.length }).map((item) => {
+            
+            return <ToursLoader key={item._id} />;
           })
         : arrBlogItem.map((blogItem) => renderBlogItem(blogItem))}
     </ul>

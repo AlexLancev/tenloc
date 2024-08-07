@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
 
 import "./style.scss";
 
@@ -43,10 +42,10 @@ const Directions = () => {
       <ul className="directions__list">
         {arrDirections &&
           arrDirections.map((item) => {
-            const key = uuidv4();
+            
             return (
               <li
-                key={key}
+                key={item.id}
                 className="directions__item"
                 style={{ backgroundImage: `url(${item.urlImage})` }}
               >

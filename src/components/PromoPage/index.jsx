@@ -1,5 +1,5 @@
 import React from "react";
-import { getPlane } from "../../store/plane/planeSlice";
+import { getTourId } from "../../store/tourId/tourIdSlice";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { SliderGallery } from "../SliderGallery";
@@ -15,17 +15,17 @@ import "./style.scss";
 const PromoPage = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
-  const { plane, isLoading } = useSelector((state) => state.plane);
+  const { tourId, isLoading } = useSelector((state) => state.tourId);
   const [isVisibleForm, setIsVisibleForm] = React.useState(false);
   const [isSlider, setIsSlider] = React.useState(false);
   const [isSsuccessfully, setIsSuccessfully] = React.useState(false);
   
   React.useEffect(() => {
-    dispatch(getPlane(id));
+    dispatch(getTourId(id));
     setIsSlider(true);
   }, [dispatch, id]);
   
-  if (isLoading || !plane) {
+  if (isLoading || !tourId) {
     return;
   }
 
@@ -37,12 +37,12 @@ const PromoPage = () => {
     images,
     typeExcursion,
     bookExcursion,
-  } = plane;
+  } = tourId;
 
   return (
     <section className="presentation">
       <div className="container">
-        <Navigation plane={plane} />
+        <Navigation plane={tourId} />
         <div className="presentation__header">
           <h2 className="presentation__title">{title}</h2>
           <div className="presentation__detail-price">

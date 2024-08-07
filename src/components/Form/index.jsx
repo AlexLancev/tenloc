@@ -1,9 +1,9 @@
-import React, { useEffect, useCallback, useState } from "react";
+import React from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import * as yup from 'yup';
+
 import schema from "../../utils/validationShema";
-import debounce from "lodash.debounce";
 import { BookingDescription } from "../BookingDescription";
 
 import "./style.scss";
@@ -14,48 +14,16 @@ const partialSchema = yup.object().shape({
 });
 
 const Form = ({setIsSuccessfully, setIsVisibleForm}) => {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-
   const {
     register,
     handleSubmit,
-    setValue,
-    trigger,
     formState: { errors },
     reset,
   } = useForm({
     resolver: yupResolver(partialSchema),
   });
 
-  const debouncedValidateField = useCallback(
-    debounce((field) => {
-      trigger(field);
-    }, 500),
-    [trigger]
-  );
-
-  useEffect(() => {
-    register("name");
-    register("phone");
-  }, [register]);
-
-  const handleFieldChange = (setter, field, value) => {
-    setter(value);
-    setValue(field, value);
-    debouncedValidateField(field);
-  };
-
-  const handleNameChange = (e) => {
-    handleFieldChange(setName, "name", e.target.value);
-  };
-
-  const handlePhoneChange = (e) => {
-    handleFieldChange(setPhone, "phone", e.target.value);
-  };
-
   const onSubmit = (data) => {
-    console.log("Form submitted:", data);
     setIsVisibleForm(false);
     setIsSuccessfully(true);
     reset();
@@ -70,8 +38,7 @@ const Form = ({setIsSuccessfully, setIsVisibleForm}) => {
             className="form__input"
             type="text"
             placeholder="Ваше имя"
-            value={name}
-            onChange={handleNameChange}
+            {...register('name')}
           />
           {errors.name && (
             <span className="form__error">{errors.name.message}</span>
@@ -82,9 +49,8 @@ const Form = ({setIsSuccessfully, setIsVisibleForm}) => {
             className="form__input"
             type="tel"
             placeholder="Номер телефона"
-            value={phone}
-            onChange={handlePhoneChange}
             maxLength="11"
+            {...register('phone')}
           />
           {errors.phone && (
             <span className="form__error">{errors.phone.message}</span>

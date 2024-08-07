@@ -1,38 +1,38 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import service from "../services/service";
 
-export const getBlog = createAsyncThunk("GET_BLOG", async (_, thunkAPI) => {
+export const getTours = createAsyncThunk("GET_TOURS", async (_, thunkAPI) => {
   try {
-    return await service.getBlog();
+    return await service.getTours();
   } catch (error) {
     return thunkAPI.rejectWithValue(error.response.data);
   }
 });
 
-const blogSlice = createSlice({
-  name: "blog",
+const toursSlice = createSlice({
+  name: "tours",
   initialState: {
-    blogArr: null,
+    tours: null,
     isError: false,
     isLoading: false,
     message: "",
   },
   extraReducers: (builder) => {
     builder
-      .addCase(getBlog.pending, (state) => {
+      .addCase(getTours.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(getBlog.fulfilled, (state, action) => {
+      .addCase(getTours.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.blogArr = action.payload;
+        state.tours = action.payload;
       })
-      .addCase(getBlog.rejected, (state, action) => {
+      .addCase(getTours.rejected, (state, action) => {
         state.isError = true;
         state.isLoading = false;
         state.message = action.payload.message;
-        state.blogArr = null;
+        state.tours = null;
       });
   },
 });
 
-export default blogSlice.reducer;
+export default toursSlice.reducer;

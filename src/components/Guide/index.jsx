@@ -7,7 +7,6 @@ import { GuideRegistration } from "../GuideRegistration";
 import { SubscribeMail } from "../SubscribeMail";
 
 const Guide = () => {
-  window.scrollTo(0, 0);
   
   return (
     <>

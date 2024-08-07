@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { paths } from "./paths";
 import { Excursions } from "./components/Excursions";
 import { Layout } from "./components/Layout";
@@ -9,18 +9,31 @@ import { Guide } from "./components/Guide";
 import { BlogPage } from "./components/BlogPage";
 import { BlogPagePresentation } from "./components/BlogPagePresentation";
 import { useDispatch } from "react-redux";
-import { getPlanes } from "./store/planes/planesSlice";
+import { getTours } from "./store/tours/toursSlice";
+import { getBlog } from "./store/blog/reducer";
 import { AboutPage } from "./components/AboutPage";
+
+function ScrollToTop() {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  return null;
+}
 
 function App() {
   const dispatch = useDispatch();
 
   React.useEffect(() => {
-    dispatch(getPlanes());
+    dispatch(getTours());
+    dispatch(getBlog());
   }, [dispatch]);
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path={`${paths.home}`} element={<Layout />}>
           <Route index element={<HomePage />} />

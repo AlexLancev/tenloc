@@ -1,18 +1,18 @@
 import { configureStore } from "@reduxjs/toolkit";
-import planeReducer from "./plane/planeSlice";
-import planesReducer from './planes/planesSlice';
+import toursIdReducer from "./tourId/tourIdSlice";
+import toursReducer from './tours/toursSlice';
 import blogReducer from './blog/reducer';
 import searchCounterSlice from "./search/reducer";
 import bookingReducer from './order/bookingReducer';
-import blogArticle from "./blogArticle/reducer";
+import blogId from "./blogId/reducer";
 
 export const store = configureStore({
   reducer: {
-    planes: planesReducer,
-    plane: planeReducer,
+    tours: toursReducer,
+    tourId: toursIdReducer,
+    blog: blogReducer,
+    blogId: blogId,
     search: searchCounterSlice,
     booking: bookingReducer,
-    blog: blogReducer,
-    article: blogArticle
   },
 });

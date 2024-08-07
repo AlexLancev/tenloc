@@ -5,14 +5,13 @@ import { useSelector } from "react-redux";
 import { IoIosClose } from "react-icons/io";
 import debounce from "lodash.debounce";
 import { Link } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
 
 import "./style.scss";
 
 const Search = () => {
   const [arrFilteredSearch, setArrFilteredSearch] = React.useState([]);
   const [searchValue, setSearchValue] = React.useState("");
-  const { planes } = useSelector((state) => state.planes);
+  const { tours } = useSelector((state) => state.tours);
   const inputRef = React.useRef();
 
   const inCloseClear = () => {
@@ -29,13 +28,13 @@ const Search = () => {
 
   const filteredSearch = React.useCallback((value) => {
     setArrFilteredSearch(
-      planes
-        ? planes.filter((el) =>
+      tours
+        ? tours.filter((el) =>
             el.title.toLocaleLowerCase().includes(value.toLocaleLowerCase())
           )
         : []
     );
-  }, [planes]);
+  }, [tours]);
 
   const debouncedSearch = React.useMemo(
     () =>
@@ -67,8 +66,6 @@ const Search = () => {
     };
   }, [debouncedSearch]);
 
-  console.log(arrFilteredSearch, searchValue);
-
   return (
     <div className="search filtered-search">
       <label className="search__label">
@@ -97,9 +94,8 @@ const Search = () => {
       {arrFilteredSearch.length > 0 && (
         <ul className="filtered-search__list">
           {arrFilteredSearch.map((item) => {
-            const key = uuidv4();
             return (
-              <li key={key} className="filtered-search__item">
+              <li key={item._id} className="filtered-search__item">
                 <Link
                   to={`/excursion/${item.name.current}/${item._id}`}
                   className="filtered-search__link"

@@ -1,38 +1,38 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import planesService from '../services/planesService';
+import service from '../services/service';
 
-export const getPlane = createAsyncThunk('GET_PLANE', async (id, thunkAPI) => {
+export const getblogId = createAsyncThunk('GET_BLOGID', async (id, thunkAPI) => {
   try {
-    return await planesService.getPlane(id);
+    return await service.getBlogId(id);
   } catch(error) {
      return thunkAPI.rejectWithValue(error.response.data)
   }
 });
 
-const planeSlice = createSlice({
-  name: 'plane',
+const getblogIdSlice = createSlice({
+  name: 'blogId',
   initialState: {
-    plane: null,
+    blogIdArr: null,
     isError: false,
     isLoading: false,
     message: '',
     errors: null
   },
   reducers: {
-    resetPlaneErrors: (state) => {
+    resetBlogIdErrors: (state) => {
       state.errors = null;
     }
   },
   extraReducers: (builder) => {
     builder
-      .addCase(getPlane.pending, (state) => {
+      .addCase(getblogId.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(getPlane.fulfilled, (state, action) => {
+      .addCase(getblogId.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.plane = action.payload[0];
+        state.blogIdArr = action.payload[0];
       })
-      .addCase(getPlane.rejected, (state, action) => {
+      .addCase(getblogId.rejected, (state, action) => {
         state.isError = true;
         state.isLoading = false;
         state.message = action.payload.message;
@@ -41,5 +41,5 @@ const planeSlice = createSlice({
   }
 });
 
-export const { resetPlaneErrors } = planeSlice.actions;
-export default planeSlice.reducer;
+export const { resetBlogIdErrors } = getblogIdSlice.actions;
+export default getblogIdSlice.reducer;

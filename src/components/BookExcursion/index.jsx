@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { orderCurrent } from "../../store/order/bookingReducer";
 import { MyBtnMinus, MyBtnPlus } from "../ui/Buttons";
 import { MyDatePicker } from "../ui/DataPicker";
-import { v4 as uuidv4 } from "uuid";
 import { bodyScroll } from "../../utils/body-scroll";
 import dayjs from "dayjs";
 import "./style.scss";
@@ -67,9 +66,9 @@ const BookExcursion = ({ arrBookExcursion, setIsVisibleForm }) => {
         <tbody className="book-excursion__body">
           {arrBookExcursion &&
             arrBookExcursion.map((item, index) => {
-              const key = uuidv4();
+              
               return (
-                <tr className="book-excursion__row" key={key}>
+                <tr className="book-excursion__row" key={index}>
                   <td className="book-excursion__cell book-excursion__cell--category">
                     {item.category}
                   </td>
