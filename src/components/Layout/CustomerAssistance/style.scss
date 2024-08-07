@@ -1,0 +1,49 @@
+@import '../../../styles/base/variables';
+
+.cust-assist {
+    position: relative;
+
+    @include breakpoint(md) {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+
+    @include breakpoint(xxs) {
+        right: 7px;
+    }
+    
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+
+        @include breakpoint(md) {
+            font-size: 0;
+            display: block;
+        }
+    }
+
+    &__text {
+    }
+
+    &__icon {
+        @include breakpoint(md) {
+            height: 0;
+        }
+    }
+
+    &__question {
+        fill: #6d6d6d;
+        display: none;
+
+        @include breakpoint(md) {
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

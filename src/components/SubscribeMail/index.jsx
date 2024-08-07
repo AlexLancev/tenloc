@@ -1,5 +1,5 @@
 import React from "react";
-import { ListSocialNetworks } from "../ListSocialNetworks";
+import { ListSocialNetworks } from "../Layout/ListSocialNetworks"; 
 import SubscribeMailBg from "../../img/subscription-mail.webp";
 
 import "./style.scss";

@@ -3,15 +3,15 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { paths } from "./paths";
 import { Excursions } from "./components/Excursions";
 import { Layout } from "./components/Layout";
-import { HomePage } from "./components/HomePage";
+import { HomePage } from "./pages/HomePage";
 import { PromoPage } from "./components/PromoPage";
-import { Guide } from "./components/Guide";
-import { BlogPage } from "./components/BlogPage";
+import { GuidePage } from "./pages/GuidePage";
+import { BlogPage } from "./pages/BlogPage";
 import { BlogPagePresentation } from "./components/BlogPagePresentation";
 import { useDispatch } from "react-redux";
 import { getTours } from "./store/tours/toursSlice";
 import { getBlog } from "./store/blog/reducer";
-import { AboutPage } from "./components/AboutPage";
+import { AboutPage } from "./pages/AboutPage";
 
 function ScrollToTop() {
   const location = useLocation();
@@ -39,7 +39,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path={`${paths.excursions}`} element={<Excursions />} />
           <Route path={`${paths.excursion}`} element={<PromoPage />} />
-          <Route path={`${paths.guide}`} element={<Guide />} />
+          <Route path={`${paths.guide}`} element={<GuidePage />} />
           <Route path={`${paths.aboutPage}`} element={<AboutPage />} />
           <Route path={`${paths.blogPage}`} element={<BlogPage />} />
           <Route path={`${paths.blogId}`} element={<BlogPagePresentation />} />

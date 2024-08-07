@@ -1,0 +1,98 @@
+@import '../../../styles/base/variables';
+
+.offer-tour {
+    padding: 50px 0;
+    text-align: center;
+
+    @include breakpoint(lg) {
+        padding: 25px 0;
+    }
+
+    &__title {
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 27px;
+
+        @include breakpoint(lg) {
+            font-size: 32px;
+            margin-bottom: 17px;
+        }
+
+        @include breakpoint(md) {
+            font-size: 27px;
+        }
+    }
+
+    &__description {
+        width: 100%;
+        max-width: 689px;
+        margin: 0 auto 90px;
+        font-size: 16px;
+
+        @include breakpoint(lg) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 25px;
+        row-gap: 50px;
+        counter-reset: section;
+        counter-increment: my-counter;
+
+        @include breakpoint(lg) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__list-item {
+        width: 20%;
+
+        @include breakpoint(lg) {
+            width: 60%;
+        }
+
+        @include breakpoint(lg) {
+            width: 80%;
+        }
+    }
+
+    &__img {
+        position: relative;
+        background-size: 52px auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: #fff8d0;
+
+        &::before {
+            content: counter(section) "";
+            counter-increment: section;
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: #ffd600;
+            font-size: 15px;
+            padding: 5px 11.5px;
+            border-radius: 50%;
+        }
+    }
+
+    &__head {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        color: #5d5d5d;
+        font-size: 15px;
+    }
+}

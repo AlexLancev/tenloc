@@ -1,27 +1,3 @@
-// import React from "react";
-// import ContentLoader from "react-content-loader";
-
-// import "./style.scss";
-
-// const ToursLoader = () => {
-//   return (
-//     <ContentLoader
-//       speed={2}
-//       className="tours__loader"
-//       backgroundColor="#f3f3f3"
-//       foregroundColor="#ecebeb"
-//     >
-//       <rect x="0" y="0" rx="10" ry="10" width="452" height="253" />
-//       <rect x="15" y="273" rx="10" ry="10" width="422" height="40" />
-//       <rect x="15" y="333" rx="10" ry="10" width="422" height="140" />
-//       <rect x="15" y="503" rx="10" ry="10" width="200" height="40" />
-//       <circle cx="410" cy="518" r="25" />
-//     </ContentLoader>
-//   );
-// };
-
-// export { ToursLoader };
-
 import React from "react";
 import ContentLoader from "react-content-loader";
 
