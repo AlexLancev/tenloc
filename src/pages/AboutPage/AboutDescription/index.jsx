@@ -1,5 +1,6 @@
 import React from 'react';
-import aboutDescriptionBg from '../../../img/about/about.webp';
+
+import aboutDescriptionBg from '../img/about/about.webp';
 
 import './style.scss';
 

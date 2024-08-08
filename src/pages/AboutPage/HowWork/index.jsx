@@ -1,5 +1,6 @@
 import React from 'react';
-import HowWorkBg from '../../../img/about/bg2.webp';
+
+import HowWorkBg from '../img/about/bg2.webp';
 import './style.scss';
 
 const HowWork = () => {

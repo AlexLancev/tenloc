@@ -1,19 +1,22 @@
-import React from "react";
-import { Logo } from "../Logo";
-import { DropdownMenuDirections } from "./DropdownMenuDirections";
-import { Menu } from "../Menu";
-import { CustomerAssistance } from "../CustomerAssistance";
-import { MenuBtn } from "../../ui/MenuBtn";
+import React from 'react';
 
-import "./style.scss";
+import { MenuBtn } from 'components/ui/MenuBtn';
+
+import { Logo } from '../Logo';
+import { Menu } from '../Menu';
+import { CustomerAssistance } from '../CustomerAssistance';
+
+import { DropdownMenuDirections } from './DropdownMenuDirections';
+
+import './style.scss';
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className="header">
-      <div className="container">
-        <div className="header__inner">
+    <header className='header'>
+      <div className='container'>
+        <div className='header__inner'>
           <Logo />
           <DropdownMenuDirections />
           <Menu setIsOpen={setIsOpen} isOpen={isOpen} />

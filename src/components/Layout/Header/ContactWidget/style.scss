@@ -1,26 +1,26 @@
 @import '../../../../styles/base/variables';
 
 .contact-widget {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    z-index: 9999;
-    padding: 15px;
-    background-color: #ffffff;
-    border: 1px solid #ececec;
-    border-radius: 8px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 9999;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 8px;
+
+  @include breakpoint(md) {
+    top: -175px;
+    left: -218px;
+  }
+
+  &__opening-hours {
+    display: block;
+    margin-bottom: 15px;
 
     @include breakpoint(md) {
-        top: -175px;
-        left: -218px;
+      font-size: 14px;
     }
-
-    &__opening-hours {
-        display: block;
-        margin-bottom: 15px;
-
-        @include breakpoint(md) {
-            font-size: 14px;
-        }
-    }
+  }
 }

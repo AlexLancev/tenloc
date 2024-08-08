@@ -1,20 +1,27 @@
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
+  globals: {
+    process: 'readonly',
+  },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', '@typescript-eslint', 'import'],
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false,
+    sourceType: 'module',
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
+  },
+  plugins: ['react', 'import'],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+    'react/prop-types': 'off',
     'no-console': ['warn', { allow: ['warn', 'error'] }],
     'quotes': ['warn', 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
     'jsx-quotes': ['warn', 'prefer-single'],
@@ -26,7 +33,6 @@ module.exports = {
       'newlines-between': 'always-and-inside-groups',
     }],
     'import/newline-after-import': ['warn', { 'count': 1 }],
-    '@typescript-eslint/no-unused-vars': ['warn', { 'vars': 'all', 'args': 'none' }],
     'prettier/prettier': 'warn',
   },
 }

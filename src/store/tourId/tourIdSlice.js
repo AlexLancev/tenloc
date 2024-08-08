@@ -1,13 +1,17 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+
 import service from '../services/service';
 
-export const getTourId = createAsyncThunk('GET_TOURID', async (id, thunkAPI) => {
-  try {
-    return await service.getTourId(id);
-  } catch(error) {
-     return thunkAPI.rejectWithValue(error.response.data)
-  }
-});
+export const getTourId = createAsyncThunk(
+  'GET_TOURID',
+  async (id, thunkAPI) => {
+    try {
+      return await service.getTourId(id);
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  },
+);
 
 const tourIdSlice = createSlice({
   name: 'tourId',
@@ -16,12 +20,12 @@ const tourIdSlice = createSlice({
     isError: false,
     isLoading: false,
     message: '',
-    errors: null
+    errors: null,
   },
   reducers: {
     resetTourIdErrors: (state) => {
       state.errors = null;
-    }
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -37,8 +41,8 @@ const tourIdSlice = createSlice({
         state.isLoading = false;
         state.message = action.payload.message;
         state.tourId = null;
-      })
-  }
+      });
+  },
 });
 
 export const { resetTorIdErrors } = tourIdSlice.actions;

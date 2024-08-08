@@ -1,10 +1,13 @@
-import React from "react";
-import { AboutDescription } from "./AboutDescription";
-import { FastConvenient } from "./FastConvenient";
-import { ListingBenefits } from "./ListingBenefits";
-import { HowWork } from "./HowWork";
-import { BlogPreview } from "../BlogPage/BlogPreview";
-import { SubscribeMail } from "../../components/SubscribeMail";
+import React from 'react';
+
+import { BlogPreview } from 'components/BlogPreview';
+
+import { SubscribeMail } from 'components/SubscribeMail';
+
+import { AboutDescription } from './AboutDescription';
+import { FastConvenient } from './FastConvenient';
+import { ListingBenefits } from './ListingBenefits';
+import { HowWork } from './HowWork';
 
 const AboutPage = () => {
   return (
@@ -13,7 +16,7 @@ const AboutPage = () => {
       <FastConvenient />
       <ListingBenefits />
       <HowWork />
-      <div className="container">
+      <div className='container'>
         <BlogPreview />
       </div>
       <SubscribeMail />

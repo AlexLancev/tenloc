@@ -1,40 +1,40 @@
 @import '../../../../styles/base/variables';
 
 .excursion-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    width: 100%;
-    max-width: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  max-width: 720px;
+
+  @include breakpoint(lg) {
+    gap: 10px;
+  }
+
+  @include breakpoint(sm) {
+    visibility: hidden;
+    height: 0;
+  }
+
+  &__link {
+    display: block;
+    padding: 7px 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #afafaf;
+    color: #7f7f7f;
+    transition: 0.3s color;
+
+    &:hover {
+      color: #000000;
+    }
 
     @include breakpoint(lg) {
-        gap: 10px;
+      font-size: 14px;
+      padding: 5px 10px;
     }
-
-    @include breakpoint(sm) {
-        visibility: hidden;
-        height: 0;
-    }
-
-    &__link {
-        display: block;
-        padding: 7px 12px;
-        border-radius: 10px;
-        overflow: hidden;
-        background-color: #ffffff;
-        border: 1px solid #afafaf;
-        color: #7f7f7f;
-        transition: 0.3s color;
-
-        &:hover {
-            color: #000000;
-        }
-
-        @include breakpoint(lg) {
-            font-size: 14px;
-            padding: 5px 10px;
-        }
-    }
+  }
 }

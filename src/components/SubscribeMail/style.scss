@@ -1,124 +1,123 @@
 @import '../../styles/base/variables';
 
 .subscribe-mail {
-    padding: 50px 0;
-    
+  padding: 50px 0;
+
+  @include breakpoint(md) {
+    padding: 25px 0 50px;
+  }
+
+  &__inner {
+    padding: 100px 50px;
+    padding-right: 45%;
+    border-radius: 50px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include breakpoint(lg) {
+      padding: 60px 50px;
+      padding-right: 45%;
+    }
+
     @include breakpoint(md) {
-        padding: 25px 0 50px;
+      padding: 50px;
+      padding-right: 45%;
     }
 
-    &__inner {
-        padding: 100px 50px;
-        padding-right: 45%;
-        border-radius: 50px;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-
-        @include breakpoint(lg) {
-            padding: 60px 50px;
-            padding-right: 45%;
-        }
-
-        @include breakpoint(md) {
-            padding: 50px;
-            padding-right: 45%;
-        }
-
-        @include breakpoint(sm) {
-            padding: 40px;
-            padding-right: 45%;
-        }
-
-        @include breakpoint(xxs) {
-            padding: 30px;
-            padding-right: 38%;
-        }
+    @include breakpoint(sm) {
+      padding: 40px;
+      padding-right: 45%;
     }
 
-    &__box {
-        width: 100%;
-        max-width: 500px;
+    @include breakpoint(xxs) {
+      padding: 30px;
+      padding-right: 38%;
+    }
+  }
+
+  &__box {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+
+    @include breakpoint(lg) {
+      font-size: 32px;
     }
 
-    &__title {
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 10px;
-
-        @include breakpoint(lg) {
-            font-size: 32px;
-        }
-
-        @include breakpoint(md) {
-            font-size: 27px;
-        }
-
-        @include breakpoint(sm) {
-            font-size: 18px;
-        }
+    @include breakpoint(md) {
+      font-size: 27px;
     }
 
-    &__text {
-        font-size: 20px;
-        margin-bottom: 30px;
-        color: #616161;
+    @include breakpoint(sm) {
+      font-size: 18px;
+    }
+  }
 
-        @include breakpoint(lg) {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
+  &__text {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #616161;
 
-        @include breakpoint(lg) {
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
+    @include breakpoint(lg) {
+      font-size: 16px;
+      margin-bottom: 20px;
     }
 
-    &__social-networks {
-        
+    @include breakpoint(lg) {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__social-networks {
+  }
+
+  &__policy {
+    font-size: 14px;
+    color: #616161;
+
+    @include breakpoint(md) {
+      font-size: 9px;
+    }
+  }
+
+  &__policy-link {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  & .social-networks__link {
+    background-color: #f8f8f8;
+    color: #616161;
+    border-radius: 5px;
+    padding: 8px 15px;
+  }
+
+  & .social-networks__icon--telegram {
+    fill: #039be5;
+  }
+
+  & .social-networks__icon--whatsapp {
+    fill: #4caf50;
+  }
+
+  & .social-networks {
+    margin-bottom: 100px;
+
+    @include breakpoint(lg) {
+      margin-bottom: 50px;
     }
 
-    &__policy {
-        font-size: 14px;
-        color: #616161;
-        
-        @include breakpoint(md) {
-            font-size: 9px;
-        }
+    @include breakpoint(sm) {
+      margin-bottom: 30px;
     }
-
-    &__policy-link {
-        color: inherit;
-        text-decoration: underline;
-    }
-
-    & .social-networks__link {
-         background-color: #f8f8f8;
-         color: #616161;
-         border-radius: 5px;
-         padding: 8px 15px;
-    }
-
-    & .social-networks__icon--telegram {
-        fill: #039be5;
-    }
-
-    & .social-networks__icon--whatsapp {
-        fill: #4caf50;
-    }
-
-    & .social-networks {
-        margin-bottom: 100px;
-
-        @include breakpoint(lg) {
-            margin-bottom: 50px;
-        }
-
-        @include breakpoint(sm) {
-            margin-bottom: 30px;
-        }
-    }
+  }
 }

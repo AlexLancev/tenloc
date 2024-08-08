@@ -1,5 +1,6 @@
 import React from 'react';
-import FastConvenientBg from '../../../img/about/bg.webp';
+
+import FastConvenientBg from '../img/about/bg.webp';
 
 import './style.scss';
 

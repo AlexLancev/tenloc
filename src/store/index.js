@@ -1,10 +1,11 @@
-import { configureStore } from "@reduxjs/toolkit";
-import toursIdReducer from "./tourId/tourIdSlice";
+import { configureStore } from '@reduxjs/toolkit';
+
+import toursIdReducer from './tourId/tourIdSlice';
 import toursReducer from './tours/toursSlice';
 import blogReducer from './blog/reducer';
-import searchCounterSlice from "./search/reducer";
+import searchCounterSlice from './search/reducer';
 import bookingReducer from './order/bookingReducer';
-import blogId from "./blogId/reducer";
+import blogId from './blogId/reducer';
 
 export const store = configureStore({
   reducer: {

@@ -1,148 +1,146 @@
 @import '../../../styles/base/variables';
 
 .presentation {
-    padding: 20px 0 50px;
+  padding: 20px 0 50px;
 
-    &__description-box {
-        padding: 40px 0px 70px;
+  &__description-box {
+    padding: 40px 0px 70px;
 
-        @include breakpoint(sm) {
-            display: flex;
-            flex-direction: column-reverse;
-        }
+    @include breakpoint(sm) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__description {
+    @include breakpoint(sm) {
+      margin-bottom: 30px;
     }
 
-    &__description {
+    & h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
 
-        @include breakpoint(sm) {
-            margin-bottom: 30px;
-        }
-
-        & h3 {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 10px;
-
-            @include breakpoint(lg) {
-                font-size: 18px;
-            }
-        }
-    
-        & p {
-            font-size: 18px;
-            color: #494949;
-
-            @include breakpoint(lg) {
-                font-size: 16px;
-            }
-        }
-    
-        & p:not(:last-child) {
-            margin-bottom: 25px;
-
-            @include breakpoint(lg) {
-                margin-bottom: 15px;
-            }
-        }
-    
-        & ul,
-        & ol {
-            margin-bottom: 25px;
-            font-size: 18px;
-            color: #494949;
-
-            @include breakpoint(lg) {
-                font-size: 16px;
-                margin-bottom: 15px;
-            }
-        }
-    
-        & ol {
-            list-style: decimal;
-            padding-left: 18px;
-        }
-    
-        & ul li:not(:last-child),
-        & ol li:not(:last-child) {
-            margin-bottom: 10px;
-        }
+      @include breakpoint(lg) {
+        font-size: 18px;
+      }
     }
 
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        line-height: 1.3;
-        column-gap: 30px;
-        row-gap: 5px;
-        margin-bottom: 40px;
+    & p {
+      font-size: 18px;
+      color: #494949;
+
+      @include breakpoint(lg) {
+        font-size: 16px;
+      }
     }
 
-    &__title {
-        font-size: 25px;
-        line-height: 1.2;
-        max-width: 900px;
+    & p:not(:last-child) {
+      margin-bottom: 25px;
 
-        @include breakpoint(md) {
-            font-size: 20px;
-        }
-
-        @include breakpoint(xxs) {
-            font-size: 18px;
-        }
-        
+      @include breakpoint(lg) {
+        margin-bottom: 15px;
+      }
     }
 
-    &__detail-price {
-        text-align: right;
+    & ul,
+    & ol {
+      margin-bottom: 25px;
+      font-size: 18px;
+      color: #494949;
 
-        @include breakpoint(md) {
-            text-align: left;
-        }
+      @include breakpoint(lg) {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
     }
 
-    &__price {
-        display: block;
-        font-size: 20px;
-        font-weight: 700;
-
-        @include breakpoint(md) {
-            font-size: 16px;
-        }
-
-        @include breakpoint(xxs) {
-            font-size: 14px;
-        }
+    & ol {
+      list-style: decimal;
+      padding-left: 18px;
     }
 
-    &__type-excursion {
-        display: block;
-        font-size: 14px;
-        color: #494949;
+    & ul li:not(:last-child),
+    & ol li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 
-        @include breakpoint(xxs) {
-            font-size: 12px;
-        }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1.3;
+    column-gap: 30px;
+    row-gap: 5px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 25px;
+    line-height: 1.2;
+    max-width: 900px;
+
+    @include breakpoint(md) {
+      font-size: 20px;
     }
 
-    &__description {
+    @include breakpoint(xxs) {
+      font-size: 18px;
+    }
+  }
+
+  &__detail-price {
+    text-align: right;
+
+    @include breakpoint(md) {
+      text-align: left;
+    }
+  }
+
+  &__price {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+
+    @include breakpoint(md) {
+      font-size: 16px;
     }
 
-    & .tours__list {
-        display: block;
+    @include breakpoint(xxs) {
+      font-size: 14px;
     }
+  }
 
-    & .slick-track {
-        padding-bottom: 20px;
-    }
+  &__type-excursion {
+    display: block;
+    font-size: 14px;
+    color: #494949;
 
-    & .tours__item {
-        display: flex !important;
-        height: 100%;
+    @include breakpoint(xxs) {
+      font-size: 12px;
     }
-    
-    &  .tours__list .slick-slide {
-        margin: 0 10px;
-    }
+  }
+
+  &__description {
+  }
+
+  & .tours__list {
+    display: block;
+  }
+
+  & .slick-track {
+    padding-bottom: 20px;
+  }
+
+  & .tours__item {
+    display: flex !important;
+    height: 100%;
+  }
+
+  & .tours__list .slick-slide {
+    margin: 0 10px;
+  }
 }

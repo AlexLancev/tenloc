@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const orderCounterSlice = createSlice({
-  name: "order",
+  name: 'order',
   initialState: {
-    orderName: "",
+    orderName: '',
   },
   reducers: {
     orderCurrent: (state, action) => {

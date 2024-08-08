@@ -1,7 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const bookingSlice = createSlice({
-  name: "booking",
+  name: 'booking',
   initialState: {
     bookings: {}, // Инициализируем массив для хранения бронирований
   },

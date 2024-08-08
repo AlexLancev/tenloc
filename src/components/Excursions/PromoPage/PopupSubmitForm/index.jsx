@@ -1,9 +1,11 @@
-import React from "react";
-import { Form } from "../Form";
-import { RxCross2 } from "react-icons/rx";
-import { bodyScroll } from "../../../../utils/body-scroll";
+import React from 'react';
+import { RxCross2 } from 'react-icons/rx';
 
-import "./style.scss";
+import { bodyScroll } from 'utils/body-scroll';
+
+import { Form } from '../Form';
+
+import './style.scss';
 
 const PopupSubmitForm = ({ setIsVisibleForm, setIsSuccessfully }) => {
   const handleClickRemovePopup = () => {
@@ -12,16 +14,19 @@ const PopupSubmitForm = ({ setIsVisibleForm, setIsSuccessfully }) => {
   };
 
   return (
-    <div className="popup">
-      <div className="popup__body">
+    <div className='popup'>
+      <div className='popup__body'>
         <button
-          type="button"
+          type='button'
           onClick={handleClickRemovePopup}
-          className="popup__close-btn"
+          className='popup__close-btn'
         >
-          <RxCross2 size={20} className="popup__close-icon" />
+          <RxCross2 size={20} className='popup__close-icon' />
         </button>
-        <Form setIsSuccessfully={setIsSuccessfully} setIsVisibleForm={setIsVisibleForm} />
+        <Form
+          setIsSuccessfully={setIsSuccessfully}
+          setIsVisibleForm={setIsVisibleForm}
+        />
       </div>
     </div>
   );

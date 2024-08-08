@@ -1,17 +1,18 @@
-import React from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import { paths } from "./paths";
-import { Excursions } from "./components/Excursions";
-import { Layout } from "./components/Layout";
-import { HomePage } from "./pages/HomePage";
-import { PromoPage } from "./components/Excursions/PromoPage";
-import { GuidePage } from "./pages/GuidePage";
-import { BlogPage } from "./pages/BlogPage";
-import { BlogPagePresentation } from "./pages/BlogPage/BlogPagePresentation";
-import { useDispatch } from "react-redux";
-import { getTours } from "./store/tours/toursSlice";
-import { getBlog } from "./store/blog/reducer";
-import { AboutPage } from "./pages/AboutPage";
+import React from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+
+import { paths } from 'paths';
+import { Excursions } from 'components/Excursions';
+import { Layout } from 'components/Layout';
+import { HomePage } from 'pages/HomePage';
+import { PromoPage } from 'components/Excursions/PromoPage';
+import { GuidePage } from 'pages/GuidePage';
+import { BlogPage } from 'pages/BlogPage';
+import { BlogPagePresentation } from 'pages/BlogPage/BlogPagePresentation';
+import { getTours } from 'store/tours/toursSlice';
+import { getBlog } from 'store/blog/reducer';
+import { AboutPage } from 'pages/AboutPage';
 
 function ScrollToTop() {
   const location = useLocation();

@@ -1,56 +1,56 @@
 @import '../../styles/base/variables';
 
 .navigation {
-    padding: 15px 0;
+  padding: 15px 0;
 
-    &__list {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 2px;
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 2px;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -12px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: #000000;
     }
 
-    &__item {
-        position: relative;
+    & span {
+      font-size: 14px;
+      color: #868686;
 
-        &:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: -12px;
-            width: 3px;
-            height: 3px;
-            border-radius: 50%;
-            background-color: #000000;
-        }
-
-        & span {
-            font-size: 14px;
-            color: #868686;
-
-            @include breakpoint(sm) {
-                font-size: 12px;
-            }
-        }
-
-        & span:hover {
-            text-decoration: none;
-        }
+      @include breakpoint(sm) {
+        font-size: 12px;
+      }
     }
 
-    &__link {
-        font-size: 15px;
-        line-height: 1.2;
-        color: #000000;
-    
-        &:hover {
-            text-decoration: underline;
-        }
-
-        @include breakpoint(sm) {
-            font-size: 13px;
-        }
+    & span:hover {
+      text-decoration: none;
     }
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 1.2;
+    color: #000000;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @include breakpoint(sm) {
+      font-size: 13px;
+    }
+  }
 }

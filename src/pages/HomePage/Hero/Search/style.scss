@@ -1,184 +1,182 @@
 @import '../../../../styles/base/variables';
 
 .search {
-    margin-bottom: 120px;
+  margin-bottom: 120px;
+  width: 100%;
+  max-width: 700px;
+
+  @include breakpoint(lg) {
+    max-width: 600px;
+    margin-bottom: 70px;
+  }
+
+  @include breakpoint(md) {
+    max-width: 500px;
+  }
+
+  @include breakpoint(sm) {
+    margin-bottom: 0;
+    max-width: 400px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
     width: 100%;
-    max-width: 700px;
+    background-color: #ffffff;
+    border: 1px solid #afafaf;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 10px;
+    padding-left: 30px;
+
+    @include breakpoint(sm) {
+      padding: 5px;
+      padding-left: 20px;
+    }
+  }
+
+  &__btn-icon {
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    width: 100%;
+
+    @include breakpoint(md) {
+      font-size: 14px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+    border-radius: 50px;
+    padding: 15px 30px;
+    background-color: #ffd600;
+    border: 1px solid #b19400;
+    transition: 0.3s background-color;
+
+    &:hover {
+      background-color: #f2ca00;
+    }
 
     @include breakpoint(lg) {
-        max-width: 600px;
-        margin-bottom: 70px;
+      padding: 12px 25px;
     }
 
     @include breakpoint(md) {
-        max-width: 500px;
+      padding: 10px 20px;
     }
 
     @include breakpoint(sm) {
-        margin-bottom: 0;
-        max-width: 400px;
+      padding: 7px 15px;
     }
 
-    &__label {
-        display: flex;
-        align-items: center;
-        column-gap: 10px;
-        row-gap: 10px;
-        width: 100%;
-        background-color: #ffffff;
-        border: 1px solid #afafaf;
-        border-radius: 50px;
-        overflow: hidden;
-        padding: 10px;
-        padding-left: 30px;
+    @include breakpoint(xxs) {
+      gap: 0;
+    }
+  }
 
-        @include breakpoint(sm) {
-            padding: 5px;
-            padding-left: 20px;
-        }
+  &__text {
+    @include breakpoint(md) {
+      font-size: 14px;
     }
 
-    &__btn-icon {
+    @include breakpoint(xxs) {
+      font-size: 0;
     }
-
-    &__input {
-        background-color: transparent;
-        border: none;
-        padding: 10px;
-        width: 100%;
-
-        @include breakpoint(md) {
-            font-size: 14px;
-        }
-    }
-
-    &__btn {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        margin-left: auto;
-        border-radius: 50px;
-        padding: 15px 30px;
-        background-color: #ffd600;
-        border: 1px solid #b19400;
-        transition: 0.3s background-color;
-
-        &:hover {
-            background-color: #f2ca00;
-        }
-
-        @include breakpoint(lg) {
-            padding: 12px 25px;
-        }
-
-        @include breakpoint(md) {
-            padding: 10px 20px;
-        }
-
-        @include breakpoint(sm) {
-            padding: 7px 15px;
-        }
-
-        @include breakpoint(xxs) {
-            gap: 0;
-        }
-    }
-
-    &__text {
-        @include breakpoint(md) {
-            font-size: 14px;
-        }
-
-        @include breakpoint(xxs) {
-            font-size: 0;
-        }
-    }
+  }
 }
 
 .filtered-search {
-    position: relative;
+  position: relative;
 
-    &__list {
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        max-height: 300px;
-        padding: 20px 20px 15px;
-        border: 1px solid #afafaf;
-        background-color: #ffffff;
-        border-radius: 20px;
-        overflow-x: hidden;
-        overflow-y: scroll;
+  &__list {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    padding: 20px 20px 15px;
+    border: 1px solid #afafaf;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 
-        @include breakpoint(sm) {
-            top: 50px;
-            padding: 10px;
-        }
+    @include breakpoint(sm) {
+      top: 50px;
+      padding: 10px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      border-bottom: 1px solid #afafaf;
+    }
+  }
+
+  &__img {
+    border-radius: 10px;
+    height: 100px;
+
+    @include breakpoint(lg) {
+      flex: 0 0 100px;
     }
 
-    &__item {
-        
-        &:not(:last-child) {
-            border-bottom: 1px solid #afafaf;
-        }
+    @include breakpoint(sm) {
+      flex: 0 0 70px;
+      width: 70px;
+      height: 70px;
     }
 
-    &__img {
-        border-radius: 10px;
-        height: 100px;
+    @include breakpoint(xxs) {
+      display: none;
+    }
+  }
 
-        @include breakpoint(lg) {
-            flex: 0 0 100px;
-        }
+  &__head {
+    width: 100%;
+    max-width: 350px;
+    font-size: 15px;
+    line-height: 1.2;
 
-        @include breakpoint(sm) {
-            flex: 0 0 70px;
-            width: 70px;
-            height: 70px;
-        }
-
-        @include breakpoint(xxs) {
-            display: none;
-        }
+    @include breakpoint(lg) {
+      font-size: 14px;
     }
 
-    &__head {
-        width: 100%;
-        max-width: 350px;
-        font-size: 15px;
-        line-height: 1.2;
-
-        @include breakpoint(lg) {
-            font-size: 14px;
-        }
-
-        @include breakpoint(sm) {
-            font-size: 12px;
-        }
+    @include breakpoint(sm) {
+      font-size: 12px;
     }
+  }
 
-    &__price {
-        display: block;
-        width: 100px;
-        font-size: 14px;
-        margin-left: auto;
+  &__price {
+    display: block;
+    width: 100px;
+    font-size: 14px;
+    margin-left: auto;
 
-        @include breakpoint(sm) {
-            font-size: 11px;
-        }
+    @include breakpoint(sm) {
+      font-size: 11px;
     }
+  }
 
-    &__link {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        padding: 20px 0;
-        color: #444444;
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+    color: #444444;
 
-        @include breakpoint(lg) {
-            gap: 15px;
-        }
-
+    @include breakpoint(lg) {
+      gap: 15px;
     }
+  }
 }

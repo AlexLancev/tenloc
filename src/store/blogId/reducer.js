@@ -1,13 +1,17 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+
 import service from '../services/service';
 
-export const getblogId = createAsyncThunk('GET_BLOGID', async (id, thunkAPI) => {
-  try {
-    return await service.getBlogId(id);
-  } catch(error) {
-     return thunkAPI.rejectWithValue(error.response.data)
-  }
-});
+export const getblogId = createAsyncThunk(
+  'GET_BLOGID',
+  async (id, thunkAPI) => {
+    try {
+      return await service.getBlogId(id);
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  },
+);
 
 const getblogIdSlice = createSlice({
   name: 'blogId',
@@ -16,12 +20,12 @@ const getblogIdSlice = createSlice({
     isError: false,
     isLoading: false,
     message: '',
-    errors: null
+    errors: null,
   },
   reducers: {
     resetBlogIdErrors: (state) => {
       state.errors = null;
-    }
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -37,8 +41,8 @@ const getblogIdSlice = createSlice({
         state.isLoading = false;
         state.message = action.payload.message;
         state.plane = null;
-      })
-  }
+      });
+  },
 });
 
 export const { resetBlogIdErrors } = getblogIdSlice.actions;

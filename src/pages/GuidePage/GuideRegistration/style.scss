@@ -1,113 +1,114 @@
 @import '../../../styles/base/variables';
 
 .guide-registration {
-    padding: 50px 0;
+  padding: 50px 0;
 
-    &__form {}
+  &__form {
+  }
 }
 
 .guide-form {
+  width: 100%;
+  max-width: 790px;
+  margin: 0 auto;
+
+  &__fieldset {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
     width: 100%;
-    max-width: 790px;
-    margin: 0 auto;
 
-    &__fieldset {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__head {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 55px;
+
+    @include breakpoint(lg) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__label {
+    width: 48%;
+
+    @include breakpoint(xxs) {
+      width: 100%;
+    }
+
+    &--ex {
+      width: 98%;
+
+      @include breakpoint(xxs) {
         width: 100%;
+      }
+    }
+  }
 
-        &:not(:last-child) {
-            margin-bottom: 15px;
-        }
+  &__input,
+  &__textarea {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #f1f1f1;
+    padding: 15px 25px;
+    font-size: 15px;
+
+    @include breakpoint(sm) {
+      font-size: 12px;
+    }
+  }
+
+  &__textarea {
+    resize: vertical;
+    min-height: 150px;
+    max-height: 400px;
+  }
+
+  &__btn {
+    display: block;
+    width: 280px;
+    padding: 12px 25px;
+    margin: 0 auto 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #ffd600;
+    border: 1px solid #b19400;
+    transition: 0.3s background-color;
+
+    &:disabled {
+      cursor: default;
+      background-color: #f2ca00;
     }
 
-    &__head {
-        font-size: 30px;
-        font-weight: 700;
-        margin-bottom: 55px;
-
-        @include breakpoint(lg) {
-            margin-bottom: 30px;
-        }
+    &:hover {
+      background-color: #f2ca00;
     }
+  }
 
-    &__label {
-        width: 48%;
+  &__police {
+    color: #505050;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
 
-        @include breakpoint(xxs) {
-            width: 100%;
-        }
+  &__police-link {
+    color: #505050;
+    margin-left: 5px;
+    text-decoration: underline;
+  }
 
-        &--ex {
-            width: 98%;
-
-            @include breakpoint(xxs) {
-                width: 100%;
-            }
-        }
-    }
-
-    &__input,
-    &__textarea {
-        display: block;
-        width: 100%;
-        border-radius: 10px;
-        border: none;
-        background-color: #f1f1f1;
-        padding: 15px 25px;
-        font-size: 15px;
-
-        @include breakpoint(sm) {
-            font-size: 12px;
-        }
-    }
-
-    &__textarea {
-        resize: vertical;
-        min-height: 150px;
-        max-height: 400px;
-    }
-
-    &__btn {
-        display: block;
-        width: 280px;
-        padding: 12px 25px;
-        margin: 0 auto 20px;
-        text-align: center;
-        border-radius: 10px;
-        font-size: 16px;
-        font-weight: 500;
-        background-color: #ffd600;
-        border: 1px solid #b19400;
-        transition: 0.3s background-color;
-
-        &:disabled {
-            cursor: default;
-            background-color: #f2ca00;
-        }
-
-        &:hover {
-            background-color: #f2ca00;
-        }
-    }
-
-    &__police {
-        color: #505050;
-        display: block;
-        margin: auto;
-        text-align: center;
-    }
-
-    &__police-link {
-        color: #505050;
-        margin-left: 5px;
-        text-decoration: underline;
-    }
-
-    &__error {
-        font-size: 14px;
-        color: red;
-    }
+  &__error {
+    font-size: 14px;
+    color: red;
+  }
 }

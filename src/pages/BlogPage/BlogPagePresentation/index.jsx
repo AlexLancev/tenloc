@@ -1,11 +1,13 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
-import { getblogId } from "../../../store/blogId/reducer";
-import { BlogPreview } from "../BlogPreview";
-import { Navigation } from "../../../components/Navigation";
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 
-import "./style.scss";
+import { getblogId } from 'store/blogId/reducer';
+import { BlogPreview } from 'components/BlogPreview';
+
+import { Navigation } from 'components/Navigation';
+
+import './style.scss';
 
 const BlogPagePresentation = () => {
   const dispatch = useDispatch();
@@ -23,13 +25,13 @@ const BlogPagePresentation = () => {
   const { description } = blogIdArr;
 
   return (
-    <div className="container">
+    <div className='container'>
       <Navigation plane={blogIdArr} />
       <div
-        className="blog-page"
+        className='blog-page'
         dangerouslySetInnerHTML={{ __html: description }}
       ></div>
-      <div className="blog-page__inner">
+      <div className='blog-page__inner'>
         <BlogPreview />
       </div>
     </div>

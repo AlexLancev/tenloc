@@ -1,65 +1,64 @@
 @import '../../../../../styles/base/variables';
 
 .directions {
+  &__list {
+    display: grid;
+    gap: 34px;
+    grid-template-columns: repeat(auto-fill, minmax(330.4px, 1fr));
 
-    &__list {
-        display: grid;
-        gap: 34px;
-        grid-template-columns: repeat(auto-fill, minmax(330.4px, 1fr));
+    @include breakpoint(lg) {
+      gap: 20px;
+    }
+  }
 
-        @include breakpoint(lg) {
-            gap: 20px;
-        }
+  &__item {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    overflow: hidden;
+  }
 
+  &__link {
+    min-height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 25px;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    color: #ffffff;
+    transition: 0.3s background-color;
+
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.2);
     }
 
-    &__item {
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        border-radius: 30px;
-        overflow: hidden;
+    @include breakpoint(lg) {
+      min-height: 430px;
     }
 
-    &__link {
-        min-height: 490px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        padding: 25px;
-        background-color: rgba($color: #000000, $alpha: 0.3);
-        color: #ffffff;
-        transition: 0.3s background-color;
-
-        &:hover {
-            background-color: rgba($color: #000000, $alpha: 0.2);
-        }
-
-        @include breakpoint(lg) {
-            min-height: 430px;
-        }
-
-        @include breakpoint(md) {
-            min-height: 360px;
-        }
+    @include breakpoint(md) {
+      min-height: 360px;
     }
+  }
 
-    &__heading {
-        font-size: 22px;
-        line-height: 1.2;
-        margin-bottom: 10px;
-    }
+  &__heading {
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
 
-    &__number-excursions {
-        display: inline-flex;
-        align-items: center;
-        background-color: #ffd600;
-        border-radius: 10px;
-        padding: 2px 5px;
-        font-size: 12px;
-        color: #000000;
-    }
+  &__number-excursions {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffd600;
+    border-radius: 10px;
+    padding: 2px 5px;
+    font-size: 12px;
+    color: #000000;
+  }
 
-    &__quantity {}
+  &__quantity {
+  }
 }

@@ -1,95 +1,99 @@
 @import '../../../styles/base/variables';
 
 .footer {
-    background-color: #fbfbfb;
-    padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-bottom: 20px;
 
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        column-gap: 50px;
-        row-gap: 30px;
-        padding: 50px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    row-gap: 30px;
+    padding: 50px 0;
+  }
+
+  &__social {
+  }
+
+  &__social-head {
+    display: block;
+    margin-bottom: 10px;
+
+    @include breakpoint(xxs) {
+      font-size: 15px;
     }
+  }
 
-    &__social {}
-
-    &__social-head {
-        display: block;
-        margin-bottom: 10px;
-
-        @include breakpoint(xxs) {
-            font-size: 15px;
-        }
-    }
-
-    &__column {
-        &--contacts {
-            @include breakpoint(md) {
-                display: none;
-            }
-        }
-    }
-
-    &__heading {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 15px;
-    }
-
-    &__list {}
-
-    &__item:not(:last-child) {
-        margin-bottom: 10px;
-
-        @include breakpoint(xxs) {
-            margin-bottom: 5px;
-        }
-    }
-
-    &__link {
-        color: #484848;
-        font-size: 16px;
-
-        &:hover {
-            text-decoration: underline;
-        }
-
-        @include breakpoint(xxs) {
-            font-size: 15px;
-        }
-    }
-
-    &__bottom {}
-
-    &__copy {}
-
-    & .logo {
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    & .social-networks__link {
-        background-color: #f8f8f8;
-        border: 1px solid #d4d4d4;
-        border-radius: 5px;
-        padding: 5px 10px;
-    }
-
-    & .social-networks__text {
+  &__column {
+    &--contacts {
+      @include breakpoint(md) {
         display: none;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+
+    @include breakpoint(xxs) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__link {
+    color: #484848;
+    font-size: 16px;
+
+    &:hover {
+      text-decoration: underline;
     }
 
-    & .social-networks__icon--telegram {
-        fill: #039be5;
+    @include breakpoint(xxs) {
+      font-size: 15px;
     }
+  }
 
-    & .social-networks__icon--whatsapp {
-        fill: #4caf50;
-    }
+  &__bottom {
+  }
 
-    & .menu__list {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  &__copy {
+  }
+
+  & .logo {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  & .social-networks__link {
+    background-color: #f8f8f8;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  & .social-networks__text {
+    display: none;
+  }
+
+  & .social-networks__icon--telegram {
+    fill: #039be5;
+  }
+
+  & .social-networks__icon--whatsapp {
+    fill: #4caf50;
+  }
+
+  & .menu__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

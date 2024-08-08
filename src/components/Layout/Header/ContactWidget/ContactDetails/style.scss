@@ -1,36 +1,35 @@
 @import '../../../../../styles/base/variables';
 
 .contact-details {
+  &__item:not(:last-child) {
+    margin-bottom: 5px;
+  }
 
-    &__item:not(:last-child) {
-        margin-bottom: 5px;
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #525252;
+    transition: 0.3s color;
+
+    &:hover {
+      color: #000000;
     }
 
-    &__link {
-        display: inline-flex;
-        align-items: center;
-        gap: 5px;
-        color: #525252;
-        transition: 0.3s color;
-
-        &:hover {
-            color: #000000;
-        }
-
-        @include breakpoint(md) {
-            font-size: 14px;
-        }
+    @include breakpoint(md) {
+      font-size: 14px;
     }
+  }
 
-    &__link--phone {
-    }
+  &__link--phone {
+  }
 
-    &__icon {
-    }
+  &__icon {
+  }
 
-    &__text {
-    }
+  &__text {
+  }
 
-    &__link--email {
-    }
+  &__link--email {
+  }
 }

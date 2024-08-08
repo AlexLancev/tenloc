@@ -1,84 +1,84 @@
 @import '../../../../styles/base/variables';
 
 .drop-directions {
-    position: relative;
+  position: relative;
 
-    &__btn-arrow {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        padding: 10px 20px;
-        background-color: #ffd600;
-        border-radius: 20px;
-        color: #000000;
+  &__btn-arrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    background-color: #ffd600;
+    border-radius: 20px;
+    color: #000000;
 
-        @include breakpoint(md) {
-            font-size: 14px;
-            padding: 10px 12px;
-        }
-
-        @include breakpoint(xxs) {
-            font-size: 12px;
-        }
+    @include breakpoint(md) {
+      font-size: 14px;
+      padding: 10px 12px;
     }
 
-    &__list {
-        position: absolute;
-        z-index: 9999;
-        top: 45px;
-        left: 0;
-        background-color: #ffffff;
-        border: 1px solid #ececec;
-        width: 300px;
-        padding: 10px;
-        border-radius: 8px;
+    @include breakpoint(xxs) {
+      font-size: 12px;
+    }
+  }
 
-        @include breakpoint(md) {
-            width: 230px;
-        }
+  &__list {
+    position: absolute;
+    z-index: 9999;
+    top: 45px;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
 
-        @include breakpoint(xxs) {
-            width: 200px;
-        }
+    @include breakpoint(md) {
+      width: 230px;
     }
 
-    &__item {
-        padding: 8px 0;
-        border-bottom: 1px solid #ececec;
+    @include breakpoint(xxs) {
+      width: 200px;
+    }
+  }
 
-        &:last-child {
-            border-bottom: none;
-        }
+  &__item {
+    padding: 8px 0;
+    border-bottom: 1px solid #ececec;
 
-        @include breakpoint(md) {
-            padding: 5px 0;
-        }
+    &:last-child {
+      border-bottom: none;
     }
 
-    &__link {
-        display: inline-block;
-        color: #5d5d5d;
-        transition: 0.3s color;
-
-        &.active {
-            color: #000000;
-            cursor: default;
-        }
-
-        &:hover {
-            color: #000000;
-        }
-
-        @include breakpoint(md) {
-            font-size: 14px;
-        }
+    @include breakpoint(md) {
+      padding: 5px 0;
     }
+  }
+
+  &__link {
+    display: inline-block;
+    color: #5d5d5d;
+    transition: 0.3s color;
+
+    &.active {
+      color: #000000;
+      cursor: default;
+    }
+
+    &:hover {
+      color: #000000;
+    }
+
+    @include breakpoint(md) {
+      font-size: 14px;
+    }
+  }
 }
 
 .arrow-icon {
-    transition: 0.3s;
+  transition: 0.3s;
 
-    &--visible {
-        transform: rotate(180deg);
-    }
+  &--visible {
+    transform: rotate(180deg);
+  }
 }

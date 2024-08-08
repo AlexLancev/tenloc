@@ -1,7 +1,8 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import service from "../services/service";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-export const getTours = createAsyncThunk("GET_TOURS", async (_, thunkAPI) => {
+import service from '../services/service';
+
+export const getTours = createAsyncThunk('GET_TOURS', async (_, thunkAPI) => {
   try {
     return await service.getTours();
   } catch (error) {
@@ -10,12 +11,12 @@ export const getTours = createAsyncThunk("GET_TOURS", async (_, thunkAPI) => {
 });
 
 const toursSlice = createSlice({
-  name: "tours",
+  name: 'tours',
   initialState: {
     tours: null,
     isError: false,
     isLoading: false,
-    message: "",
+    message: '',
   },
   extraReducers: (builder) => {
     builder

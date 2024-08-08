@@ -1,21 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { LuPlus } from "react-icons/lu";
-import { useParams } from "react-router-dom";
-import { ToursLoader } from "../../../pages/BlogPage/BlogPreview/Loader/toursLoader";
-import Slider from "react-slick";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { LuPlus } from 'react-icons/lu';
+import { useParams } from 'react-router-dom';
+import Slider from 'react-slick';
 
-import "./style.scss";
+import { ToursLoader } from 'components/BlogPreview/Loader/toursLoader';
+
+import './style.scss';
 
 const Tours = ({ isSlider = false }) => {
-
   const { direct, id } = useParams();
   const { tours, isLoading } = useSelector((state) => state.tours);
   const arrDirect = tours
-    ? tours.filter(
-        (plane) => plane.name.current === direct && plane._id !== id
-      )
+    ? tours.filter((plane) => plane.name.current === direct && plane._id !== id)
     : [];
 
   const settings = {
@@ -29,48 +27,50 @@ const Tours = ({ isSlider = false }) => {
       {
         breakpoint: 1025,
         settings: {
-          slidesToShow: 2
-        }
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 577,
         settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   const renderTourItem = (plane) => {
-    
     return (
-      <li className="tours__item" key={plane._id}>
+      <li className='tours__item' key={plane._id}>
         <Link
           to={`/excursion/${direct}/${plane._id}`}
-          className="tours__img-link"
+          className='tours__img-link'
         >
           <img
-            className="tours__img"
+            className='tours__img'
             width={337}
             height={253}
             src={`/${plane.images[0]}`}
             alt={plane.title}
           />
         </Link>
-        <div className="tours__box">
-          <h3 className="tours__heading">{plane.title}</h3>
-          <p className="tours__text">{plane.presentation}</p>
-          <div className="prices-reservation">
-            <div className="prices-reservation__details">
-              <span className="prices-reservation__price">
+        <div className='tours__box'>
+          <h3 className='tours__heading'>{plane.title}</h3>
+          <p className='tours__text'>{plane.presentation}</p>
+          <div className='prices-reservation'>
+            <div className='prices-reservation__details'>
+              <span className='prices-reservation__price'>
                 {`от ${plane.prices[0]}`} &#8381;
               </span>
-              <i className="prices-reservation__quantity">
+              <i className='prices-reservation__quantity'>
                 {` / за ${plane.typeExcursion.personally} `}
               </i>
             </div>
-            <Link to={`/excursion/${direct}/${plane._id}`} className="tours__link">
-              <LuPlus className="tours__link-icon" size={20} />
+            <Link
+              to={`/excursion/${direct}/${plane._id}`}
+              className='tours__link'
+            >
+              <LuPlus className='tours__link-icon' size={20} />
             </Link>
           </div>
         </div>
@@ -79,19 +79,18 @@ const Tours = ({ isSlider = false }) => {
   };
 
   return isSlider ? (
-    <Slider {...settings} className="tours__list">
+    <Slider {...settings} className='tours__list'>
       {arrDirect && arrDirect.map((plane) => renderTourItem(plane))}
     </Slider>
   ) : (
-    <ul className="tours__list">
+    <ul className='tours__list'>
       {isLoading || !arrDirect
         ? Array.from({ length: arrDirect.length }).map((_, index) => {
-          
-          return <ToursLoader key={index} />})
+            return <ToursLoader key={index} />;
+          })
         : arrDirect.map((plane) => renderTourItem(plane))}
     </ul>
   );
-  
 };
 
 export { Tours };

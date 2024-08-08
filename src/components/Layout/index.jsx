@@ -1,17 +1,17 @@
-import { Outlet } from "react-router-dom";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-function Layout() {
+import { Header } from './Header';
+import { Footer } from './Footer';
+
+export const Layout = () => {
   return (
     <>
       <Header />
-      <main className="main">
+      <main className='main'>
         <Outlet />
       </main>
       <Footer />
     </>
   );
-}
-
-export { Layout };
+};

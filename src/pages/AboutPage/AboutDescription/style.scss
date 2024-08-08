@@ -1,49 +1,49 @@
 @import '../../../styles/base/variables';
 
 .about-description {
-    padding: 50px 0 100px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    z-index: 1;
+  padding: 50px 0 100px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 1;
+
+  @include breakpoint(lg) {
+    padding: 25px 0 80px;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+    font-size: 42px;
+    font-weight: 700;
 
     @include breakpoint(lg) {
-        padding: 25px 0 80px;
+      font-size: 32px;
+      margin-bottom: 14px;
     }
+  }
 
-    &__title {
-        margin-bottom: 34px;
-        font-size: 42px;
-        font-weight: 700;
+  &__text {
+    width: 66.9%;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.5;
 
-        @include breakpoint(lg) {
-            font-size: 32px;
-            margin-bottom: 14px;
-        }
+    @include breakpoint(lg) {
+      width: 100%;
+      margin-bottom: 30px;
     }
+  }
 
-    &__text {
-        width: 66.9%;
-        margin-bottom: 40px;
-        font-size: 16px;
-        line-height: 1.5;
+  &__bg {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 448px;
 
-        @include breakpoint(lg) {
-            width: 100%;
-            margin-bottom: 30px;
-        }
+    @include breakpoint(sm) {
+      height: 338px;
     }
-
-    &__bg {
-        width: 100%;
-        border-radius: 20px;
-        overflow: hidden;
-        height: 448px;
-
-        @include breakpoint(sm) {
-            height: 338px;
-        }
-    }
+  }
 }

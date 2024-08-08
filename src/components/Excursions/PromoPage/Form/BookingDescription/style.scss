@@ -1,22 +1,21 @@
 .booking-description {
+  &__head {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
 
-    &__head {
-        display: block;
-        font-weight: 700;
-        margin-bottom: 5px;
-    }
+  &__lists {
+    margin-bottom: 20px;
+  }
 
-    &__lists {
-        margin-bottom: 20px;
-    }
+  &__items {
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(190, 190, 190);
+  }
 
-    &__items {
-        padding: 5px 0;
-        border-bottom: 1px solid rgb(190, 190, 190);
-    }
-
-    &__total-price,
-    &__date {
-        display: block;
-    }
+  &__total-price,
+  &__date {
+    display: block;
+  }
 }

@@ -1,7 +1,8 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import service from "../services/service";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-export const getBlog = createAsyncThunk("GET_BLOG", async (_, thunkAPI) => {
+import service from '../services/service';
+
+export const getBlog = createAsyncThunk('GET_BLOG', async (_, thunkAPI) => {
   try {
     return await service.getBlog();
   } catch (error) {
@@ -10,12 +11,12 @@ export const getBlog = createAsyncThunk("GET_BLOG", async (_, thunkAPI) => {
 });
 
 const blogSlice = createSlice({
-  name: "blog",
+  name: 'blog',
   initialState: {
     blogArr: null,
     isError: false,
     isLoading: false,
-    message: "",
+    message: '',
   },
   extraReducers: (builder) => {
     builder

@@ -1,7 +1,7 @@
-import React from "react";
-import Slider from "react-slick";
+import React from 'react';
+import Slider from 'react-slick';
 
-import "./style.scss";
+import './style.scss';
 
 const SliderGallery = ({ arrImages }) => {
   const settings = {
@@ -16,30 +16,29 @@ const SliderGallery = ({ arrImages }) => {
       {
         breakpoint: 769,
         settings: {
-          slidesToShow: 2
-        }
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <section className="slider-gallery">
+    <section className='slider-gallery'>
       <Slider {...settings}>
         {arrImages &&
           arrImages.map((image, index) => {
-            
             return (
               <img
                 src={`/${image}`}
-                loading="lazy"
-                className="slider-gallery__img"
-                alt=""
+                loading='lazy'
+                className='slider-gallery__img'
+                alt=''
                 key={index}
               />
             );
