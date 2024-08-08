@@ -31,8 +31,8 @@ const Search = () => {
       setArrFilteredSearch(
         tours
           ? tours.filter((el) =>
-            el.title.toLocaleLowerCase().includes(value.toLocaleLowerCase()),
-          )
+              el.title.toLocaleLowerCase().includes(value.toLocaleLowerCase()),
+            )
           : [],
       );
     },

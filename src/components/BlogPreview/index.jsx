@@ -69,10 +69,10 @@ const BlogPreview = ({ isSlider = true }) => {
     <ul className='blog-preview__list'>
       {isLoading || !arrBlogItem
         ? Array.from({ length: arrBlogItem && arrBlogItem.length }).map(
-          (item) => {
-            return <ToursLoader key={item._id} />;
-          },
-        )
+            (item) => {
+              return <ToursLoader key={item._id} />;
+            },
+          )
         : arrBlogItem.map((blogItem) => renderBlogItem(blogItem))}
     </ul>
   );
