@@ -1,14 +1,14 @@
 import React from "react";
-import { getTourId } from "../../store/tourId/tourIdSlice";
+import { getTourId } from "../../../store/tourId/tourIdSlice";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { SliderGallery } from "../SliderGallery";
-import { TourInformation } from "../TourInformation";
-import { BookExcursion } from "../BookExcursion";
-import { PopupSubmitForm } from "../PopupSubmitForm";
+import { SliderGallery } from "./SliderGallery";
+import { TourInformation } from "./TourInformation";
+import { BookExcursion } from "../../BookExcursion";
+import { PopupSubmitForm } from "../../PopupSubmitForm";
 import { Tours } from "../Tours";
-import { Navigation } from "../Navigation";
-import { ApplicationCompleted } from "../ApplicationCompleted";
+import { Navigation } from "../../Navigation";
+import { ApplicationCompleted } from "../../ApplicationCompleted";
 
 import "./style.scss";
 

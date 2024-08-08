@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { LuPlus } from "react-icons/lu";
 import { useParams } from "react-router-dom";
-import { ToursLoader } from "../../Loader/toursLoader";
+import { ToursLoader } from "../../BlogPreview/Loader/toursLoader";
 import Slider from "react-slick";
 
 import "./style.scss";

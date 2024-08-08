@@ -1,7 +1,7 @@
 import React from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import schema from "../../utils/validationShema";
+import schema from "../../../utils/validationShema";
 
 import "./style.scss";
 

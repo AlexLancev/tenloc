@@ -1,6 +1,6 @@
 import React from "react";
 import { ExcursionList } from "../../../components/ExcursionList";
-import { Search } from "../../../components/Search";
+import { Search } from "./Search";
 
 import HeroBg from "../../../img/hero-bg.webp";
 

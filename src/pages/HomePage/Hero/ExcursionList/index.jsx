@@ -1,5 +1,5 @@
 import React from "react";
-import { arrDirections } from "../Directions";
+import { arrDirections } from "../../../../components/Layout/Header/DropdownMenuDirections/Directions";
 import { Link } from "react-router-dom";
 
 import "./style.scss";

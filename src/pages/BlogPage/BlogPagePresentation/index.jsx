@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { getblogId } from "../../store/blogId/reducer";
+import { getblogId } from "../../../store/blogId/reducer";
 import { BlogPreview } from "../BlogPreview";
-import { Navigation } from "../Navigation";
+import { Navigation } from "../../../components/Navigation";
 
 import "./style.scss";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { NavLink } from "react-router-dom";
-import { arrDirections } from "../../../Directions";
+import { arrDirections } from "./Directions";
 
 import "./style.scss";
 
