@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BlogPreview } from "../../../components/BlogPreview";
+import { BlogPreview } from "../../BlogPage/BlogPreview";
 import { paths } from "../../../paths";
 
 import "./style.scss";

@@ -1,6 +1,6 @@
 import React from "react";
 import { ListSocialNetworks } from "../../ListSocialNetworks";
-import { ContactsDetails } from "../../../ContactDetails";
+import { ContactsDetails } from "./ContactDetails";
 
 import "./style.scss";
 

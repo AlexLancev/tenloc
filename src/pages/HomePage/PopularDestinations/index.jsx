@@ -1,5 +1,5 @@
 import React from "react";
-import { Directions } from "../../../components/Directions";
+import { Directions } from "../../../components/Layout/Header/DropdownMenuDirections/Directions";
 
 import "./style.scss";
 

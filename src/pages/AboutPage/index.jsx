@@ -3,7 +3,7 @@ import { AboutDescription } from "./AboutDescription";
 import { FastConvenient } from "./FastConvenient";
 import { ListingBenefits } from "./ListingBenefits";
 import { HowWork } from "./HowWork";
-import { BlogPreview } from "../../components/BlogPreview";
+import { BlogPreview } from "../BlogPage/BlogPreview";
 import { SubscribeMail } from "../../components/SubscribeMail";
 
 const AboutPage = () => {

@@ -4,11 +4,11 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { SliderGallery } from "./SliderGallery";
 import { TourInformation } from "./TourInformation";
-import { BookExcursion } from "../../BookExcursion";
-import { PopupSubmitForm } from "../../PopupSubmitForm";
+import { BookExcursion } from "./BookExcursion";
+import { PopupSubmitForm } from "./PopupSubmitForm";
 import { Tours } from "../Tours";
-import { Navigation } from "../../Navigation";
-import { ApplicationCompleted } from "../../ApplicationCompleted";
+import { Navigation } from "../../../components/Navigation";
+import { ApplicationCompleted } from "./ApplicationCompleted";
 
 import "./style.scss";
 

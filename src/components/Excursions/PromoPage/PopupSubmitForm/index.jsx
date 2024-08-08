@@ -1,7 +1,7 @@
 import React from "react";
 import { Form } from "../Form";
 import { RxCross2 } from "react-icons/rx";
-import { bodyScroll } from "../../utils/body-scroll";
+import { bodyScroll } from "../../../../utils/body-scroll";
 
 import "./style.scss";
 

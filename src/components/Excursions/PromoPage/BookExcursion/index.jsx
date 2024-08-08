@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { orderCurrent } from "../../store/order/bookingReducer";
-import { MyBtnMinus, MyBtnPlus } from "../ui/Buttons";
-import { MyDatePicker } from "../ui/DataPicker";
-import { bodyScroll } from "../../utils/body-scroll";
+import { orderCurrent } from "../../../../store/order/bookingReducer";
+import { MyBtnMinus, MyBtnPlus } from "../../../ui/Buttons";
+import { MyDatePicker } from "../../../ui/DataPicker";
+import { bodyScroll } from "../../../../utils/body-scroll";
 import dayjs from "dayjs";
 import "./style.scss";
 

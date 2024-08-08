@@ -3,8 +3,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import * as yup from 'yup';
 
-import schema from "../../utils/validationShema";
-import { BookingDescription } from "../BookingDescription";
+import schema from "../../../../utils/validationShema";
+import { BookingDescription } from "./BookingDescription";
 
 import "./style.scss";
 

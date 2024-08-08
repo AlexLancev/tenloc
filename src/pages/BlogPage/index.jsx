@@ -1,5 +1,5 @@
 import React from "react";
-import { BlogPreview } from "../../components/BlogPreview";
+import { BlogPreview } from "./BlogPreview";
 
 import "./style.scss";
 

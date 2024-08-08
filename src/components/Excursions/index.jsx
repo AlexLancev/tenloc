@@ -1,7 +1,7 @@
 import React from "react";
 import { Tours } from "./Tours";
-import { arrDirections } from "../Directions";
 import { useParams } from "react-router-dom";
+import { arrDirections } from "../Layout/Header/DropdownMenuDirections/Directions";
 
 import "./style.scss";
 

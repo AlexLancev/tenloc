@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactsDetails } from "../../ContactDetails";
+import { ContactsDetails } from "../Header/ContactWidget/ContactDetails";
 import { Logo } from "../Logo";
 import { ListSocialNetworks } from "../ListSocialNetworks";
 

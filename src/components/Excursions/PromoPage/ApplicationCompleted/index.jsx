@@ -1,7 +1,7 @@
 import React from "react";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
-import { bodyScroll } from "../../utils/body-scroll";
+import { bodyScroll } from "../../../../utils/body-scroll";
 
 import "./style.scss";
 

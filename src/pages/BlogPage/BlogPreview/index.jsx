@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { BsThreeDots } from "react-icons/bs";
 import { useSelector } from "react-redux";
-import { ToursLoader } from "../Loader/toursLoader";
+import { ToursLoader } from "./Loader/toursLoader";
 import Slider from "react-slick";
 
 import "./style.scss";
