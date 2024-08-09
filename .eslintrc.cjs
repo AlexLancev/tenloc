@@ -20,19 +20,39 @@ module.exports = {
     },
   },
   plugins: ['react', 'import'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   rules: {
     'react/prop-types': 'off',
     'no-console': ['warn', { allow: ['warn', 'error'] }],
-    'quotes': ['warn', 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
+    quotes: [
+      'warn',
+      'single',
+      { avoidEscape: true, allowTemplateLiterals: true },
+    ],
     'jsx-quotes': ['warn', 'prefer-single'],
-    'indent': ['warn', 2],
     'comma-dangle': ['error', 'always-multiline'],
-    'semi': ['warn', 'always'],
-    'import/order': ['warn', {
-      'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
-      'newlines-between': 'always-and-inside-groups',
-    }],
-    'import/newline-after-import': ['warn', { 'count': 1 }],
+    semi: ['warn', 'always'],
+    'import/order': [
+      'warn',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'object',
+          'type',
+        ],
+        'newlines-between': 'always-and-inside-groups',
+      },
+    ],
+    'import/newline-after-import': ['warn', { count: 1 }],
     'prettier/prettier': 'warn',
   },
-}
+};

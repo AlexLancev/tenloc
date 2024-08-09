@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { CiSearch } from 'react-icons/ci';
 import { FiMapPin } from 'react-icons/fi';
 import { useSelector } from 'react-redux';
